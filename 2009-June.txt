@@ -1,0 +1,1974 @@
+From heiner at jost-net.de  Mon Jun  1 10:51:09 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 01 Jun 2009 10:51:09 +0200
+Subject: [JVerein-Mailliste] Neue Entwicklerversion freigegeben.
+Message-ID: <4A23967D.9070106@jost-net.de>
+
+Hallo,
+
+ich habe gerade eine neue Entwicklerversion von JVerein unter der 
+Adresse http://prdownload.berlios.de/jverein/jverein.1.2.0-devel-179.zip 
+zur Verfügung gestellt. Die Änderungen sind in 
+http://www.jverein.de/index.php5?title=Changelog dokumentiert.
+
+Wichtig ist der Einsatz der aktuellen Nightly-Builds von Jameica und 
+Hibiscus.
+
+Insbesondere interessiert mich eure Meinung zu den neuen Suchfeldern bei 
+Name, Vorname und Straße. Bringt das was? Ich bin mir selber nicht so 
+ganz sicher.
+
+Viel Spaß beim testen.
+
+
+Heiner
+
+
+From a_henke at gmx.de  Wed Jun 10 12:16:42 2009
+From: a_henke at gmx.de (Andre Henke)
+Date: Wed, 10 Jun 2009 10:16:42 +0000
+Subject: [JVerein-Mailliste] First contact
+Message-ID: <4a2f880a72690_33603fe01e48f1dc79ab@app02.zenbe.com.tmail>
+
+Hallo zusammen,
+
+ich bin über ein Prolinux.de-Kommentar auf euer Projekt "JVerein" gestoßen und habe interessiert eure Webseite gesichtet. 
+
+Ich habe selbst schon mal über eine Vereinssoftware nachgedacht und auch in sehr rudimentären Anfängen gestartet, aber wie immer hat die Zeit nicht mehr hergegeben. Anstoß war im Wesentlichen eine Online-Platzreservierung für in meinem Fall Tennisplätze, von der ich auf die Basis-Verwaltung eines Vereins abgekommen bin, um die Grundlagen z. B. Mitgliederverwaltung zu schaffen. Technologisch wollte ich Tapestry, Spring Framework und Hibernate einsetzen, da ich aus der Client-Server Ecke komme.
+
+Generell würden mich mal ein paar Basisinfos interessieren:
+Wieviel Leute sind am Projekt beteiligt?
+Wieviele Vereine setzen den JVerein ein? 
+Welche Vision hat JVerein? Gibt's eine Roadmap?
+Gibt es kommerzielle Pläne oder rein OpenSource?
+
+Gruß
+André
+
+
+From heiner at jost-net.de  Thu Jun 11 12:09:52 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Thu, 11 Jun 2009 12:09:52 +0200
+Subject: [JVerein-Mailliste] First contact
+In-Reply-To: <4a2f880a72690_33603fe01e48f1dc79ab@app02.zenbe.com.tmail>
+References: <4a2f880a72690_33603fe01e48f1dc79ab@app02.zenbe.com.tmail>
+Message-ID: <4A30D7F0.3010609@jost-net.de>
+
+Hallo André,
+
+> Generell würden mich mal ein paar Basisinfos interessieren:
+> Wieviel Leute sind am Projekt beteiligt?
+>   
+Ich bin JVerein ;-) Olaf Willuhn hat mich bei der Programmierung in der 
+Anfangsphase hervorragend unterstützt.
+> Wieviele Vereine setzen den JVerein ein?
+Genaue Zahlen gibt es nicht. Eine Registrierung ist nicht erforderlich. 
+Lizenzgebühren gehen nicht ein. Aufgrund der Downloadzahlen (ca. jeweils 
+2.000 für die Versionen 1.0 und 1.1) gehe ich von 300 bis 500 Vereinen 
+aus. Ob das aber stimmt, steht in den Sternen.
+>  
+> Welche Vision hat JVerein? Gibt's eine Roadmap?
+>   
+JVerein habe ich entwickelt, nachdem ich vor ca.3 1/2 Jahren den Posten 
+eines Vereinskassierers übernommen habe. Das von meiner Vorgängerin 
+übernommene Programm SPG-Verein entsprach überhaupt nicht meinen 
+Vorstellungen. U. a. suchte ich ein Programm, dass unter Linux 
+ablauffähig ist. Da ich für das private Homebanking bereits Hibiscus 
+einsetzte und ich beruflich auch Software mit Java entwickle, lag der 
+Gedanke nahe, ein Jameica-Plugin zu schreiben. Olaf Willuhn hat mich 
+dabei unterstützt. Da er Benutzerwünsche in Richtung Vereinsverwaltung 
+zu Hibiscus bekam, entwickelte sich die Idee, JVerein als OpenSource zu 
+veröffentlichen.
+
+Zwischenzeitlich wurden schon einige Features implementiert, die von 
+anderen JVerein-Benutzern gewünscht wurden. Eine Vision oder eine 
+Roadmap gibt es nicht. Benutzer tragen Wünsche an mich heran. Ich 
+entscheide, ob sie von allgemeinem Interesse sind und realisiere ggfls. 
+die zusätzlichen Funktionalitäten. Allerdings baue ich keinem Verein 
+seine individuelle Lösung.
+> Gibt es kommerzielle Pläne oder rein OpenSource?
+>   
+Ich möchte nicht das weltbeste Vereinsverwaltungsprogramm bauen und 
+damit anschließend irres Geld verdienen. Es soll lediglich meine 
+Anforderungen an eine Vereinsverwaltung erfüllen. Andere Vereine können 
+das Programm gerne nutzen. Weitere Funktionen werde ich, wie bereits 
+beschrieben, noch implementieren.
+
+Heiner
+
+
+Andre Henke schrieb:
+> Hallo zusammen,
+>
+> ich bin über ein Prolinux.de-Kommentar auf euer Projekt "JVerein" gestoßen und habe interessiert eure Webseite gesichtet. 
+>
+> Ich habe selbst schon mal über eine Vereinssoftware nachgedacht und auch in sehr rudimentären Anfängen gestartet, aber wie immer hat die Zeit nicht mehr hergegeben. Anstoß war im Wesentlichen eine Online-Platzreservierung für in meinem Fall Tennisplätze, von der ich auf die Basis-Verwaltung eines Vereins abgekommen bin, um die Grundlagen z. B. Mitgliederverwaltung zu schaffen. Technologisch wollte ich Tapestry, Spring Framework und Hibernate einsetzen, da ich aus der Client-Server Ecke komme.
+>
+> Generell würden mich mal ein paar Basisinfos interessieren:
+> Wieviel Leute sind am Projekt beteiligt?
+> Wieviele Vereine setzen den JVerein ein? 
+> Welche Vision hat JVerein? Gibt's eine Roadmap?
+> Gibt es kommerzielle Pläne oder rein OpenSource?
+>
+> Gruß
+> André
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+
+From ralf-info at family-moll.de  Mon Jun 15 09:34:30 2009
+From: ralf-info at family-moll.de (Ralf Moll)
+Date: Mon, 15 Jun 2009 09:34:30 +0200
+Subject: [JVerein-Mailliste] First contact
+In-Reply-To: <4A30D7F0.3010609@jost-net.de>
+References: <4a2f880a72690_33603fe01e48f1dc79ab@app02.zenbe.com.tmail>
+	<4A30D7F0.3010609@jost-net.de>
+Message-ID: <4A35F986.2040101@family-moll.de>
+
+Hallo Liste,
+
+ich nutze das Programm für einen gemeinnützigen Verein, dort geht es
+eigentlich nur um Mitgliederverwaltung und Serienbrief.
+
+Bankeinzug geht leider nicht, da Volksbank mit SECCOS-Karten, dafür mal
+DTAU testen.
+
+Bin mit der Unterstützung durch Heiner sehr zufrieden, er hat für mich /
+uns das Feature "Mitglied ist nichtnätürliche Person" eingebaut.
+
+Bin mal gespannt, was der Betrieb noch so alles an Anforderungen
+aufwirft ;-)
+
+Grüße,
+
+Ralf Moll
+
+Heiner Jostkleigrewe schrieb:
+> Hallo André,
+> 
+>> Generell würden mich mal ein paar Basisinfos interessieren:
+>> Wieviel Leute sind am Projekt beteiligt?
+>>   
+> Ich bin JVerein ;-) Olaf Willuhn hat mich bei der Programmierung in der 
+> Anfangsphase hervorragend unterstützt.
+>> Wieviele Vereine setzen den JVerein ein?
+> Genaue Zahlen gibt es nicht. Eine Registrierung ist nicht erforderlich. 
+> Lizenzgebühren gehen nicht ein. Aufgrund der Downloadzahlen (ca. jeweils 
+> 2.000 für die Versionen 1.0 und 1.1) gehe ich von 300 bis 500 Vereinen 
+> aus. Ob das aber stimmt, steht in den Sternen.
+>>  
+>> Welche Vision hat JVerein? Gibt's eine Roadmap?
+>>   
+> JVerein habe ich entwickelt, nachdem ich vor ca.3 1/2 Jahren den Posten 
+> eines Vereinskassierers übernommen habe. Das von meiner Vorgängerin 
+> übernommene Programm SPG-Verein entsprach überhaupt nicht meinen 
+> Vorstellungen. U. a. suchte ich ein Programm, dass unter Linux 
+> ablauffähig ist. Da ich für das private Homebanking bereits Hibiscus 
+> einsetzte und ich beruflich auch Software mit Java entwickle, lag der 
+> Gedanke nahe, ein Jameica-Plugin zu schreiben. Olaf Willuhn hat mich 
+> dabei unterstützt. Da er Benutzerwünsche in Richtung Vereinsverwaltung 
+> zu Hibiscus bekam, entwickelte sich die Idee, JVerein als OpenSource zu 
+> veröffentlichen.
+> 
+> Zwischenzeitlich wurden schon einige Features implementiert, die von 
+> anderen JVerein-Benutzern gewünscht wurden. Eine Vision oder eine 
+> Roadmap gibt es nicht. Benutzer tragen Wünsche an mich heran. Ich 
+> entscheide, ob sie von allgemeinem Interesse sind und realisiere ggfls. 
+> die zusätzlichen Funktionalitäten. Allerdings baue ich keinem Verein 
+> seine individuelle Lösung.
+>> Gibt es kommerzielle Pläne oder rein OpenSource?
+>>   
+> Ich möchte nicht das weltbeste Vereinsverwaltungsprogramm bauen und 
+> damit anschließend irres Geld verdienen. Es soll lediglich meine 
+> Anforderungen an eine Vereinsverwaltung erfüllen. Andere Vereine können 
+> das Programm gerne nutzen. Weitere Funktionen werde ich, wie bereits 
+> beschrieben, noch implementieren.
+> 
+> Heiner
+> 
+> 
+> Andre Henke schrieb:
+>> Hallo zusammen,
+>>
+>> ich bin über ein Prolinux.de-Kommentar auf euer Projekt "JVerein" gestoßen und habe interessiert eure Webseite gesichtet. 
+>>
+>> Ich habe selbst schon mal über eine Vereinssoftware nachgedacht und auch in sehr rudimentären Anfängen gestartet, aber wie immer hat die Zeit nicht mehr hergegeben. Anstoß war im Wesentlichen eine Online-Platzreservierung für in meinem Fall Tennisplätze, von der ich auf die Basis-Verwaltung eines Vereins abgekommen bin, um die Grundlagen z. B. Mitgliederverwaltung zu schaffen. Technologisch wollte ich Tapestry, Spring Framework und Hibernate einsetzen, da ich aus der Client-Server Ecke komme.
+>>
+>> Generell würden mich mal ein paar Basisinfos interessieren:
+>> Wieviel Leute sind am Projekt beteiligt?
+>> Wieviele Vereine setzen den JVerein ein? 
+>> Welche Vision hat JVerein? Gibt's eine Roadmap?
+>> Gibt es kommerzielle Pläne oder rein OpenSource?
+>>
+>> Gruß
+>> André
+>> _______________________________________________
+>> JVerein-Mailliste mailing list
+>> JVerein-Mailliste at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>>
+>>   
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+> 
+
+
+
+From heiner at jost-net.de  Tue Jun 16 20:15:30 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Tue, 16 Jun 2009 20:15:30 +0200
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <4A37E142.2040103@jost-net.de>
+
+Hallo,
+
+ich habe gerade eine neue Entwicklerversion hochgeladen. In der 
+vorherigen Version hatte sich durch die neuen Suchfelder in der 
+Mitgliedermaske ein Fehler beim speichern neuer Mitglieder eingeschlichen.
+
+Heiner
+
+
+From a_henke at gmx.de  Sat Jun 20 08:39:03 2009
+From: a_henke at gmx.de (Andre Henke)
+Date: Sat, 20 Jun 2009 06:39:03 +0000
+Subject: [JVerein-Mailliste] Testcases
+Message-ID: <4a3c8407158d8_7beb3fb1668d5ef8768e@app02.zenbe.com.tmail>
+
+Hallo Heiner,
+
+bei meinen ersten Schritten in der Anwendung sind mir folgenden Sachen aufgefallen - eher Kleinigkeiten und ist ja auch noch eine Entwicklerversion
+
+UseCase "Mitglied suchen"
+- Fehlermeldung das keine Beitragsgruppe vorhanden ist verweist nicht auf den richtigen Pfad > "Plugins|JVerein|Beitragsgruppe" anstatt "Administration|Beitragsgruppe"
+
+UseCase "Mitglied anlegen"
+- Vorname, Name, Geschlecht, Beitragsgruppe nicht als Pflichtfeld (orange) markiert
+- Geschlecht nur als "m" und "w" in der Auswahl vorhanden. Männlich, weiblich wäre vielleicht sprechender
+
+UseCase "Beitragsgruppe anlegen"
+- Cursor auf Feld "Bezeichnung" initial nicht vorhanden
+- Betrag "10..............................,10" wird akzeptiert und als Betrag "10,10" gespeichert
+
+UseCase "Beitragsgruppe löschen"
+- Wird einen bereits verwendete Beitragsgruppe gelöscht, gibt es zwar eine Fehlermeldung, aber keine genaue Informationen warum das Löschen fehl geschlagen ist. Schaut man im Stacktrace nach, gibt es auf der DB eine ForeignKey-Constraint Verletzung und danach eine Nullpointer-Exception.
+
+
+Dann habe ich überlegt, ob Testcase-Beschreibungen sinnvoll wären und habe mal folgende initial erstellt:
+
+##### Testcases (V1.2.0-devel-181) :
+
+
+## UseCase "Pflege der Stammdaten"
+
+1.1 Stammdaten ändern (Administration -> Stammdaten)
+
+Voraussetzung
+keine
+
+Durchführung
+- Name des Vereins eingeben (Pflichtfeld, nicht mehr als 27 Zeichen)
+- Bankleitzahl eingeben (Pflichtfeld, nicht mehr als 7 Zeichen)
+- Konto Nummer eingeben (Pflichtfeld, nicht mehr als 10 Zeichen)
+- Altersgruppen eingeben (Format "0-6,7-10")
+- Jubiläen eingeben (Format "10,20")
+- Altersjubiläen (Format "10,20")  
+- Den Button "speichern" betätigen oder Taste "Enter" drücken
+
+Erwartetes Ergebnis
+Die Stammdaten werden gespeichert
+
+
+## UseCase "Pflege der Beitragsgruppe"
+
+2.1 Beitragsgruppe anlegen (Administration -> Beitragsgruppen -> neu)
+
+Voraussetzung
+keine
+
+Durchführung
+- Bezeichnung eingeben (Pflichtfeld - nicht mehr als 30 Zeichen)
+- Betrag eingeben (Pflichtfeld - Zahl)
+- Beitragsart auswählen
+- Den Button "speichern" betätigen oder Taste "Enter" drücken
+
+Erwartetes Ergebnis
+Die Beitragsgruppe wird gespeichert
+
+2.2 Beitragsgruppe ändern (Administration -> Beitragsgruppen -> Doppelklick in Liste)
+
+Voraussetzung
+Beitragsgruppe wurde angelegt
+
+Durchführung
+- Bezeichnung ändern (Pflichtfeld - nicht mehr als 30 Zeichen)
+- Betrag ändern (Pflichtfeld - Zahl)
+- Beitragsart ändern
+- Den Button "speichern" betätigen oder Taste "Enter" drücken
+
+Erwartetes Ergebnis
+Die Beitragsgruppe wird gespeichert und Änderungen werden übernommen
+
+2.3 Beitragsgruppe löschen ohne Verwendung bei den Mitgliedern (Administration -> Beitragsgruppen -> löschen)
+
+Voraussetzung
+keine
+
+Durchführung
+- Beitragsgruppe in der Liste der Beitragsgruppen auswählen
+- Button "löschen" betätigen
+
+Erwartetes Ergebnis
+Beitragsgruppe wird gelöscht und ist in der der Liste nicht mehr sichtbar
+
+2.4 Beitragsgruppe löschen mit Verwendung bei den Mitgliedern (Administration -> Beitragsgruppen -> löschen)
+
+Voraussetzung
+Es wurden bereits Mitglieder angelegt, die die Beitragsgruppe verwenden
+
+Durchführung
+- Beitragsgruppe in der Liste der Beitragsgruppen auswählen
+- Button "löschen" betätigen
+- Bestätigungsdialog mit ja bestätigen
+
+Erwartetes Ergebnis
+Beitragsgruppe wird nicht gelöscht. Es erscheint eine Fehlermeldung "Fehler beim Löschen der Beitragsgruppe".
+
+#####
+
+
+Was hällst du von den Testcases? Macht das Sinn? Soll ich die im Wiki dokumentieren? Ist natürlich initial ne Menge Fleißarbeit
+
+Gruß
+André
+
+
+From heiner at jost-net.de  Sat Jun 20 09:50:23 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sat, 20 Jun 2009 09:50:23 +0200
+Subject: [JVerein-Mailliste] Testcases
+In-Reply-To: <4a3c8407158d8_7beb3fb1668d5ef8768e@app02.zenbe.com.tmail>
+References: <4a3c8407158d8_7beb3fb1668d5ef8768e@app02.zenbe.com.tmail>
+Message-ID: <4A3C94BF.40707@jost-net.de>
+
+Hallo Andre,
+
+> bei meinen ersten Schritten in der Anwendung sind mir folgenden Sachen aufgefallen - eher Kleinigkeiten und ist ja auch noch eine Entwicklerversion
+>
+> UseCase "Mitglied suchen"
+> - Fehlermeldung das keine Beitragsgruppe vorhanden ist verweist nicht auf den richtigen Pfad > "Plugins|JVerein|Beitragsgruppe" anstatt "Administration|Beitragsgruppe"
+>   
+Momentan sind beide Pfade korrekt. Ursprünglich wurden die 
+Beitragsgruppen unter Plugins|... eingestellt. Es gab aber bei den 
+Benutzern immer wieder Verwirrungen mit dem Plugins-Menü. Deshalb habe 
+ich mich entschlossen zur Version 1.2 die gleichen Menüpunkte auch ins 
+Administrationsmenü aufzunehmen. Vermutlich werde ich zur 1.3 das 
+Plugins-Menü für JVerein entfernen.
+> UseCase "Mitglied anlegen"
+> - Vorname, Name, Geschlecht, Beitragsgruppe nicht als Pflichtfeld (orange) markiert
+> - Geschlecht nur als "m" und "w" in der Auswahl vorhanden. Männlich, weiblich wäre vielleicht sprechender
+>   
+Das habe ich mir neulich auch schon gedacht. Wird in kürze realisiert.
+> UseCase "Beitragsgruppe anlegen"
+> - Cursor auf Feld "Bezeichnung" initial nicht vorhanden
+> - Betrag "10..............................,10" wird akzeptiert und als Betrag "10,10" gespeichert
+>   
+Bug oder Feature?
+> UseCase "Beitragsgruppe löschen"
+> - Wird einen bereits verwendete Beitragsgruppe gelöscht, gibt es zwar eine Fehlermeldung, aber keine genaue Informationen warum das Löschen fehl geschlagen ist. Schaut man im Stacktrace nach, gibt es auf der DB eine ForeignKey-Constraint Verletzung und danach eine Nullpointer-Exception.
+>   
+Habe ich als Bug aufgenommen: 
+https://developer.berlios.de/bugs/?func=detailbug&bug_id=15892&group_id=7335
+>
+> Dann habe ich überlegt, ob Testcase-Beschreibungen sinnvoll wären und habe mal folgende initial erstellt:
+>
+> ##### Testcases (V1.2.0-devel-181) :
+>
+>
+> ## UseCase "Pflege der Stammdaten"
+>
+> 1.1 Stammdaten ändern (Administration -> Stammdaten)
+>
+> Voraussetzung
+> keine
+>
+> Durchführung
+> - Name des Vereins eingeben (Pflichtfeld, nicht mehr als 27 Zeichen)
+> - Bankleitzahl eingeben (Pflichtfeld, nicht mehr als 7 Zeichen)
+> - Konto Nummer eingeben (Pflichtfeld, nicht mehr als 10 Zeichen)
+> - Altersgruppen eingeben (Format "0-6,7-10")
+> - Jubiläen eingeben (Format "10,20")
+> - Altersjubiläen (Format "10,20")  
+> - Den Button "speichern" betätigen oder Taste "Enter" drücken
+>
+> Erwartetes Ergebnis
+> Die Stammdaten werden gespeichert
+>
+>
+> ## UseCase "Pflege der Beitragsgruppe"
+>
+> 2.1 Beitragsgruppe anlegen (Administration -> Beitragsgruppen -> neu)
+>
+> Voraussetzung
+> keine
+>
+> Durchführung
+> - Bezeichnung eingeben (Pflichtfeld - nicht mehr als 30 Zeichen)
+> - Betrag eingeben (Pflichtfeld - Zahl)
+> - Beitragsart auswählen
+> - Den Button "speichern" betätigen oder Taste "Enter" drücken
+>
+> Erwartetes Ergebnis
+> Die Beitragsgruppe wird gespeichert
+>
+> 2.2 Beitragsgruppe ändern (Administration -> Beitragsgruppen -> Doppelklick in Liste)
+>
+> Voraussetzung
+> Beitragsgruppe wurde angelegt
+>
+> Durchführung
+> - Bezeichnung ändern (Pflichtfeld - nicht mehr als 30 Zeichen)
+> - Betrag ändern (Pflichtfeld - Zahl)
+> - Beitragsart ändern
+> - Den Button "speichern" betätigen oder Taste "Enter" drücken
+>
+> Erwartetes Ergebnis
+> Die Beitragsgruppe wird gespeichert und Änderungen werden übernommen
+>
+> 2.3 Beitragsgruppe löschen ohne Verwendung bei den Mitgliedern (Administration -> Beitragsgruppen -> löschen)
+>
+> Voraussetzung
+> keine
+>
+> Durchführung
+> - Beitragsgruppe in der Liste der Beitragsgruppen auswählen
+> - Button "löschen" betätigen
+>
+> Erwartetes Ergebnis
+> Beitragsgruppe wird gelöscht und ist in der der Liste nicht mehr sichtbar
+>
+> 2.4 Beitragsgruppe löschen mit Verwendung bei den Mitgliedern (Administration -> Beitragsgruppen -> löschen)
+>
+> Voraussetzung
+> Es wurden bereits Mitglieder angelegt, die die Beitragsgruppe verwenden
+>
+> Durchführung
+> - Beitragsgruppe in der Liste der Beitragsgruppen auswählen
+> - Button "löschen" betätigen
+> - Bestätigungsdialog mit ja bestätigen
+>
+> Erwartetes Ergebnis
+> Beitragsgruppe wird nicht gelöscht. Es erscheint eine Fehlermeldung "Fehler beim Löschen der Beitragsgruppe".
+>
+> #####
+>
+>
+> Was hällst du von den Testcases? Macht das Sinn? Soll ich die im Wiki dokumentieren? Ist natürlich initial ne Menge Fleißarbeit
+>   
+Die Idee halte ich für sehr gut. Allerdings ist das Wiki bei JVerein ein 
+Auslaufmodell. Auf der einen Seite ist es von der Geschwindigkeit sehr 
+träge. Auf der anderen Seite gab es auch schon einen Missbrauch des Wiki 
+für "Schmuddelseiten". Da ich keine Zeit habe, das Wiki laufend zu 
+kontrollieren, bin ich momentan dabei, die Web-Site auf traditionelles 
+HTML zurückzubauen. Schicke mir die Testcases im HTML-,  Text-, 
+Openoffice- oder Winword-Format zu. Ich werde eine Konvertierung 
+vornehmen. Zusätzlich werde ich einige Checks mittels JUnit-Tests 
+durchführen.
+
+Heiner
+
+
+From ansgar.schrage at bigfoot.com  Sat Jun 20 18:03:43 2009
+From: ansgar.schrage at bigfoot.com (Ansgar Schrage)
+Date: Sat, 20 Jun 2009 18:03:43 +0200
+Subject: [JVerein-Mailliste] Problem mit DTAUS Datei
+Message-ID: <71bab5a0906200903t8fbebbdu765bfdccf2067d30@mail.gmail.com>
+
+Hallo,
+
+hatte schon jemand Probleme, dass die DTAUS-Datei von der Bank nicht
+eingelesen werden kann?
+
+Ein Mitarbeiter von der Sparkasse teilte mit, dass es Probleme mit den
+Zeilenumbrüchen gibt. Leider habe ich mit dem Mitarbeiter nicht selbst
+sprechen können, da ich nicht die Datei selbst abgegeben hatte, werde
+das aber am Montag nachholen.
+
+Eine Idee die ich hätte ist, dass die DTAUS-Datei ja unter Linux
+erstellt worden und die Zeilenumbrüche bei Windows anders kodiert
+werden. Aber eine Bank müsste doch auch UNIX-Textdateien verarbeiten
+können? Allerdings wenn ich mir die Datei anschaue, dann sehe nur eine
+lange Zeile.
+
+Des Weiteren habe ich aber auch in der DTAUS-Datei gesehen, dass
+Umlaute nicht dargestellt werden statt einem 'Ü' wird z.B. ein ']'
+dargestellt.
+Darf man bei Vereinsnamen und Mitgliedernamen keine Umlaute verwenden?
+
+JVerein wird unter Linux genutzt mit dem Zeichensatz UTF-8
+
+Gruß
+Ansgar
+
+
+From ansgar.schrage at bigfoot.com  Sun Jun 21 14:21:10 2009
+From: ansgar.schrage at bigfoot.com (Ansgar Schrage)
+Date: Sun, 21 Jun 2009 14:21:10 +0200
+Subject: [JVerein-Mailliste] Problem mit DTAUS Datei
+In-Reply-To: <4A3D1450.1070207@jost-net.de>
+References: <71bab5a0906200903t8fbebbdu765bfdccf2067d30@mail.gmail.com>
+	<4A3D1450.1070207@jost-net.de>
+Message-ID: <200906211421.11151.ansgar.schrage@bigfoot.com>
+
+Hallo Heiner,
+
+OK, dann weiß ich Bescheid wegen den Umlauten.
+
+Ich habe mir die Datei mal unter Windows angeschaut. Wenn ich diese dort mit 
+dem einfachen Notepad öffne, sehe ich auch einige Zeilenumbrüche, die nicht 
+sein dürften. Öffne ich die Datei jedoch mit einem besseren Editor wird nur 
+eine Zeile angezeigt, so wie es sein sollte. 
+
+Ich werde das dann mal mit dem Mitarbeiter der Sparkasse abklären.
+
+Danke für die Infos.
+
+Gruß
+Ansgar
+
+Am Samstag, 20. Juni 2009 18:54:40 schrieben Sie:
+> Hallo Ansgar,
+>
+> Hibiscus und JVerein nutzen zur Verarbeitung von DTAUS die Bibliothek
+> OBanToo. Diese Bibliothek wird auch von Anderen benutzt.
+>
+> Da ich selber Autor dieser Bibliothek bin, ist mir bekannt, dass es zur
+> Zeit keine offenen Fehlermeldungen gibt. Es ist korrekt, dass Ä,Ö,Ü als
+> [,\,] dargestellt werden. Das ist die Zeichensatzkonvention.
+>
+> Kann es sein, dass du oder die Bank die Datei mit einem Texteditor
+> geöffnet und wieder gespeichert haben?
+>
+>
+> Heiner
+>
+> Ansgar Schrage schrieb:
+> > Hallo,
+> >
+> > hatte schon jemand Probleme, dass die DTAUS-Datei von der Bank nicht
+> > eingelesen werden kann?
+> >
+> > Ein Mitarbeiter von der Sparkasse teilte mit, dass es Probleme mit den
+> > Zeilenumbrüchen gibt. Leider habe ich mit dem Mitarbeiter nicht selbst
+> > sprechen können, da ich nicht die Datei selbst abgegeben hatte, werde
+> > das aber am Montag nachholen.
+> >
+> > Eine Idee die ich hätte ist, dass die DTAUS-Datei ja unter Linux
+> > erstellt worden und die Zeilenumbrüche bei Windows anders kodiert
+> > werden. Aber eine Bank müsste doch auch UNIX-Textdateien verarbeiten
+> > können? Allerdings wenn ich mir die Datei anschaue, dann sehe nur eine
+> > lange Zeile.
+> >
+> > Des Weiteren habe ich aber auch in der DTAUS-Datei gesehen, dass
+> > Umlaute nicht dargestellt werden statt einem 'Ü' wird z.B. ein ']'
+> > dargestellt.
+> > Darf man bei Vereinsnamen und Mitgliedernamen keine Umlaute verwenden?
+> >
+> > JVerein wird unter Linux genutzt mit dem Zeichensatz UTF-8
+> >
+> > Gruß
+> > Ansgar
+> > _______________________________________________
+> > JVerein-Mailliste mailing list
+> > JVerein-Mailliste at lists.berlios.de
+> > https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+
+
+
+
+From ansgar.schrage at bigfoot.com  Sun Jun 21 14:24:12 2009
+From: ansgar.schrage at bigfoot.com (Ansgar Schrage)
+Date: Sun, 21 Jun 2009 14:24:12 +0200
+Subject: [JVerein-Mailliste] Problem mit DTAUS Datei
+In-Reply-To: <4A3D1D7B.6050805@igboerse.de>
+References: <71bab5a0906200903t8fbebbdu765bfdccf2067d30@mail.gmail.com>
+	<4A3D1D7B.6050805@igboerse.de>
+Message-ID: <200906211424.12504.ansgar.schrage@bigfoot.com>
+
+Hallo Volker,
+
+das wäre wahrscheinlich der bessere Weg. Aber für das Konto des Vereins wurde 
+noch kein Online-Banking beantragt und es ist das erste mal, dass hier etwas 
+'elektronisch' gemacht wurde. Werde das mal der Vereinsleitung vorschlagen.
+
+Gruß
+Ansgar
+
+Am Samstag, 20. Juni 2009 19:33:47 schrieben Sie:
+> Hallo,
+>
+> warum schickst du die Lastschrift nicht direkt per Onlinebanking
+> zur Sparkasse. Das sollte überdies auch noch billiger sein.
+>
+> Gruß
+>     Volker
+>
+> Ansgar Schrage schrieb:
+> > Hallo,
+> >
+> > hatte schon jemand Probleme, dass die DTAUS-Datei von der Bank nicht
+> > eingelesen werden kann?
+> >
+> > Ein Mitarbeiter von der Sparkasse teilte mit, dass es Probleme mit den
+> > Zeilenumbrüchen gibt. Leider habe ich mit dem Mitarbeiter nicht selbst
+> > sprechen können, da ich nicht die Datei selbst abgegeben hatte, werde
+> > das aber am Montag nachholen.
+> >
+> > Eine Idee die ich hätte ist, dass die DTAUS-Datei ja unter Linux
+> > erstellt worden und die Zeilenumbrüche bei Windows anders kodiert
+> > werden. Aber eine Bank müsste doch auch UNIX-Textdateien verarbeiten
+> > können? Allerdings wenn ich mir die Datei anschaue, dann sehe nur eine
+> > lange Zeile.
+> >
+> > Des Weiteren habe ich aber auch in der DTAUS-Datei gesehen, dass
+> > Umlaute nicht dargestellt werden statt einem 'Ü' wird z.B. ein ']'
+> > dargestellt.
+> > Darf man bei Vereinsnamen und Mitgliedernamen keine Umlaute verwenden?
+> >
+> > JVerein wird unter Linux genutzt mit dem Zeichensatz UTF-8
+> >
+> > Gruß
+> > Ansgar
+> > _______________________________________________
+> > JVerein-Mailliste mailing list
+> > JVerein-Mailliste at lists.berlios.de
+> > https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+
+
+
+
+From m.guenther at lahntalindians.de  Mon Jun 22 11:41:37 2009
+From: m.guenther at lahntalindians.de (=?ISO-8859-1?Q?Marcel_G=FCnther?=)
+Date: Mon, 22 Jun 2009 11:41:37 +0200
+Subject: [JVerein-Mailliste] Onlinenutzung von Jverein
+Message-ID: <cd2d0b6d0906220241w73cede01hd35bcb26dc1648c@mail.gmail.com>
+
+Hallo,
+ich bin auf Jverein gestossen und finde es sehr interessant. Da wir unsere
+Vorstandsarbeit verbessern und vereinfachen möchten, suchen wir ein
+vernünftiges Verwaltungsprogramm für die Mitgliedsdaten und Zahlungsinfos.
+Auch das das Programm als Linux und Windows-Varianten angeboten wird, ist
+ein Entscheidungskriterium. Das haben wir in JVerein auch gefunden.
+Nun meine Frage:
+Ist es möglich JVerein übers Internet zunutzen bzw. die Daten online
+bereitzuhalten, damit jedes Vorstandsmitglied die gleichen Daten zur
+Verfügung hat? Da MySQL unterstützt wird, denke ich sollte es gehen! Wie
+sieht es da mit der Datensicherheit aus? Hat da jemand Erfahrung?
+Würde mich über eine entsprechende Hilfe freuen.
+Viele Grüße
+Marcel Günther
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20090622/cee62c86/attachment.html>
+
+From d.m.n at gmx.de  Mon Jun 22 13:37:32 2009
+From: d.m.n at gmx.de (Daniel Naumann)
+Date: Mon, 22 Jun 2009 13:37:32 +0200
+Subject: [JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,
+	Band 17, Eintrag 8
+In-Reply-To: <mailman.61.1245664899.31159.jverein-mailliste@lists.berlios.de>
+References: <mailman.61.1245664899.31159.jverein-mailliste@lists.berlios.de>
+Message-ID: <!&!AAAAAAAAAAAuAAAAAAAAACiLZHVuo4ZKth8RPBX/+s0BAEWLZg1r4L5MiqJ9lhCQqzcAAAANC6AAABAAAADHecgtnBPGTZC3v9+1jU8iAQAAAAA=@gmx.de>
+
+Hallo Herr Günther,
+
+prinzipiell nutzen wir JVerein schon erfolgreich um unsere Mitgliedsdaten zu
+verwalten und auf Dauer auch unsere Kasse inklusive Girokonto zu verwalten.
+
+Damit mein Vorstandskollege und ich auf der selben Basis arbeiten, haben wir
+schon erfolgreich die Nutzung über das Internet, mit einem MySQL auf einem
+Webserver, getestet. Allerdings haben wir die gleichen Bedenken zur
+Datensicherheit wie Sie. Die Daten würden unverschlüsselt übertragen und
+ebenso unverschlüsselt in MySQL auf dem Server gespeichert.
+An dieser Stelle suche ich ebenso noch eine Möglichkeit. Ich hatte überlegt
+einen Vereinskammeraden zu bitten eine Art Kryptographie-Modul für JVerein
+bzw. Jameica zu erstellen. Als andere Variante könnte ich mir vorstellen mit
+einem VPN zu arbeiten. Letztlich sind die Überlegungen noch recht
+unausgegoren.
+Wenn ich dahingehend etwas gefunden haben sollte bzw. implementiert haben
+sollte, melde ich mich über diese Liste.
+
+Beste Grüße,
+Daniel Naumann
+
+
+-----Ursprüngliche Nachricht-----
+Date: Mon, 22 Jun 2009 11:41:37 +0200
+From: Marcel Günther <m.guenther at lahntalindians.de>
+Subject: [JVerein-Mailliste] Onlinenutzung von Jverein
+To: jverein-mailliste at lists.berlios.de
+Message-ID:
+	<cd2d0b6d0906220241w73cede01hd35bcb26dc1648c at mail.gmail.com>
+Content-Type: text/plain; charset="iso-8859-1"
+
+Hallo,
+ich bin auf Jverein gestossen und finde es sehr interessant. Da wir unsere
+Vorstandsarbeit verbessern und vereinfachen möchten, suchen wir ein
+vernünftiges Verwaltungsprogramm für die Mitgliedsdaten und Zahlungsinfos.
+Auch das das Programm als Linux und Windows-Varianten angeboten wird, ist
+ein Entscheidungskriterium. Das haben wir in JVerein auch gefunden.
+Nun meine Frage:
+Ist es möglich JVerein übers Internet zunutzen bzw. die Daten online
+bereitzuhalten, damit jedes Vorstandsmitglied die gleichen Daten zur
+Verfügung hat? Da MySQL unterstützt wird, denke ich sollte es gehen! Wie
+sieht es da mit der Datensicherheit aus? Hat da jemand Erfahrung?
+Würde mich über eine entsprechende Hilfe freuen.
+Viele Grüße
+Marcel Günther
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL:
+https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20090622/ce
+e62c86/attachment-0001.html 
+
+------------------------------
+
+_______________________________________________
+JVerein-Mailliste mailing list
+JVerein-Mailliste at lists.berlios.de
+https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+
+
+
+
+From hibiscus at willuhn.de  Mon Jun 22 14:17:45 2009
+From: hibiscus at willuhn.de (Olaf Willuhn)
+Date: Mon, 22 Jun 2009 14:17:45 +0200
+Subject: [JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,
+	Band 17, Eintrag 8
+In-Reply-To: <!&!AAAAAAAAAAAuAAAAAAAAACiLZHVuo4ZKth8RPBX/+s0BAEWLZg1r4L5MiqJ9lhCQqzcAAAANC6AAABAAAADHecgtnBPGTZC3v9+1jU8iAQAAAAA=@gmx.de>
+References: <mailman.61.1245664899.31159.jverein-mailliste@lists.berlios.de>
+	<!&!AAAAAAAAAAAuAAAAAAAAACiLZHVuo4ZKth8RPBX/+s0BAEWLZg1r4L5MiqJ9lhCQqzcAAAANC6AAABAAAADHecgtnBPGTZC3v9+1jU8iAQAAAAA=@gmx.de>
+Message-ID: <200906221417.45527.hibiscus@willuhn.de>
+
+Hallo,
+
+> Damit mein Vorstandskollege und ich auf der selben Basis arbeiten, haben
+> wir schon erfolgreich die Nutzung über das Internet, mit einem MySQL auf
+> einem Webserver, getestet. Allerdings haben wir die gleichen Bedenken zur
+> Datensicherheit wie Sie. Die Daten würden unverschlüsselt übertragen und
+> ebenso unverschlüsselt in MySQL auf dem Server gespeichert.
+> An dieser Stelle suche ich ebenso noch eine Möglichkeit. Ich hatte überlegt
+> einen Vereinskammeraden zu bitten eine Art Kryptographie-Modul für JVerein
+> bzw. Jameica zu erstellen. Als andere Variante könnte ich mir vorstellen
+> mit einem VPN zu arbeiten. Letztlich sind die Überlegungen noch recht
+> unausgegoren.
+> Wenn ich dahingehend etwas gefunden haben sollte bzw. implementiert haben
+> sollte, melde ich mich über diese Liste.
+
+Sowohl der Transport der Daten ueber das Netz als auch die Speicherung
+sollten sich mit MySQL- und Betriebssystembordmitteln loesen lassen:
+
+1) Transport-Sicherung: MySQL unterstuetzt SSL-gesicherte Verbindungen
+Auf folgenden beiden Seiten ist das Thema beschrieben:
+http://dev.mysql.com/doc/refman/5.1/de/secure-basics.html
+http://dev.mysql.com/doc/refman/5.1/de/connector-j-reference-using-ssl.html
+
+Der manuelle Import des CA-Zertifikates vom MySQL-Server (zweite URL)
+mittels "keytool" sollte jedoch nicht noetig sein. Stattdessen kann
+man das Zertifikat auch bequem in Jameica unter Datei->Einstellungen
+in den Truststore laden (Button "Zertifikat importieren").
+
+Anschliessend muesste noch der Parameter "useSSL=true" an die JDBC-URL
+von JVerein angehaengt werden. Hier kann aber sicher Heiner sagen, in welcher
+Config-Datei das eingetragen werden kann.
+
+Was ich an dem Tutorial allerdings auf die Schnelle nicht verstanden habe,
+ist die Frage, was mit dem Client-Zertifikat passieren soll. Ich habe
+SSL-gesicherte MySQL-Verbindungen naemlich auch noch nie genutzt.
+
+2) Speicherung der Daten: Meines Wissens nach unterstuetzt derzeit keine
+der bekannten Storage-Engines von MySQL eine Verschluesselung. Allerdings
+kann man sich mittels TrueCrypt oder Linux-Bordmitteln (Crypto-Loop)
+eine verschluesselte Partition anlegen und die Datenbank-Dateien von
+MySQL dort ablegen. Erfordert etwas MySQL-Know-How, ist aber eigentlich
+nicht schwer.
+
+Gruss
+Olaf
+
+
+From ansgar.schrage at bigfoot.com  Mon Jun 22 14:50:22 2009
+From: ansgar.schrage at bigfoot.com (Ansgar Schrage)
+Date: Mon, 22 Jun 2009 14:50:22 +0200
+Subject: [JVerein-Mailliste]  Re: Problem mit DTAUS Datei
+In-Reply-To: <4A3D1450.1070207@jost-net.de>
+References: <71bab5a0906200903t8fbebbdu765bfdccf2067d30@mail.gmail.com> 
+	<4A3D1450.1070207@jost-net.de>
+Message-ID: <71bab5a0906220550t4d99a540l9651a37af495c2e5@mail.gmail.com>
+
+Hallo Heiner,
+
+so, das Problem ist gelöst.
+
+Es lag nicht an JVerein bzw. der Bibliothek OBanToo.
+
+Derjenige, der die DTAUS-Datei an die Bank gesendet hatte verwendet in
+seiner Firma eine Software Namens Mailina. Diese soll dafür sorgen, dass man
+keine Viren und Spam versendet. Leider hat diese Software die DTAUS-Datei
+mit einer 'mailina-ID' versehen. Dadurch wurde natürlich Inhalt und Größe
+der DTAUS-Datei verändert und somit von der Sparkassen Software nicht mehr
+akzeptiert. Nachdem dann die Datei erst gezippt wurde und dann versendet,
+war alles OK.
+
+Das bei der Anzeige mit dem Programm Notepad unter Windows Zeilenumbrüche
+angezeigt werden, ist wohl ein Bug (Feature) in Notepad. Generell wird dort
+nach 1024 Zeichen ein Zeilenumbruch auf dem Bildschirm angezeigt.. Schaut
+man sich die Datei mit Wordpad an ist alles OK.
+
+Gruß
+Ansgar
+
+
+Am 20. Juni 2009 18:54 schrieb Heiner Jostkleigrewe <heiner at jost-net.de>:
+
+> Hallo Ansgar,
+>
+> Hibiscus und JVerein nutzen zur Verarbeitung von DTAUS die Bibliothek
+> OBanToo. Diese Bibliothek wird auch von Anderen benutzt.
+>
+> Da ich selber Autor dieser Bibliothek bin, ist mir bekannt, dass es zur
+> Zeit keine offenen Fehlermeldungen gibt. Es ist korrekt, dass Ä,Ö,Ü als
+> [,\,] dargestellt werden. Das ist die Zeichensatzkonvention.
+>
+> Kann es sein, dass du oder die Bank die Datei mit einem Texteditor geöffnet
+> und wieder gespeichert haben?
+>
+>
+> Heiner
+>
+> Ansgar Schrage schrieb:
+>
+>> Hallo,
+>>
+>> hatte schon jemand Probleme, dass die DTAUS-Datei von der Bank nicht
+>> eingelesen werden kann?
+>>
+>> Ein Mitarbeiter von der Sparkasse teilte mit, dass es Probleme mit den
+>> Zeilenumbrüchen gibt. Leider habe ich mit dem Mitarbeiter nicht selbst
+>> sprechen können, da ich nicht die Datei selbst abgegeben hatte, werde
+>> das aber am Montag nachholen.
+>>
+>> Eine Idee die ich hätte ist, dass die DTAUS-Datei ja unter Linux
+>> erstellt worden und die Zeilenumbrüche bei Windows anders kodiert
+>> werden. Aber eine Bank müsste doch auch UNIX-Textdateien verarbeiten
+>> können? Allerdings wenn ich mir die Datei anschaue, dann sehe nur eine
+>> lange Zeile.
+>>
+>> Des Weiteren habe ich aber auch in der DTAUS-Datei gesehen, dass
+>> Umlaute nicht dargestellt werden statt einem 'Ü' wird z.B. ein ']'
+>> dargestellt.
+>> Darf man bei Vereinsnamen und Mitgliedernamen keine Umlaute verwenden?
+>>
+>> JVerein wird unter Linux genutzt mit dem Zeichensatz UTF-8
+>>
+>> Gruß
+>> Ansgar
+>> _______________________________________________
+>> JVerein-Mailliste mailing list
+>> JVerein-Mailliste at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>>
+>>
+>>
+>
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20090622/9fd7d155/attachment.html>
+
+From heiner at jost-net.de  Mon Jun 22 19:15:45 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 22 Jun 2009 19:15:45 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?Anregung_f=FCr_eine_Sammel-Spe?=
+ =?iso-8859-1?q?ndenbescheinigung?=
+Message-ID: <4A3FBC41.2040707@jost-net.de>
+
+
+
+Hallo Martin,
+
+du kannst die Spenden über den Funktion "Zusatzbeträge" einziehen. 
+Allerdings sehe ich momentan keine Möglichkeit einer "Knopfdruck-Lösung" 
+für die Spendenbescheinigung. Du kannst allerdings alle Mitglieder in 
+eine CSV-Datei ausgeben und dann mit OOCalc oder Excel die 
+Spendenbeträge manuell einfügen und die Mitglieder, die nicht gespendet 
+haben, aus der CSV-Datei löschen. Anschließend erstellt du mit einer 
+Serienbrieffunktion die Spendenbescheinigungen.
+
+Das ist nicht der eleganteste Weg. Für 50 Mitglieder, von den nur einige 
+Spenden, aber sicherlich machbar. Ich möchte keine extrem 
+vereinsspezifischen Lösungen bauen. Daher der "Würgaraunt".
+
+Heiner
+
+Martin Gerrits schrieb:
+> Hallo Heiner,
+>  
+> ich bin Vorstand eines Chores mit ca. 50 Mitglieder inkl. Förderer und 
+> bin gerade dabei, mich in die Anwendung der Software zu vertiefen. Ich 
+> bin wirklich sehr angetan von den Möglichkeiten die das Programm anbietet.
+>  
+> Eine Anregung hätte ich für eine Sammel-Spendenbescheinigung: viele 
+> unsere Mitglieder und Förderer zahlen nämlich neben dem normalen 
+> monatlichen Beitrag zusätzlich eine monatliche Spende, die ich 
+> ebenfalls mit der Software per Lastschrift bearbeiten möchte. Es soll 
+> aber erst am Ende des Kalenderjahres für jeden eine 
+> Sammel-Spendenbescheinigung geben, auf der dann die Einzelbeträge 
+> inkl. Datum ausgewiesen wird. Läßt sich sowas bewerkstelligen? Oder 
+> gibts vielleicht schon eine Möglichkeit dafür, die ich nur noch nicht 
+> endeckt habe?
+>  
+> Viele Grüße
+> Martin
+>
+> -- 
+> ------------------------------------------------------
+> Martin Gerrits
+> Bauerstr. 37
+> 80796 München
+> Telefon (089) 28 80 66 83
+> Mobil (0163) 14 11 633
+> m.gerrits at gmx.de <mailto:m.gerrits at gmx.de>
+
+
+
+From heiner at jost-net.de  Mon Jun 22 19:16:26 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 22 Jun 2009 19:16:26 +0200
+Subject: [JVerein-Mailliste] Onlinenutzung von Jverein
+Message-ID: <4A3FBC6A.80805@jost-net.de>
+
+Hallo Marcel,
+
+zur Nutzung von JVerein über das Internet einige Gedanken von mir:
+
+Die Nutzung von JVerein über das Internet ist sicherlich irgendwie 
+machbar. Da es sich bei den Mitgliederdaten um personenbezogene Daten 
+handelt, gibt es besondere Sicherheitsbedürfnisse. Es muss AUF DAUER 
+jemanden geben, der sich um diese Themen kümmert. Das ist bei Vereinen 
+aber oft ein problematisch. Ein Spezialist richtet alles ein und ist 
+anschließend nicht mehr greifbar. Bei Problemen gibt es entweder keinen 
+Zugriff auf die Daten oder im schlimmsten Fall hat die ganze Welt den 
+Zugriff.
+
+Es stellt sich auch die Frage, ob ein Zugriff über das Internet 
+überhaupt erforderlich ist. Wir machen das bei meinem Verein (fast 400 
+Mitglieder) so, dass ich die Mitgliederdatei führe und die 
+Kassengeschäfte tätige. Einige Vorstandsmitglieder erhalten für ihre 
+Aufgaben PDF-Dateien mit den Mitgliederdaten oder eine CSV-Datei mit den 
+EMail-Adressen.
+
+Jameica (und damit auch Hibiscus und JVerein) kennen keine 
+Benutzerverwaltung und damit keine Benutzerrechte. Es kann nicht 
+festgelegt werden, welche Person welche Zuständigkeitsbereiche hat. Es 
+wird nicht protokolliert, welche Änderung zu welchem Zeitpunkt durch 
+welchen Benutzer (es gibt ja keine Benutzer) vorgenommen wurde. Deshalb 
+kann später nicht mehr rekonstruiert werden, wer für Fehler oder 
+Missbrauch verantwortlich ist.
+
+Selbst wenn du sagst "Bei uns ist alles in Ordnung, wir verstehen uns 
+gut. Jeder erledigt seine Aufgaben korrekt", ist meine Antwort: "Dort, 
+wo es um Geld geht und ein Missbrauch nicht nachweisbar ist, kommt es 
+zwangsläufig irgendwann dazu. Irgendwann wechselt auch mal das 
+Vorstandsteam. Ob es bei denen genau so gut läuft wie bei euch, weiß 
+heute niemand.". Deshalb mein Tip: Überlege dir gut, ob du eine 
+Internetnutzung von JVerein tatsächlich gebrauchst oder ob es nur chic 
+ist, so etwas zu haben.
+
+Im übrigen habe ich keine Erfahrung mit der Verschlüsselung der 
+Verbindung oder der Datenbank. Die MySQL-Beschreibung wurde von einem 
+JVerein-User beigesteuert.
+
+Heiner
+
+Marcel Günther schrieb:
+> Hallo,
+> ich bin auf Jverein gestossen und finde es sehr interessant. Da wir 
+> unsere Vorstandsarbeit verbessern und vereinfachen möchten, suchen wir 
+> ein vernünftiges Verwaltungsprogramm für die Mitgliedsdaten und 
+> Zahlungsinfos. Auch das das Programm als Linux und Windows-Varianten 
+> angeboten wird, ist ein Entscheidungskriterium. Das haben wir in 
+> JVerein auch gefunden.
+> Nun meine Frage:
+> Ist es möglich JVerein übers Internet zunutzen bzw. die Daten online 
+> bereitzuhalten, damit jedes Vorstandsmitglied die gleichen Daten zur 
+> Verfügung hat? Da MySQL unterstützt wird, denke ich sollte es gehen! 
+> Wie sieht es da mit der Datensicherheit aus? Hat da jemand Erfahrung?
+> Würde mich über eine entsprechende Hilfe freuen.
+> Viele Grüße
+> Marcel Günther
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>   
+
+
+
+
+From a_henke at gmx.de  Mon Jun 22 21:31:30 2009
+From: a_henke at gmx.de (Andre Henke)
+Date: Mon, 22 Jun 2009 19:31:30 +0000
+Subject: [JVerein-Mailliste] Onlinenutzung von Jverein
+Message-ID: <4a3fdc1229c1e_3c003fab301e50bc16561@app02.zenbe.com.tmail>
+
+Hallo Marcel,
+
+bei der Nutzung eines zentralen Servers im Internet, egal ob Datenbank, Webanwendung etc., die nicht jeder zu sehen bekommen soll, rate ich dir zu einer sicheren VPN Verbindung (siehe http://de.wikipedia.org/wiki/OpenVPN). Der Aufwand für die Einrichtung eines OpenVPN Servers ist akzeptabel und mit dem Frontend (http://openvpn.se/) kann du das Virtual Private Netzwerk von jeden beliebigen Client aufbauen. 
+
+Beim ersten Lesen kam mir allerdings "jverein4web" in den Kopf, also eine Webapplikation auf die alle Mitglieder des Vereins inkl. Rollen und Rechtekonzept zugreifen können. Mehr ein Hirngespinst.... ;-)
+
+Gruß
+André
+
+
+
+On Mon, Jun 22, 2009 at 11:41 AM "Marcel Günther" <m.guenther at lahntalindians.de> wrote:
+>Hallo,
+> ich bin auf Jverein gestossen und finde es sehr interessant. Da wir unsere
+> Vorstandsarbeit verbessern und vereinfachen möchten, suchen wir ein
+> vernünftiges Verwaltungsprogramm für die Mitgliedsdaten und Zahlungsinfos.
+> Auch das das Programm als Linux und Windows-Varianten angeboten wird, ist
+> ein Entscheidungskriterium. Das haben wir in JVerein auch gefunden.
+> Nun meine Frage:
+> Ist es möglich JVerein übers Internet zunutzen bzw. die Daten online
+> bereitzuhalten, damit jedes Vorstandsmitglied die gleichen Daten zur
+> Verfügung hat? Da MySQL unterstützt wird, denke ich sollte es gehen! Wie
+> sieht es da mit der Datensicherheit aus? Hat da jemand Erfahrung?
+> Würde mich über eine entsprechende Hilfe freuen.
+> Viele Grüße
+> Marcel Günther
+> 
+
+
+From mail at timo-m88.de  Tue Jun 23 20:06:03 2009
+From: mail at timo-m88.de (mail at timo-m88.de)
+Date: Tue, 23 Jun 2009 20:06:03 +0200
+Subject: [JVerein-Mailliste] =?iso-8859-1?q?JVerein_Rechnungen_f=FCr_Zusat?=
+ =?iso-8859-1?q?zbetr=E4ge?=
+Message-ID: <20090623200603.99667feglyfj2ycc@webmail.df.eu>
+
+
+Hallo,
+
+ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich  
+das Programm ein wenig aus und bin bisher wirklich begeistert!
+
+Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die  
+"normalen" Beiträge konnte ich problemlos erstellen und auch als pdf  
+speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)  
+über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+
+Viele Grüße,
+Timo Müller
+
+
+
+From heiner at jost-net.de  Tue Jun 23 22:26:23 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Tue, 23 Jun 2009 22:26:23 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?JVerein_Rechnungen_f=FCr_Zusat?=
+ =?iso-8859-1?q?zbetr=E4ge?=
+In-Reply-To: <20090623200603.99667feglyfj2ycc@webmail.df.eu>
+References: <20090623200603.99667feglyfj2ycc@webmail.df.eu>
+Message-ID: <4A413A6F.9060609@jost-net.de>
+
+Hallo Timo,
+
+stelle bitte unter Plugins>JVerein>Einstellungen>Rechnungen die 
+Zahlungswege ein, für die du Rechnungen erstellen willst. Dann gebe bei 
+den Mitgliedern die einmaligen oder wiederkehrenden Zusatzbeträge ein. 
+Über Abrechnung werden die Abbuchungssätze und die Rechnungssätze 
+erzeugt. Damit kannst du dann die Rechnungen erstellen.
+
+Heiner
+
+mail at timo-m88.de schrieb:
+> Hallo,
+>
+> ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich  
+> das Programm ein wenig aus und bin bisher wirklich begeistert!
+>
+> Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die  
+> "normalen" Beiträge konnte ich problemlos erstellen und auch als pdf  
+> speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)  
+> über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+>
+> Viele Grüße,
+> Timo Müller
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+
+From hyllismuell at gmx.de  Wed Jun 24 12:16:24 2009
+From: hyllismuell at gmx.de (=?iso-8859-1?Q?=22Marco_H=FCgel=22?=)
+Date: Wed, 24 Jun 2009 12:16:24 +0200
+Subject: [JVerein-Mailliste] =?iso-8859-1?q?Mailliste_=FCbersichtlicher_le?=
+	=?iso-8859-1?q?sen=3F?=
+Message-ID: <20090624101624.23170@gmx.net>
+
+Besteht eigentlich die Möglichkeit, dass man die Mailliste etwas übersichtlicher lesen kann, sprich Threadbezogen?!?
+
+
+Hylli
+-- 
+GRATIS für alle GMX-Mitglieder: Die maxdome Movie-FLAT!
+Jetzt freischalten unter http://portal.gmx.net/de/go/maxdome01
+
+
+From hibiscus at willuhn.de  Wed Jun 24 12:22:07 2009
+From: hibiscus at willuhn.de (Olaf Willuhn)
+Date: Wed, 24 Jun 2009 12:22:07 +0200
+Subject: [JVerein-Mailliste]
+	=?iso-8859-1?q?Mailliste_=FCbersichtlicher_le?=
+	=?iso-8859-1?q?sen=3F?=
+In-Reply-To: <20090624101624.23170@gmx.net>
+References: <20090624101624.23170@gmx.net>
+Message-ID: <200906241222.08103.hibiscus@willuhn.de>
+
+Hi,
+
+> Besteht eigentlich die Möglichkeit, dass man die Mailliste etwas
+> übersichtlicher lesen kann, sprich Threadbezogen?!?
+
+Die Liste in Threads anzuzeigen ist eigentlich Aufgabe des
+Mail-Clients ;)
+
+Aber du kannst auch das Webinterface nutzen:
+https://lists.berlios.de/pipermail/jverein-mailliste/
+
+Gruss
+Olaf
+
+
+From mail at timo-m88.de  Wed Jun 24 18:18:01 2009
+From: mail at timo-m88.de (mail at timo-m88.de)
+Date: Wed, 24 Jun 2009 18:18:01 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?Rechnungen_f=FCr_Zusatzbetr=E4?= =?iso-8859-1?q?ge?=
+Message-ID: <20090624181801.19683vte33zx9by8@webmail.df.eu>
+
+Hallo Heiner,
+
+Danke für deine schnelle Antwort. Leider hatte ich das auch schon versucht:
+
+Unter Plugins>JVerein>Einstellungen>Rechnungen sind alle drei  
+Zahlungswege mit Häkchen versehen.
+Die Zusatzbeträge sind bei den einzelnen Mitglieder eingegeben.
+
+Unter Abrechnung habe ich auch "Zusatzbeträge"angehakt. Ist bei Modus  
+"Jahresbeiträge" gewählt, wird für alle Mitglieder eine Rechnung über  
+den jeweiligen Jahresbeitrag erstellt. Bei Modus "keine  
+Beitragsabrechnung" wird gar keine Rechnung erstellt. Die  
+Zusatzbeiträge werden also in keinem Fall auf irgendeiner Rechnung  
+aufgelistet.
+
+Muss das "Stichtag"-Datum unter Abrechnung mit einem der Daten der  
+Zusatzbeträge (Startdatum / nächste Fälligkeit / Endedatum) gleich  
+sein? Oder was mache ich falsch?
+
+Timo
+
+
+
+heiner at jost-net.de schrieb:
+> Hallo Timo,
+>
+> stelle bitte unter Plugins>JVerein>Einstellungen>Rechnungen die
+> Zahlungswege ein, für die du Rechnungen erstellen willst. Dann gebe bei
+> den Mitgliedern die einmaligen oder wiederkehrenden Zusatzbeträge ein.
+> Über Abrechnung werden die Abbuchungssätze und die Rechnungssätze
+> erzeugt. Damit kannst du dann die Rechnungen erstellen.
+>
+> Heiner
+
+mail at timo-m88.de schrieb:
+> Hallo,
+>
+> ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich
+> das Programm ein wenig aus und bin bisher wirklich begeistert!
+>
+> Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die
+> "normalen" Beiträge konnte ich problemlos erstellen und auch als pdf
+> speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)
+> über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+>
+> Viele Grüße,
+> Timo Müller
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>
+
+
+
+
+From heiner at jost-net.de  Wed Jun 24 22:23:14 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Wed, 24 Jun 2009 22:23:14 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?Rechnungen_f=FCr_Zusatzbetr=E4?= =?iso-8859-1?q?ge?=
+In-Reply-To: <20090624181801.19683vte33zx9by8@webmail.df.eu>
+References: <20090624181801.19683vte33zx9by8@webmail.df.eu>
+Message-ID: <4A428B32.3060603@jost-net.de>
+
+Hallo Timo,
+
+das Stichtagsdatum wird bei der Beitragsabbuchung für die Mitglieder 
+benutzt. Es dient der Überprüfung, ob das Mitglied noch/schon Mitglied ist.
+
+Bei den Zusatzbeträgen wird das aktuelle Tagesdatum für den Vergleich 
+verwendet. Der Zusatzbetrag, den du dem beigefügten Hardcopy entnehmen 
+kannst, hat gestern funktioniert.
+
+Heiner
+
+
+
+mail at timo-m88.de schrieb:
+> Hallo Heiner,
+>
+> Danke für deine schnelle Antwort. Leider hatte ich das auch schon versucht:
+>
+> Unter Plugins>JVerein>Einstellungen>Rechnungen sind alle drei  
+> Zahlungswege mit Häkchen versehen.
+> Die Zusatzbeträge sind bei den einzelnen Mitglieder eingegeben.
+>
+> Unter Abrechnung habe ich auch "Zusatzbeträge"angehakt. Ist bei Modus  
+> "Jahresbeiträge" gewählt, wird für alle Mitglieder eine Rechnung über  
+> den jeweiligen Jahresbeitrag erstellt. Bei Modus "keine  
+> Beitragsabrechnung" wird gar keine Rechnung erstellt. Die  
+> Zusatzbeiträge werden also in keinem Fall auf irgendeiner Rechnung  
+> aufgelistet.
+>
+> Muss das "Stichtag"-Datum unter Abrechnung mit einem der Daten der  
+> Zusatzbeträge (Startdatum / nächste Fälligkeit / Endedatum) gleich  
+> sein? Oder was mache ich falsch?
+>
+> Timo
+>
+>
+>
+> heiner at jost-net.de schrieb:
+>   
+>> Hallo Timo,
+>>
+>> stelle bitte unter Plugins>JVerein>Einstellungen>Rechnungen die
+>> Zahlungswege ein, für die du Rechnungen erstellen willst. Dann gebe bei
+>> den Mitgliedern die einmaligen oder wiederkehrenden Zusatzbeträge ein.
+>> Über Abrechnung werden die Abbuchungssätze und die Rechnungssätze
+>> erzeugt. Damit kannst du dann die Rechnungen erstellen.
+>>
+>> Heiner
+>>     
+>
+> mail at timo-m88.de schrieb:
+>   
+>> Hallo,
+>>
+>> ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich
+>> das Programm ein wenig aus und bin bisher wirklich begeistert!
+>>
+>> Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die
+>> "normalen" Beiträge konnte ich problemlos erstellen und auch als pdf
+>> speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)
+>> über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+>>
+>> Viele Grüße,
+>> Timo Müller
+>>
+>> _______________________________________________
+>> JVerein-Mailliste mailing list
+>> JVerein-Mailliste at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>>
+>>
+>>     
+>
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+-------------- nächster Teil --------------
+Ein Dateianhang mit Binärdaten wurde abgetrennt...
+Dateiname   : Bildschirmfoto-Jameica 1.8.0-nightly -1.png
+Dateityp    : image/png
+Dateigröße  : 47340 bytes
+Beschreibung: nicht verfügbar
+URL         : <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20090624/b829bc1a/attachment.png>
+
+From mail at timo-m88.de  Fri Jun 26 23:30:59 2009
+From: mail at timo-m88.de (mail at timo-m88.de)
+Date: Fri, 26 Jun 2009 23:30:59 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?Rechnungen_f=FCr_Zusatzbetr=E4?= =?iso-8859-1?q?ge?=
+Message-ID: <20090626233059.19873a7zxrwtls00@webmail.df.eu>
+
+Hallo Heiner,
+
+ich habe mir mein Problem noch einmal genauer angeschaut: Die  
+Rechnungen über die Zusatzbeträge werden erstellt, wenn für alle  
+Mitglieder, bei denen aktive Zusatzbeträge eingetragen sind, Bankdaten  
+(d.h. Kontonr.+BLZ) eingetragen sind. Der Zahlungsweg spielt dabei  
+keine Rolle. Fehlt aber bei nur einem Mitglied mit aktivem  
+Zusatzbetrag die Kontonummer, dann wird keine einzige Rechnung über  
+einen Zusatzbetrag ausgegeben.
+
+Ist das nur bei mir oder grundsätzlich so? Und falls letzteres: Ist  
+das aus irgendeinem Grund so gewollt oder ist es Zufall? (Meiner  
+Meinung nach könnte ich auch Rechnungen über Zusatzbeträge bei  
+Mitgliedern brauchen, deren Kontodaten ich nicht kenne, weil sie per  
+Überweisung oder bar bezahlen)
+
+Viele Grüße,
+Timo
+
+
+
+heiner at jost-net.de schrieb:
+
+Hallo Timo,
+
+das Stichtagsdatum wird bei der Beitragsabbuchung für die Mitglieder
+benutzt. Es dient der Überprüfung, ob das Mitglied noch/schon Mitglied ist.
+
+Bei den Zusatzbeträgen wird das aktuelle Tagesdatum für den Vergleich
+verwendet. Der Zusatzbetrag, den du dem beigefügten Hardcopy entnehmen
+kannst, hat gestern funktioniert.
+
+Heiner
+
+
+
+mail at timo-m88.de schrieb:
+> Hallo Heiner,
+>
+> Danke für deine schnelle Antwort. Leider hatte ich das auch schon versucht:
+>
+> Unter Plugins>JVerein>Einstellungen>Rechnungen sind alle drei
+> Zahlungswege mit Häkchen versehen.
+> Die Zusatzbeträge sind bei den einzelnen Mitglieder eingegeben.
+>
+> Unter Abrechnung habe ich auch "Zusatzbeträge"angehakt. Ist bei Modus
+> "Jahresbeiträge" gewählt, wird für alle Mitglieder eine Rechnung über
+> den jeweiligen Jahresbeitrag erstellt. Bei Modus "keine
+> Beitragsabrechnung" wird gar keine Rechnung erstellt. Die
+> Zusatzbeiträge werden also in keinem Fall auf irgendeiner Rechnung
+> aufgelistet.
+>
+> Muss das "Stichtag"-Datum unter Abrechnung mit einem der Daten der
+> Zusatzbeträge (Startdatum / nächste Fälligkeit / Endedatum) gleich
+> sein? Oder was mache ich falsch?
+>
+> Timo
+>
+>
+>
+> heiner at jost-net.de schrieb:
+>
+>> Hallo Timo,
+>>
+>> stelle bitte unter Plugins>JVerein>Einstellungen>Rechnungen die
+>> Zahlungswege ein, für die du Rechnungen erstellen willst. Dann gebe bei
+>> den Mitgliedern die einmaligen oder wiederkehrenden Zusatzbeträge ein.
+>> Über Abrechnung werden die Abbuchungssätze und die Rechnungssätze
+>> erzeugt. Damit kannst du dann die Rechnungen erstellen.
+>>
+>> Heiner
+>>
+>
+> mail at timo-m88.de schrieb:
+>
+>> Hallo,
+>>
+>> ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich
+>> das Programm ein wenig aus und bin bisher wirklich begeistert!
+>>
+>> Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die
+>> "normalen" Beiträge konnte ich problemlos erstellen und auch als pdf
+>> speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)
+>> über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+>>
+>> Viele Grüße,
+>> Timo Müller
+>>
+>
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+
+
+
+
+
+From heiner at jost-net.de  Sat Jun 27 11:33:56 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sat, 27 Jun 2009 11:33:56 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?Rechnungen_f=FCr_Zusatzbetr=E4?= =?iso-8859-1?q?ge?=
+In-Reply-To: <20090626233059.19873a7zxrwtls00@webmail.df.eu>
+References: <20090626233059.19873a7zxrwtls00@webmail.df.eu>
+Message-ID: <4A45E784.9060607@jost-net.de>
+
+Hallo Timo,
+
+grundsätzlich sollte es so funktionieren, wie du es erwartest. Warum das 
+nicht klappt, werde ich in den nächsten Tagen mal überprüfen. Du hörst 
+von mir.
+
+Heiner
+
+mail at timo-m88.de schrieb:
+> Hallo Heiner,
+>
+> ich habe mir mein Problem noch einmal genauer angeschaut: Die  
+> Rechnungen über die Zusatzbeträge werden erstellt, wenn für alle  
+> Mitglieder, bei denen aktive Zusatzbeträge eingetragen sind, Bankdaten  
+> (d.h. Kontonr.+BLZ) eingetragen sind. Der Zahlungsweg spielt dabei  
+> keine Rolle. Fehlt aber bei nur einem Mitglied mit aktivem  
+> Zusatzbetrag die Kontonummer, dann wird keine einzige Rechnung über  
+> einen Zusatzbetrag ausgegeben.
+>
+> Ist das nur bei mir oder grundsätzlich so? Und falls letzteres: Ist  
+> das aus irgendeinem Grund so gewollt oder ist es Zufall? (Meiner  
+> Meinung nach könnte ich auch Rechnungen über Zusatzbeträge bei  
+> Mitgliedern brauchen, deren Kontodaten ich nicht kenne, weil sie per  
+> Überweisung oder bar bezahlen)
+>
+> Viele Grüße,
+> Timo
+>
+>
+>
+> heiner at jost-net.de schrieb:
+>
+> Hallo Timo,
+>
+> das Stichtagsdatum wird bei der Beitragsabbuchung für die Mitglieder
+> benutzt. Es dient der Überprüfung, ob das Mitglied noch/schon Mitglied ist.
+>
+> Bei den Zusatzbeträgen wird das aktuelle Tagesdatum für den Vergleich
+> verwendet. Der Zusatzbetrag, den du dem beigefügten Hardcopy entnehmen
+> kannst, hat gestern funktioniert.
+>
+> Heiner
+>
+>
+>
+> mail at timo-m88.de schrieb:
+>   
+>> Hallo Heiner,
+>>
+>> Danke für deine schnelle Antwort. Leider hatte ich das auch schon versucht:
+>>
+>> Unter Plugins>JVerein>Einstellungen>Rechnungen sind alle drei
+>> Zahlungswege mit Häkchen versehen.
+>> Die Zusatzbeträge sind bei den einzelnen Mitglieder eingegeben.
+>>
+>> Unter Abrechnung habe ich auch "Zusatzbeträge"angehakt. Ist bei Modus
+>> "Jahresbeiträge" gewählt, wird für alle Mitglieder eine Rechnung über
+>> den jeweiligen Jahresbeitrag erstellt. Bei Modus "keine
+>> Beitragsabrechnung" wird gar keine Rechnung erstellt. Die
+>> Zusatzbeiträge werden also in keinem Fall auf irgendeiner Rechnung
+>> aufgelistet.
+>>
+>> Muss das "Stichtag"-Datum unter Abrechnung mit einem der Daten der
+>> Zusatzbeträge (Startdatum / nächste Fälligkeit / Endedatum) gleich
+>> sein? Oder was mache ich falsch?
+>>
+>> Timo
+>>
+>>
+>>
+>> heiner at jost-net.de schrieb:
+>>
+>>     
+>>> Hallo Timo,
+>>>
+>>> stelle bitte unter Plugins>JVerein>Einstellungen>Rechnungen die
+>>> Zahlungswege ein, für die du Rechnungen erstellen willst. Dann gebe bei
+>>> den Mitgliedern die einmaligen oder wiederkehrenden Zusatzbeträge ein.
+>>> Über Abrechnung werden die Abbuchungssätze und die Rechnungssätze
+>>> erzeugt. Damit kannst du dann die Rechnungen erstellen.
+>>>
+>>> Heiner
+>>>
+>>>       
+>> mail at timo-m88.de schrieb:
+>>
+>>     
+>>> Hallo,
+>>>
+>>> ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich
+>>> das Programm ein wenig aus und bin bisher wirklich begeistert!
+>>>
+>>> Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die
+>>> "normalen" Beiträge konnte ich problemlos erstellen und auch als pdf
+>>> speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)
+>>> über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+>>>
+>>> Viele Grüße,
+>>> Timo Müller
+>>>
+>>>       
+>> _______________________________________________
+>> JVerein-Mailliste mailing list
+>> JVerein-Mailliste at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>>
+>>     
+>
+>
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+
+From ansgar.schrage at bigfoot.com  Sat Jun 27 13:38:43 2009
+From: ansgar.schrage at bigfoot.com (Ansgar Schrage)
+Date: Sat, 27 Jun 2009 13:38:43 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?Rechnungen_f=FCr_Zusatzbetr=E4?= =?iso-8859-1?q?ge?=
+In-Reply-To: <4A45E784.9060607@jost-net.de>
+References: <20090626233059.19873a7zxrwtls00@webmail.df.eu>
+	<4A45E784.9060607@jost-net.de>
+Message-ID: <200906271338.44240.ansgar.schrage@bigfoot.com>
+
+Hallo,
+
+ich hatte einmal den Fall, dass keine Abrechnung für die Mitgliedsbeiträge 
+erstellt wurde. Der Prozess fing immer an, gab aber keine Ausgabe (DTAUS-
+Datei).
+
+Nachdem ich mir alles nochmal angesehen hatte, stellte ich fest, das bei einem 
+Mitglied in der Kontonummer ein Bindestrich war (123-4568). Nach dem ich den 
+Bindestrich entfernt hatte, klappte es auch mit der Abrechnung.
+
+Gruß
+Ansgar
+
+Am Samstag, 27. Juni 2009 11:33:56 schrieb Heiner Jostkleigrewe:
+> Hallo Timo,
+>
+> grundsätzlich sollte es so funktionieren, wie du es erwartest. Warum das
+> nicht klappt, werde ich in den nächsten Tagen mal überprüfen. Du hörst
+> von mir.
+>
+> Heiner
+>
+> mail at timo-m88.de schrieb:
+> > Hallo Heiner,
+> >
+> > ich habe mir mein Problem noch einmal genauer angeschaut: Die
+> > Rechnungen über die Zusatzbeträge werden erstellt, wenn für alle
+> > Mitglieder, bei denen aktive Zusatzbeträge eingetragen sind, Bankdaten
+> > (d.h. Kontonr.+BLZ) eingetragen sind. Der Zahlungsweg spielt dabei
+> > keine Rolle. Fehlt aber bei nur einem Mitglied mit aktivem
+> > Zusatzbetrag die Kontonummer, dann wird keine einzige Rechnung über
+> > einen Zusatzbetrag ausgegeben.
+> >
+> > Ist das nur bei mir oder grundsätzlich so? Und falls letzteres: Ist
+> > das aus irgendeinem Grund so gewollt oder ist es Zufall? (Meiner
+> > Meinung nach könnte ich auch Rechnungen über Zusatzbeträge bei
+> > Mitgliedern brauchen, deren Kontodaten ich nicht kenne, weil sie per
+> > Überweisung oder bar bezahlen)
+> >
+> > Viele Grüße,
+> > Timo
+> >
+> >
+> >
+> > heiner at jost-net.de schrieb:
+> >
+> > Hallo Timo,
+> >
+> > das Stichtagsdatum wird bei der Beitragsabbuchung für die Mitglieder
+> > benutzt. Es dient der Überprüfung, ob das Mitglied noch/schon Mitglied
+> > ist.
+> >
+> > Bei den Zusatzbeträgen wird das aktuelle Tagesdatum für den Vergleich
+> > verwendet. Der Zusatzbetrag, den du dem beigefügten Hardcopy entnehmen
+> > kannst, hat gestern funktioniert.
+> >
+> > Heiner
+> >
+> > mail at timo-m88.de schrieb:
+> >> Hallo Heiner,
+> >>
+> >> Danke für deine schnelle Antwort. Leider hatte ich das auch schon
+> >> versucht:
+> >>
+> >> Unter Plugins>JVerein>Einstellungen>Rechnungen sind alle drei
+> >> Zahlungswege mit Häkchen versehen.
+> >> Die Zusatzbeträge sind bei den einzelnen Mitglieder eingegeben.
+> >>
+> >> Unter Abrechnung habe ich auch "Zusatzbeträge"angehakt. Ist bei Modus
+> >> "Jahresbeiträge" gewählt, wird für alle Mitglieder eine Rechnung über
+> >> den jeweiligen Jahresbeitrag erstellt. Bei Modus "keine
+> >> Beitragsabrechnung" wird gar keine Rechnung erstellt. Die
+> >> Zusatzbeiträge werden also in keinem Fall auf irgendeiner Rechnung
+> >> aufgelistet.
+> >>
+> >> Muss das "Stichtag"-Datum unter Abrechnung mit einem der Daten der
+> >> Zusatzbeträge (Startdatum / nächste Fälligkeit / Endedatum) gleich
+> >> sein? Oder was mache ich falsch?
+> >>
+> >> Timo
+> >>
+> >> heiner at jost-net.de schrieb:
+> >>> Hallo Timo,
+> >>>
+> >>> stelle bitte unter Plugins>JVerein>Einstellungen>Rechnungen die
+> >>> Zahlungswege ein, für die du Rechnungen erstellen willst. Dann gebe bei
+> >>> den Mitgliedern die einmaligen oder wiederkehrenden Zusatzbeträge ein.
+> >>> Über Abrechnung werden die Abbuchungssätze und die Rechnungssätze
+> >>> erzeugt. Damit kannst du dann die Rechnungen erstellen.
+> >>>
+> >>> Heiner
+> >>
+> >> mail at timo-m88.de schrieb:
+> >>> Hallo,
+> >>>
+> >>> ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich
+> >>> das Programm ein wenig aus und bin bisher wirklich begeistert!
+> >>>
+> >>> Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die
+> >>> "normalen" Beiträge konnte ich problemlos erstellen und auch als pdf
+> >>> speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)
+> >>> über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+> >>>
+> >>> Viele Grüße,
+> >>> Timo Müller
+
+
+
+From heiner at jost-net.de  Sun Jun 28 10:40:10 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 28 Jun 2009 10:40:10 +0200
+Subject: [JVerein-Mailliste]
+ =?windows-1252?q?Rechnungen_f=FCr_Zusatzbetr?=
+ =?windows-1252?q?=E4ge?=
+In-Reply-To: <200906271338.44240.ansgar.schrage@bigfoot.com>
+References: <20090626233059.19873a7zxrwtls00@webmail.df.eu>	<4A45E784.9060607@jost-net.de>
+	<200906271338.44240.ansgar.schrage@bigfoot.com>
+Message-ID: <4A472C6A.4070806@jost-net.de>
+
+Hallo Ansgar,
+
+die Bankverbindung wird bei der Eingabe auf Plausibilität geprüft. Es 
+gab allerdings eine Lücke in der Prüfung. Bei einem Mitglied, dass einer 
+Beitragsgruppe mit 0 ? zugeordnet wurde, griff die Plausi nicht. Ab 
+jetzt wird eine eingegebene Bankverbindung generell geprüft. Eine 
+Bankverbindung ist nur Pflichtfeld, wenn der Zahlungsweg Abbuchung 
+ausgewählt wurde und der Betrag der Beitragsgruppe > 0 ? ist.
+
+Heiner
+
+Ansgar Schrage schrieb:
+> Hallo,
+>
+> ich hatte einmal den Fall, dass keine Abrechnung für die Mitgliedsbeiträge 
+> erstellt wurde. Der Prozess fing immer an, gab aber keine Ausgabe (DTAUS-
+> Datei).
+>
+> Nachdem ich mir alles nochmal angesehen hatte, stellte ich fest, das bei einem 
+> Mitglied in der Kontonummer ein Bindestrich war (123-4568). Nach dem ich den 
+> Bindestrich entfernt hatte, klappte es auch mit der Abrechnung.
+>
+> Gruß
+> Ansgar
+>
+> Am Samstag, 27. Juni 2009 11:33:56 schrieb Heiner Jostkleigrewe:
+>   
+>> Hallo Timo,
+>>
+>> grundsätzlich sollte es so funktionieren, wie du es erwartest. Warum das
+>> nicht klappt, werde ich in den nächsten Tagen mal überprüfen. Du hörst
+>> von mir.
+>>
+>> Heiner
+>>
+>> mail at timo-m88.de schrieb:
+>>     
+>>> Hallo Heiner,
+>>>
+>>> ich habe mir mein Problem noch einmal genauer angeschaut: Die
+>>> Rechnungen über die Zusatzbeträge werden erstellt, wenn für alle
+>>> Mitglieder, bei denen aktive Zusatzbeträge eingetragen sind, Bankdaten
+>>> (d.h. Kontonr.+BLZ) eingetragen sind. Der Zahlungsweg spielt dabei
+>>> keine Rolle. Fehlt aber bei nur einem Mitglied mit aktivem
+>>> Zusatzbetrag die Kontonummer, dann wird keine einzige Rechnung über
+>>> einen Zusatzbetrag ausgegeben.
+>>>
+>>> Ist das nur bei mir oder grundsätzlich so? Und falls letzteres: Ist
+>>> das aus irgendeinem Grund so gewollt oder ist es Zufall? (Meiner
+>>> Meinung nach könnte ich auch Rechnungen über Zusatzbeträge bei
+>>> Mitgliedern brauchen, deren Kontodaten ich nicht kenne, weil sie per
+>>> Überweisung oder bar bezahlen)
+>>>
+>>> Viele Grüße,
+>>> Timo
+>>>
+>>>
+>>>
+>>> heiner at jost-net.de schrieb:
+>>>
+>>> Hallo Timo,
+>>>
+>>> das Stichtagsdatum wird bei der Beitragsabbuchung für die Mitglieder
+>>> benutzt. Es dient der Überprüfung, ob das Mitglied noch/schon Mitglied
+>>> ist.
+>>>
+>>> Bei den Zusatzbeträgen wird das aktuelle Tagesdatum für den Vergleich
+>>> verwendet. Der Zusatzbetrag, den du dem beigefügten Hardcopy entnehmen
+>>> kannst, hat gestern funktioniert.
+>>>
+>>> Heiner
+>>>
+>>> mail at timo-m88.de schrieb:
+>>>       
+>>>> Hallo Heiner,
+>>>>
+>>>> Danke für deine schnelle Antwort. Leider hatte ich das auch schon
+>>>> versucht:
+>>>>
+>>>> Unter Plugins>JVerein>Einstellungen>Rechnungen sind alle drei
+>>>> Zahlungswege mit Häkchen versehen.
+>>>> Die Zusatzbeträge sind bei den einzelnen Mitglieder eingegeben.
+>>>>
+>>>> Unter Abrechnung habe ich auch "Zusatzbeträge"angehakt. Ist bei Modus
+>>>> "Jahresbeiträge" gewählt, wird für alle Mitglieder eine Rechnung über
+>>>> den jeweiligen Jahresbeitrag erstellt. Bei Modus "keine
+>>>> Beitragsabrechnung" wird gar keine Rechnung erstellt. Die
+>>>> Zusatzbeiträge werden also in keinem Fall auf irgendeiner Rechnung
+>>>> aufgelistet.
+>>>>
+>>>> Muss das "Stichtag"-Datum unter Abrechnung mit einem der Daten der
+>>>> Zusatzbeträge (Startdatum / nächste Fälligkeit / Endedatum) gleich
+>>>> sein? Oder was mache ich falsch?
+>>>>
+>>>> Timo
+>>>>
+>>>> heiner at jost-net.de schrieb:
+>>>>         
+>>>>> Hallo Timo,
+>>>>>
+>>>>> stelle bitte unter Plugins>JVerein>Einstellungen>Rechnungen die
+>>>>> Zahlungswege ein, für die du Rechnungen erstellen willst. Dann gebe bei
+>>>>> den Mitgliedern die einmaligen oder wiederkehrenden Zusatzbeträge ein.
+>>>>> Über Abrechnung werden die Abbuchungssätze und die Rechnungssätze
+>>>>> erzeugt. Damit kannst du dann die Rechnungen erstellen.
+>>>>>
+>>>>> Heiner
+>>>>>           
+>>>> mail at timo-m88.de schrieb:
+>>>>         
+>>>>> Hallo,
+>>>>>
+>>>>> ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich
+>>>>> das Programm ein wenig aus und bin bisher wirklich begeistert!
+>>>>>
+>>>>> Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die
+>>>>> "normalen" Beiträge konnte ich problemlos erstellen und auch als pdf
+>>>>> speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)
+>>>>> über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+>>>>>
+>>>>> Viele Grüße,
+>>>>> Timo Müller
+>>>>>           
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+
+From heiner at jost-net.de  Mon Jun 29 21:46:31 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 29 Jun 2009 21:46:31 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?Rechnungen_f=FCr_Zusatzbetr=E4?= =?iso-8859-1?q?ge?=
+In-Reply-To: <4A45E784.9060607@jost-net.de>
+References: <20090626233059.19873a7zxrwtls00@webmail.df.eu>
+	<4A45E784.9060607@jost-net.de>
+Message-ID: <4A491A17.7080401@jost-net.de>
+
+Hallo Timo,
+
+bislang wurden die Zusatzbeträge anscheinend nur von Vereinen genutzt, 
+die von ihren Mitgliedern abbuchen. In der nächsten Version funktioniert 
+es auch ohne Bankverbindung mit den anderen Zahlungswegen.
+
+Heiner
+
+Heiner Jostkleigrewe schrieb:
+> Hallo Timo,
+>
+> grundsätzlich sollte es so funktionieren, wie du es erwartest. Warum das 
+> nicht klappt, werde ich in den nächsten Tagen mal überprüfen. Du hörst 
+> von mir.
+>
+> Heiner
+>
+> mail at timo-m88.de schrieb:
+>   
+>> Hallo Heiner,
+>>
+>> ich habe mir mein Problem noch einmal genauer angeschaut: Die  
+>> Rechnungen über die Zusatzbeträge werden erstellt, wenn für alle  
+>> Mitglieder, bei denen aktive Zusatzbeträge eingetragen sind, Bankdaten  
+>> (d.h. Kontonr.+BLZ) eingetragen sind. Der Zahlungsweg spielt dabei  
+>> keine Rolle. Fehlt aber bei nur einem Mitglied mit aktivem  
+>> Zusatzbetrag die Kontonummer, dann wird keine einzige Rechnung über  
+>> einen Zusatzbetrag ausgegeben.
+>>
+>> Ist das nur bei mir oder grundsätzlich so? Und falls letzteres: Ist  
+>> das aus irgendeinem Grund so gewollt oder ist es Zufall? (Meiner  
+>> Meinung nach könnte ich auch Rechnungen über Zusatzbeträge bei  
+>> Mitgliedern brauchen, deren Kontodaten ich nicht kenne, weil sie per  
+>> Überweisung oder bar bezahlen)
+>>
+>> Viele Grüße,
+>> Timo
+>>
+>>
+>>
+>> heiner at jost-net.de schrieb:
+>>
+>> Hallo Timo,
+>>
+>> das Stichtagsdatum wird bei der Beitragsabbuchung für die Mitglieder
+>> benutzt. Es dient der Überprüfung, ob das Mitglied noch/schon Mitglied ist.
+>>
+>> Bei den Zusatzbeträgen wird das aktuelle Tagesdatum für den Vergleich
+>> verwendet. Der Zusatzbetrag, den du dem beigefügten Hardcopy entnehmen
+>> kannst, hat gestern funktioniert.
+>>
+>> Heiner
+>>
+>>
+>>
+>> mail at timo-m88.de schrieb:
+>>   
+>>     
+>>> Hallo Heiner,
+>>>
+>>> Danke für deine schnelle Antwort. Leider hatte ich das auch schon versucht:
+>>>
+>>> Unter Plugins>JVerein>Einstellungen>Rechnungen sind alle drei
+>>> Zahlungswege mit Häkchen versehen.
+>>> Die Zusatzbeträge sind bei den einzelnen Mitglieder eingegeben.
+>>>
+>>> Unter Abrechnung habe ich auch "Zusatzbeträge"angehakt. Ist bei Modus
+>>> "Jahresbeiträge" gewählt, wird für alle Mitglieder eine Rechnung über
+>>> den jeweiligen Jahresbeitrag erstellt. Bei Modus "keine
+>>> Beitragsabrechnung" wird gar keine Rechnung erstellt. Die
+>>> Zusatzbeiträge werden also in keinem Fall auf irgendeiner Rechnung
+>>> aufgelistet.
+>>>
+>>> Muss das "Stichtag"-Datum unter Abrechnung mit einem der Daten der
+>>> Zusatzbeträge (Startdatum / nächste Fälligkeit / Endedatum) gleich
+>>> sein? Oder was mache ich falsch?
+>>>
+>>> Timo
+>>>
+>>>
+>>>
+>>> heiner at jost-net.de schrieb:
+>>>
+>>>     
+>>>       
+>>>> Hallo Timo,
+>>>>
+>>>> stelle bitte unter Plugins>JVerein>Einstellungen>Rechnungen die
+>>>> Zahlungswege ein, für die du Rechnungen erstellen willst. Dann gebe bei
+>>>> den Mitgliedern die einmaligen oder wiederkehrenden Zusatzbeträge ein.
+>>>> Über Abrechnung werden die Abbuchungssätze und die Rechnungssätze
+>>>> erzeugt. Damit kannst du dann die Rechnungen erstellen.
+>>>>
+>>>> Heiner
+>>>>
+>>>>       
+>>>>         
+>>> mail at timo-m88.de schrieb:
+>>>
+>>>     
+>>>       
+>>>> Hallo,
+>>>>
+>>>> ich bin vor ein paar Tagen auf JVerein gestoßen. Seither probiere ich
+>>>> das Programm ein wenig aus und bin bisher wirklich begeistert!
+>>>>
+>>>> Jetzt habe ich aber eine Frage zu den Rechnungen: Rechnungen über die
+>>>> "normalen" Beiträge konnte ich problemlos erstellen und auch als pdf
+>>>> speichern bzw. ausdrucken. Kann ich auch Rechnungen (mit pdf-Export)
+>>>> über die (einmaligen) Zusatzbeträge erstellen? Falls ja: Wie?
+>>>>
+>>>> Viele Grüße,
+>>>> Timo Müller
+>>>>
+>>>>       
+>>>>         
+>>> _______________________________________________
+>>> JVerein-Mailliste mailing list
+>>> JVerein-Mailliste at lists.berlios.de
+>>> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>>>
+>>>     
+>>>       
+>>
+>> _______________________________________________
+>> JVerein-Mailliste mailing list
+>> JVerein-Mailliste at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>>
+>>   
+>>     
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+

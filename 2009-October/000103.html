@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste] Abrechnung funktioniert nicht - gelöst!
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2009-October/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%0A%20%3D%3Fiso-8859-15%3Fq%3FAbrechnung_funktioniert_nicht%3F%3D%0A%20%3D%3Fiso-8859-15%3Fq%3F_-_gel%3DF6st%21%3F%3D&In-Reply-To=%3C1226301003%40web.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000102.html">
+   <LINK REL="Next"  HREF="000104.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste] Abrechnung funktioniert nicht - gelöst!</H1>
+    <B>Frank Nausedat</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%0A%20%3D%3Fiso-8859-15%3Fq%3FAbrechnung_funktioniert_nicht%3F%3D%0A%20%3D%3Fiso-8859-15%3Fq%3F_-_gel%3DF6st%21%3F%3D&In-Reply-To=%3C1226301003%40web.de%3E"
+           TITLE="[JVerein-Mailliste] Abrechnung funktioniert nicht - gelöst!">frank at gesunddurchbewegung.de
+                  </A><BR>
+    <I>Mi Okt 21 09:15:56 CEST 2009</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000102.html">[JVerein-Mailliste] Abrechnung funktioniert nicht
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000104.html">[JVerein-Mailliste] sortierung von Zusatzfeldern
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#103">[ Datum ]</a>
+              <a href="thread.html#103">[ Thema ]</a>
+              <a href="subject.html#103">[ Betreff (Subject) ]</a>
+              <a href="author.html#103">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hallo Liste,
+dank eurer Denkanstöße habe ich das Problem gefunden! In den Stammdaten (Systemmeldung in etwa:
+SQL&gt; select * from STAMMDATEN) steht bei unserem Verein ein &quot; (Anführungszeichen). Das hat offenbar 
+die weitere Abarbeitung verhindert. Dieses habe ich entfernt und: alles klappt perfekt!
+
+Danke vielmals für eure Hilfe!
+
+Frank Nausedat ...
+
+&gt;<i> Hallo,
+</I>&gt;<i> danke für die Antwort.
+</I>&gt;<i> 
+</I>&gt;<i> &gt; meiner Ansicht nach kann es an verschiedenen Punkten liegen, wichtig ist aber auf jeden Fall, 
+</I>&gt;<i> &gt; dass die Kontendaten des Vereins gepflegt sind (Administration, Stammdaten) da diese Informationen 
+</I>&gt;<i> &gt; für die Erstellung der DTAUS-Datei notwendig sind. 
+</I>&gt;<i> Sind sie. Die Übernahme der Buchungen aus Hibiskus erfolgt problemlos. 
+</I>&gt;<i> 
+</I>&gt;<i> &gt; Ich gehe mal davon aus, dass für das Mitglied die Kontendaten gepflegt sind, und dass der Beitrag auch 
+</I>&gt;<i> &gt; fällig ist?
+</I>&gt;<i> Da nach dem Datenimport noch kein Beiträge als solche eingetragen sind sind doch alle noch &quot;fällig&quot;, oder?
+</I>&gt;<i> Das Eintrittsdatum ist ebenso gepflegt wie die Kontodaten bei meinem &quot;Probemitglied&quot; mit &quot;Abbuchung&quot;.
+</I>&gt;<i> Alle anderen Mitglieder stehen auf &quot;Überweisung&quot;. Da müssen doch keine Kontodaten rein, oder? Die
+</I>&gt;<i> müsste ich doch so wie so über &quot;Manueller Zahlungseingang&quot; einpflegen, nicht wahr? Da kann ich aber 
+</I>&gt;<i> ohne &quot;Abrechnung&quot; nix eintragen.
+</I>&gt;<i> 
+</I>&gt;<i> Danke für die Mühe,
+</I>&gt;<i> 
+</I>&gt;<i> Frank Nausedat ...  
+</I>&gt;<i> 
+</I>&gt;<i> 
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; &gt; Hallo Liste,
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; &gt; erst mal Danke für dieses tolle Verwaltungsprogramm.
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; &gt; Trotzdem bin ich schier am Verzweifeln. Alles funktioniert:
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; &gt; Kommunikation mit Hibiskus, der Bank etc. Aber ich bekomme 
+</I>&gt;<i> &gt; &gt; bei der &quot;Abrechnung&quot; für die Mitgliedsbeiträge nur leere DTAUS-
+</I>&gt;<i> &gt; &gt; Dateien. Normalerweise haben wir alles nur &quot;Selbst-Überweiser&quot;,
+</I>&gt;<i> &gt; &gt; keine Abbuchungen. Wenn ich jedoch zu Testzwecken einen 
+</I>&gt;<i> &gt; &gt; &quot;Abbucher&quot; eintrage, das gleiche Spiel. Leere DTAUS-Datei.
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; &gt; Was habe ich übersehen? Bin für jede Form von Hilfe dankbar!
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; &gt; In der Dokumentation habe ich ebenso nix gefunden, wie im 
+</I>&gt;<i> &gt; &gt; Mailinglisten-Archiv. Käpfe schon über eine Woche an dem Problem!
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; &gt; Ich freue mich auf eure Hilfe!
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; &gt; Danke,
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; &gt; Frank Nausedat ...
+</I>&gt;<i> &gt; &gt; _______________________________________________
+</I>&gt;<i> &gt; &gt; JVerein-Mailliste mailing list
+</I>&gt;<i> &gt; &gt; <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">JVerein-Mailliste at lists.berlios.de</A>
+</I>&gt;<i> &gt; &gt; <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">https://lists.berlios.de/mailman/listinfo/jverein-mailliste</A>
+</I>&gt;<i> &gt; &gt; 
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; 
+</I>&gt;<i> &gt; _______________________________________________
+</I>&gt;<i> &gt; JVerein-Mailliste mailing list
+</I>&gt;<i> &gt; <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">JVerein-Mailliste at lists.berlios.de</A>
+</I>&gt;<i> &gt; <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">https://lists.berlios.de/mailman/listinfo/jverein-mailliste</A>
+</I>&gt;<i> &gt; 
+</I>&gt;<i> 
+</I>&gt;<i> -- 
+</I>&gt;<i> future Training &amp; Consulting GmbH
+</I>&gt;<i> Fiete-Schulze-Str. 13
+</I>&gt;<i> 06116 Halle/Saale
+</I>&gt;<i> Tel.: +49 345 5641820
+</I>&gt;<i> Fax:  +49 345 5641899
+</I>&gt;<i> Email: <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Frank.Nausedat at futuretrainings.com</A>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> JVerein-Mailliste mailing list
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">JVerein-Mailliste at lists.berlios.de</A>
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">https://lists.berlios.de/mailman/listinfo/jverein-mailliste</A>
+</I>&gt;<i> 
+</I>
+-- 
+future Training &amp; Consulting GmbH
+Fiete-Schulze-Str. 13
+06116 Halle/Saale
+Tel.: +49 345 5641820
+Fax:  +49 345 5641899
+Email: <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Frank.Nausedat at futuretrainings.com</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000102.html">[JVerein-Mailliste] Abrechnung funktioniert nicht
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000104.html">[JVerein-Mailliste] sortierung von Zusatzfeldern
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#103">[ Datum ]</a>
+              <a href="thread.html#103">[ Thema ]</a>
+              <a href="subject.html#103">[ Betreff (Subject)]</a>
+              <a href="author.html#103">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

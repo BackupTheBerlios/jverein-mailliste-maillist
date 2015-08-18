@@ -1,0 +1,576 @@
+From wuczc at gmx.at  Thu Oct 15 08:52:46 2009
+From: wuczc at gmx.at (Christoph Wuczkowski)
+Date: Thu, 15 Oct 2009 08:52:46 +0200
+Subject: [JVerein-Mailliste] Zugriff auf die H2 Datenbank
+Message-ID: <4AD6C6BE.1020509@gmx.at>
+
+Hallo!
+
+Gibt es eine Möglichkeit direkt auf die H2-Datenbank zuzugreifen?
+Im Hibiscus werden ja Benutzername, um Passwort von der Applikation 
+angezeigt.
+
+Plugins --> Hibiscus --> About --> Diagnose-Informationen
+
+Bei Jverein finde ich die Informationen nirgends, der Benutzer ist wohl 
+jverein, das Passwort???
+Ich habs auch schon mit dem Passwort, das bei mySQL verwendet wird 
+versucht (<passwort>)
+damit geht aber leider auch nicht.
+-- 
+
+Liebe Grüße
+kind regards
+Christoph Wuczkowski
+<wuczc at gmx.at> <mailto:wuczc at gmx.at>
+
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20091015/7f054bc5/attachment.html>
+
+From heiner at jost-net.de  Thu Oct 15 18:12:13 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Thu, 15 Oct 2009 18:12:13 +0200
+Subject: [JVerein-Mailliste] Zugriff auf die H2 Datenbank
+In-Reply-To: <4AD6C6BE.1020509@gmx.at>
+References: <4AD6C6BE.1020509@gmx.at>
+Message-ID: <4AD749DD.8050404@jost-net.de>
+
+Hallo,
+
+das Passwort lautet "jverein" (ohne Anführungszeichen).
+
+Heiner
+
+Christoph Wuczkowski schrieb:
+> Hallo!
+>
+> Gibt es eine Möglichkeit direkt auf die H2-Datenbank zuzugreifen?
+> Im Hibiscus werden ja Benutzername, um Passwort von der Applikation 
+> angezeigt.
+>
+> Plugins --> Hibiscus --> About --> Diagnose-Informationen
+>
+> Bei Jverein finde ich die Informationen nirgends, der Benutzer ist 
+> wohl jverein, das Passwort???
+> Ich habs auch schon mit dem Passwort, das bei mySQL verwendet wird 
+> versucht (<passwort>)
+> damit geht aber leider auch nicht.
+> -- 
+>
+> Liebe Grüße
+> kind regards
+> Christoph Wuczkowski
+> <wuczc at gmx.at> <mailto:wuczc at gmx.at>
+>
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>   
+
+
+From wuczc at gmx.at  Fri Oct 16 14:08:59 2009
+From: wuczc at gmx.at (Christoph Wuczkowski)
+Date: Fri, 16 Oct 2009 14:08:59 +0200
+Subject: [JVerein-Mailliste] Zugriff auf die H2 Datenbank
+In-Reply-To: <mailman.71.1255687304.20573.jverein-mailliste@lists.berlios.de>
+References: <mailman.71.1255687304.20573.jverein-mailliste@lists.berlios.de>
+Message-ID: <4AD8625B.2000607@gmx.at>
+
+Hallo,
+
+Danke das hat funktioniert!
+-- 
+
+Liebe Grüße
+kind regards
+Christoph Wuczkowski
+<wuczc at gmx.at> <mailto:wuczc at gmx.at>
+
+
+
+Heiner Jostkleigrewe schrieb:
+>    1. Re: Zugriff auf die H2 Datenbank (Heiner Jostkleigrewe)
+>
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: Thu, 15 Oct 2009 18:12:13 +0200
+> From: Heiner Jostkleigrewe <heiner at jost-net.de>
+> Subject: Re: [JVerein-Mailliste] Zugriff auf die H2 Datenbank
+> To: Mailingliste für JVerein 	<jverein-mailliste at lists.berlios.de>
+> Message-ID: <4AD749DD.8050404 at jost-net.de>
+> Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+>
+> Hallo,
+>
+> das Passwort lautet "jverein" (ohne Anführungszeichen).
+>
+> Heiner
+>
+> Christoph Wuczkowski schrieb:
+>   
+>> Hallo!
+>>
+>> Gibt es eine Möglichkeit direkt auf die H2-Datenbank zuzugreifen?
+>> Im Hibiscus werden ja Benutzername, um Passwort von der Applikation 
+>> angezeigt.
+>>
+>> Plugins --> Hibiscus --> About --> Diagnose-Informationen
+>>
+>> Bei Jverein finde ich die Informationen nirgends, der Benutzer ist 
+>> wohl jverein, das Passwort???
+>> Ich habs auch schon mit dem Passwort, das bei mySQL verwendet wird 
+>> versucht (<passwort>)
+>> damit geht aber leider auch nicht.
+>> -- 
+>>
+>> Liebe Grüße
+>> kind regards
+>> Christoph Wuczkowski
+>> <wuczc at gmx.at> <mailto:wuczc at gmx.at>
+>>
+>> ------------------------------------------------------------------------
+>>
+>> _______________________________________________
+>> JVerein-Mailliste mailing list
+>> JVerein-Mailliste at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>>   
+>>     
+
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20091016/6c83718b/attachment.html>
+
+From frank at gesunddurchbewegung.de  Tue Oct 20 09:16:15 2009
+From: frank at gesunddurchbewegung.de (Frank Nausedat)
+Date: Tue, 20 Oct 2009 09:16:15 +0200
+Subject: [JVerein-Mailliste] Abrechnung funktioniert nicht
+Message-ID: <1225592946@web.de>
+
+Hallo Liste,
+
+erst mal Danke für dieses tolle Verwaltungsprogramm.
+
+Trotzdem bin ich schier am Verzweifeln. Alles funktioniert:
+
+Kommunikation mit Hibiskus, der Bank etc. Aber ich bekomme 
+bei der "Abrechnung" für die Mitgliedsbeiträge nur leere DTAUS-
+Dateien. Normalerweise haben wir alles nur "Selbst-Überweiser",
+keine Abbuchungen. Wenn ich jedoch zu Testzwecken einen 
+"Abbucher" eintrage, das gleiche Spiel. Leere DTAUS-Datei.
+
+Was habe ich übersehen? Bin für jede Form von Hilfe dankbar!
+
+In der Dokumentation habe ich ebenso nix gefunden, wie im 
+Mailinglisten-Archiv. Käpfe schon über eine Woche an dem Problem!
+
+Ich freue mich auf eure Hilfe!
+
+Danke,
+
+Frank Nausedat ...
+
+
+From s-kuebel at web.de  Tue Oct 20 18:18:59 2009
+From: s-kuebel at web.de (=?iso-8859-15?Q?Siegfried_K=FCbel?=)
+Date: Tue, 20 Oct 2009 18:18:59 +0200
+Subject: [JVerein-Mailliste] Abrechnung funktioniert nicht
+Message-ID: <1055109451@web.de>
+
+Hallo,
+
+meiner Ansicht nach kann es an verschiedenen Punkten liegen, wichtig ist aber auf jeden Fall, dass die Kontendaten des Vereins gepflegt sind (Administration, Stammdaten) da diese Informationen für die Erstellung der DTAUS-Datei notwendig sind. 
+
+Ich gehe mal davon aus, dass für das Mitglied die Kontendaten gepflegt sind, und dass der Beitrag auch fällig ist?
+
+Gruß
+Siegfried Kübel
+
+
+> -----Ursprüngliche Nachricht-----
+> Von: "Frank Nausedat" <frank at gesunddurchbewegung.de>
+> Gesendet: 20.10.09 09:48:16
+> An: jverein-mailliste at lists.berlios.de
+> Betreff: [JVerein-Mailliste] Abrechnung funktioniert nicht
+
+
+> Hallo Liste,
+> 
+> erst mal Danke für dieses tolle Verwaltungsprogramm.
+> 
+> Trotzdem bin ich schier am Verzweifeln. Alles funktioniert:
+> 
+> Kommunikation mit Hibiskus, der Bank etc. Aber ich bekomme 
+> bei der "Abrechnung" für die Mitgliedsbeiträge nur leere DTAUS-
+> Dateien. Normalerweise haben wir alles nur "Selbst-Überweiser",
+> keine Abbuchungen. Wenn ich jedoch zu Testzwecken einen 
+> "Abbucher" eintrage, das gleiche Spiel. Leere DTAUS-Datei.
+> 
+> Was habe ich übersehen? Bin für jede Form von Hilfe dankbar!
+> 
+> In der Dokumentation habe ich ebenso nix gefunden, wie im 
+> Mailinglisten-Archiv. Käpfe schon über eine Woche an dem Problem!
+> 
+> Ich freue mich auf eure Hilfe!
+> 
+> Danke,
+> 
+> Frank Nausedat ...
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+> 
+
+
+
+
+From heiner at jost-net.de  Tue Oct 20 19:23:44 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Tue, 20 Oct 2009 19:23:44 +0200
+Subject: [JVerein-Mailliste] Abrechnung funktioniert nicht
+In-Reply-To: <1055109451@web.de>
+References: <1055109451@web.de>
+Message-ID: <4ADDF220.9070101@jost-net.de>
+
+Hallo,
+
+es kann auch daran liegen, dass das Mitglied zum Abrechnungszeitpunkt 
+nicht Mitglied ist. Beispiel: Eintrittsdatum 1.8.2009, Stichtag der 
+Abrechung 1.1.2009. Da der Eintritt nach dem Stichtag liegt, war das 
+Mitglied noch nicht "aktiv".
+
+Ein anderer Grund kann es sein, dass im Modus "eingetretener Mitglieder" 
+z. B. das aktuelle Datum als "von Datum" eingetragen wird, die 
+Mitglieder aber früher eingetreten sind. Evtl. kann es auch daran 
+liegen, dass die Mitglieder "frisch" importiert wurden. Dabei wird das 
+Eingabedatum nicht gesetzt.
+
+Falls alles nicht zutrifft, beschreibe mal genau deine Situation.
+
+Heiner
+
+Siegfried Kübel schrieb:
+> Hallo,
+>
+> meiner Ansicht nach kann es an verschiedenen Punkten liegen, wichtig ist aber auf jeden Fall, dass die Kontendaten des Vereins gepflegt sind (Administration, Stammdaten) da diese Informationen für die Erstellung der DTAUS-Datei notwendig sind. 
+>
+> Ich gehe mal davon aus, dass für das Mitglied die Kontendaten gepflegt sind, und dass der Beitrag auch fällig ist?
+>
+> Gruß
+> Siegfried Kübel
+>
+>
+>   
+>> -----Ursprüngliche Nachricht-----
+>> Von: "Frank Nausedat" <frank at gesunddurchbewegung.de>
+>> Gesendet: 20.10.09 09:48:16
+>> An: jverein-mailliste at lists.berlios.de
+>> Betreff: [JVerein-Mailliste] Abrechnung funktioniert nicht
+>>     
+>
+>
+>   
+>> Hallo Liste,
+>>
+>> erst mal Danke für dieses tolle Verwaltungsprogramm.
+>>
+>> Trotzdem bin ich schier am Verzweifeln. Alles funktioniert:
+>>
+>> Kommunikation mit Hibiskus, der Bank etc. Aber ich bekomme 
+>> bei der "Abrechnung" für die Mitgliedsbeiträge nur leere DTAUS-
+>> Dateien. Normalerweise haben wir alles nur "Selbst-Überweiser",
+>> keine Abbuchungen. Wenn ich jedoch zu Testzwecken einen 
+>> "Abbucher" eintrage, das gleiche Spiel. Leere DTAUS-Datei.
+>>
+>> Was habe ich übersehen? Bin für jede Form von Hilfe dankbar!
+>>
+>> In der Dokumentation habe ich ebenso nix gefunden, wie im 
+>> Mailinglisten-Archiv. Käpfe schon über eine Woche an dem Problem!
+>>
+>> Ich freue mich auf eure Hilfe!
+>>
+>> Danke,
+>>
+>> Frank Nausedat ...
+>> _______________________________________________
+>> JVerein-Mailliste mailing list
+>> JVerein-Mailliste at lists.berlios.de
+>> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>>
+>>     
+>
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+
+From frank at gesunddurchbewegung.de  Wed Oct 21 08:55:06 2009
+From: frank at gesunddurchbewegung.de (Frank Nausedat)
+Date: Wed, 21 Oct 2009 08:55:06 +0200
+Subject: [JVerein-Mailliste] Abrechnung funktioniert nicht
+Message-ID: <1226290562@web.de>
+
+Hallo,
+danke für die Antwort.
+
+> meiner Ansicht nach kann es an verschiedenen Punkten liegen, wichtig ist aber auf jeden Fall, 
+> dass die Kontendaten des Vereins gepflegt sind (Administration, Stammdaten) da diese Informationen 
+> für die Erstellung der DTAUS-Datei notwendig sind. 
+Sind sie. Die Übernahme der Buchungen aus Hibiskus erfolgt problemlos. 
+
+> Ich gehe mal davon aus, dass für das Mitglied die Kontendaten gepflegt sind, und dass der Beitrag auch 
+> fällig ist?
+Da nach dem Datenimport noch kein Beiträge als solche eingetragen sind sind doch alle noch "fällig", oder?
+Das Eintrittsdatum ist ebenso gepflegt wie die Kontodaten bei meinem "Probemitglied" mit "Abbuchung".
+Alle anderen Mitglieder stehen auf "Überweisung". Da müssen doch keine Kontodaten rein, oder? Die
+müsste ich doch so wie so über "Manueller Zahlungseingang" einpflegen, nicht wahr? Da kann ich aber 
+ohne "Abrechnung" nix eintragen.
+
+Danke für die Mühe,
+
+Frank Nausedat ...  
+
+
+> 
+> > Hallo Liste,
+> > 
+> > erst mal Danke für dieses tolle Verwaltungsprogramm.
+> > 
+> > Trotzdem bin ich schier am Verzweifeln. Alles funktioniert:
+> > 
+> > Kommunikation mit Hibiskus, der Bank etc. Aber ich bekomme 
+> > bei der "Abrechnung" für die Mitgliedsbeiträge nur leere DTAUS-
+> > Dateien. Normalerweise haben wir alles nur "Selbst-Überweiser",
+> > keine Abbuchungen. Wenn ich jedoch zu Testzwecken einen 
+> > "Abbucher" eintrage, das gleiche Spiel. Leere DTAUS-Datei.
+> > 
+> > Was habe ich übersehen? Bin für jede Form von Hilfe dankbar!
+> > 
+> > In der Dokumentation habe ich ebenso nix gefunden, wie im 
+> > Mailinglisten-Archiv. Käpfe schon über eine Woche an dem Problem!
+> > 
+> > Ich freue mich auf eure Hilfe!
+> > 
+> > Danke,
+> > 
+> > Frank Nausedat ...
+> > _______________________________________________
+> > JVerein-Mailliste mailing list
+> > JVerein-Mailliste at lists.berlios.de
+> > https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+> > 
+> 
+> 
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+> 
+
+-- 
+future Training & Consulting GmbH
+Fiete-Schulze-Str. 13
+06116 Halle/Saale
+Tel.: +49 345 5641820
+Fax:  +49 345 5641899
+Email: Frank.Nausedat at futuretrainings.com
+
+
+From frank at gesunddurchbewegung.de  Wed Oct 21 09:15:56 2009
+From: frank at gesunddurchbewegung.de (Frank Nausedat)
+Date: Wed, 21 Oct 2009 09:15:56 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-15?q?Abrechnung_funktioniert_nicht?=
+ =?iso-8859-15?q?_-_gel=F6st!?=
+Message-ID: <1226301003@web.de>
+
+Hallo Liste,
+dank eurer Denkanstöße habe ich das Problem gefunden! In den Stammdaten (Systemmeldung in etwa:
+SQL> select * from STAMMDATEN) steht bei unserem Verein ein " (Anführungszeichen). Das hat offenbar 
+die weitere Abarbeitung verhindert. Dieses habe ich entfernt und: alles klappt perfekt!
+
+Danke vielmals für eure Hilfe!
+
+Frank Nausedat ...
+
+> Hallo,
+> danke für die Antwort.
+> 
+> > meiner Ansicht nach kann es an verschiedenen Punkten liegen, wichtig ist aber auf jeden Fall, 
+> > dass die Kontendaten des Vereins gepflegt sind (Administration, Stammdaten) da diese Informationen 
+> > für die Erstellung der DTAUS-Datei notwendig sind. 
+> Sind sie. Die Übernahme der Buchungen aus Hibiskus erfolgt problemlos. 
+> 
+> > Ich gehe mal davon aus, dass für das Mitglied die Kontendaten gepflegt sind, und dass der Beitrag auch 
+> > fällig ist?
+> Da nach dem Datenimport noch kein Beiträge als solche eingetragen sind sind doch alle noch "fällig", oder?
+> Das Eintrittsdatum ist ebenso gepflegt wie die Kontodaten bei meinem "Probemitglied" mit "Abbuchung".
+> Alle anderen Mitglieder stehen auf "Überweisung". Da müssen doch keine Kontodaten rein, oder? Die
+> müsste ich doch so wie so über "Manueller Zahlungseingang" einpflegen, nicht wahr? Da kann ich aber 
+> ohne "Abrechnung" nix eintragen.
+> 
+> Danke für die Mühe,
+> 
+> Frank Nausedat ...  
+> 
+> 
+> > 
+> > > Hallo Liste,
+> > > 
+> > > erst mal Danke für dieses tolle Verwaltungsprogramm.
+> > > 
+> > > Trotzdem bin ich schier am Verzweifeln. Alles funktioniert:
+> > > 
+> > > Kommunikation mit Hibiskus, der Bank etc. Aber ich bekomme 
+> > > bei der "Abrechnung" für die Mitgliedsbeiträge nur leere DTAUS-
+> > > Dateien. Normalerweise haben wir alles nur "Selbst-Überweiser",
+> > > keine Abbuchungen. Wenn ich jedoch zu Testzwecken einen 
+> > > "Abbucher" eintrage, das gleiche Spiel. Leere DTAUS-Datei.
+> > > 
+> > > Was habe ich übersehen? Bin für jede Form von Hilfe dankbar!
+> > > 
+> > > In der Dokumentation habe ich ebenso nix gefunden, wie im 
+> > > Mailinglisten-Archiv. Käpfe schon über eine Woche an dem Problem!
+> > > 
+> > > Ich freue mich auf eure Hilfe!
+> > > 
+> > > Danke,
+> > > 
+> > > Frank Nausedat ...
+> > > _______________________________________________
+> > > JVerein-Mailliste mailing list
+> > > JVerein-Mailliste at lists.berlios.de
+> > > https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+> > > 
+> > 
+> > 
+> > _______________________________________________
+> > JVerein-Mailliste mailing list
+> > JVerein-Mailliste at lists.berlios.de
+> > https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+> > 
+> 
+> -- 
+> future Training & Consulting GmbH
+> Fiete-Schulze-Str. 13
+> 06116 Halle/Saale
+> Tel.: +49 345 5641820
+> Fax:  +49 345 5641899
+> Email: Frank.Nausedat at futuretrainings.com
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+> 
+
+-- 
+future Training & Consulting GmbH
+Fiete-Schulze-Str. 13
+06116 Halle/Saale
+Tel.: +49 345 5641820
+Fax:  +49 345 5641899
+Email: Frank.Nausedat at futuretrainings.com
+
+
+From van-ballegooy at gmx.de  Sun Oct 25 14:33:46 2009
+From: van-ballegooy at gmx.de (Karl-Heinz van Ballegooy)
+Date: Sun, 25 Oct 2009 14:33:46 +0100
+Subject: [JVerein-Mailliste] sortierung von Zusatzfeldern
+Message-ID: <AEA0A791F40146FAA538517365B73B19@kalle1>
+
+Hallo,
+ich habe meiner Mitgliedstabelle ein Feld hinzugefügt,
+in dem ich ein Datum eintrage.
+Wenn ich die Tabelle nach dieser Spalte dann sortiere wird eine falsche Sortierung angezeigt. 
+Kann ich das ändern, so das das Datum richtig sortiert wird.
+Wenn ich die Tabelle nach Eintrittsdatum sortiere funktioniert es richtig.
+
+Viele Grüsse
+Karl-Heinz
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20091025/ad662244/attachment.html>
+-------------- nächster Teil --------------
+Ein Dateianhang mit Binärdaten wurde abgetrennt...
+Dateiname   : Sortierung Zusatzfeld.png
+Dateityp    : image/png
+Dateigröße  : 4638 bytes
+Beschreibung: nicht verfügbar
+URL         : <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20091025/ad662244/attachment.png>
+
+From heiner at jost-net.de  Sun Oct 25 14:54:00 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 25 Oct 2009 14:54:00 +0100
+Subject: [JVerein-Mailliste] sortierung von Zusatzfeldern
+In-Reply-To: <AEA0A791F40146FAA538517365B73B19@kalle1>
+References: <AEA0A791F40146FAA538517365B73B19@kalle1>
+Message-ID: <4AE45878.1050807@jost-net.de>
+
+Hallo Karl-Heinz,
+
+der Grund ist ganz einfach: Die Zusatzfelder sind alle vom Typ 
+Zeichenfolge. Die werden Zeichen für Zeichen sortiert. Das 
+Eintrittsdatum ist vom Type Datum. Dabei wird zunächst nach dem Jahr, 
+dann dem Monat und zum Schluss nach dem Tag sortiert.
+
+Lösungsmöglichkeiten:
+
+1. Den Zusatzfeldern können alle von der Datenbank unterstützten 
+Datentypen zugeordnet werden. Das wird allerdings kurzfristig nicht 
+realisiert.
+2. Du gibst das Datum in der Form jjjj.mm.tt ein.
+
+MfG
+
+Heiner
+
+Karl-Heinz van Ballegooy schrieb:
+> Hallo,
+> ich habe meiner Mitgliedstabelle ein Feld hinzugefügt,
+> in dem ich ein Datum eintrage.
+> Wenn ich die Tabelle nach dieser Spalte dann sortiere wird eine 
+> falsche Sortierung angezeigt.
+> Kann ich das ändern, so das das Datum richtig sortiert wird.
+> Wenn ich die Tabelle nach Eintrittsdatum sortiere funktioniert es richtig.
+>  
+> Viele Grüsse
+> Karl-Heinz
+>  
+>
+> ------------------------------------------------------------------------
+>
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>   
+
+
+From heiner at jost-net.de  Fri Oct 30 20:41:08 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Fri, 30 Oct 2009 20:41:08 +0100
+Subject: [JVerein-Mailliste] JVerein-Forum ist online
+Message-ID: <4AEB4154.9030904@jost-net.de>
+
+Hallo,
+
+die JVerein-Mailingliste ist nicht gut angenommen worden. Daher habe ich 
+heute ein Forum online gestellt. Solltet ihr zusätzliche Foren 
+gebrauchen, meldet euch bitte.
+
+Heiner
+
+

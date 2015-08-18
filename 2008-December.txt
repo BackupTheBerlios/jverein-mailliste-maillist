@@ -1,0 +1,217 @@
+From heiner at jost-net.de  Mon Dec  1 20:32:16 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 01 Dec 2008 20:32:16 +0100
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <49343BC0.2000905@jost-net.de>
+
+Hallo,
+
+ich habe eine neue Entwicklerversion hochgeladen. Änderungen siehe 
+http://www.jverein.de/index.php5?title=Changelog
+
+Neu ist die Konfiguration der Spalten der Tabelle der Treffermenge für 
+die Mitgliedersuche.
+
+Heiner
+
+
+From heiner at jost-net.de  Thu Dec 11 21:06:00 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Thu, 11 Dec 2008 21:06:00 +0100
+Subject: [JVerein-Mailliste] Beta1 von 1.1 freigegeben
+Message-ID: <494172A8.2030303@jost-net.de>
+
+Hallo,
+
+ich habe gerade die Beta1 von der Version 1.1 freigegeben. Sofern keine 
+gravierenden Fehler auftreten, wird die Version 1.1 koordiniert mit der 
+Version 1.7 von Jameica und 1.9 von Hibiscus zwischen den Feiertagen 
+freigegeben.
+
+Bitte testet die Beta ausführlich und berichtet mir über den Ausgang des 
+Tests.
+
+
+Heiner
+
+
+From heiner at jost-net.de  Sun Dec 14 11:07:06 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 14 Dec 2008 11:07:06 +0100
+Subject: [JVerein-Mailliste] JVerein 1.1-Beta2 herausgegeben
+Message-ID: <4944DACA.8020205@jost-net.de>
+
+Hallo,
+
+bei der Aktualisierung der Dokumentation sind mir noch kleine Fehler im 
+Zusammenhang mit Drop-Down-Boxen aufgefallen. Die Boxen wurden nach 
+einem Refactoring teilweise falsch initialisiert.
+
+Heiner
+
+
+From heiner at jost-net.de  Sat Dec 20 22:15:38 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sat, 20 Dec 2008 22:15:38 +0100
+Subject: [JVerein-Mailliste] [Hibiscus-devel] Online-Updates fuer
+	Jameica-Plugins
+In-Reply-To: <200812171706.10144.hibiscus@willuhn.de>
+References: <200812171706.10144.hibiscus@willuhn.de>
+Message-ID: <494D607A.4050401@jost-net.de>
+
+Hallo,
+
+für JVerein gibt es ab sofort auch das Online-Update. Unter der Adresse 
+www.jverein.de/updates steht das Repository mit der 1.1-Beta2 zur Verfügung.
+
+@Olaf:
+
+   1. Ich schlage vor, dass die Repositories der "well known public
+      plugins" in Jameica direkt vorgegeben werden.
+   2. Bei den ersten Test hatte ich aus Versehen eine existierende URL,
+      die kein gültiges Zip-File enthält, angegeben. Sowohl an der
+      Oberfläche als auch im Logging wurden keine Meldung ausgegeben.
+      Alles sah sauber aus. JVerein tauchte allerdings nicht in Jameica
+      auf.  Hier gibt es noch Optimierungspotential.
+
+
+Heiner
+
+Olaf Willuhn schrieb:
+> Hi,
+>
+> im Blog habe ich es bereits erwaehnt: Seit heute gibt es ein neues
+> Jameica-Plugin namens "jameica.update", mit dem Hibiscus, SynTAX und weitere
+> Plugins via Online-Update installiert werden können. In die nächste Release
+> wird es dieses Feature vermutlich nicht mehr schaffen (bin mir noch nicht
+> sicher). 
+> http://www.willuhn.de/blog/index.php?/archives/435-Online-Updates-fuer-Jameica-Plugins.html
+>
+> Im Wiki habe ich gerade beschrieben, wie man solche Online-Repositories
+> selbst bauen kann:
+> http://jameica.berlios.de/doku.php?id=develop:repository
+>
+> Gruss
+> Olaf
+> _______________________________________________
+> Hibiscus-devel mailing list
+> Hibiscus-devel at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/hibiscus-devel
+>
+>   
+
+
+From hibiscus at willuhn.de  Sun Dec 21 23:58:25 2008
+From: hibiscus at willuhn.de (Olaf Willuhn)
+Date: Sun, 21 Dec 2008 23:58:25 +0100
+Subject: [JVerein-Mailliste] [Hibiscus-devel] Online-Updates fuer
+	Jameica-Plugins
+In-Reply-To: <494D607A.4050401@jost-net.de>
+References: <200812171706.10144.hibiscus@willuhn.de>
+	<494D607A.4050401@jost-net.de>
+Message-ID: <200812212358.25890.hibiscus@willuhn.de>
+
+Hi,
+
+> @Olaf:
+>
+>    1. Ich schlage vor, dass die Repositories der "well known public
+>       plugins" in Jameica direkt vorgegeben werden.
+
+Ich habe "http://www.jverein.de/updates/jverein/1.1" gerade zum
+Default-Repository "https://www.willuhn.de/projects/jameica" hinzugefuegt.
+
+>    2. Bei den ersten Test hatte ich aus Versehen eine existierende URL,
+>       die kein gültiges Zip-File enthält, angegeben. Sowohl an der
+>       Oberfläche als auch im Logging wurden keine Meldung ausgegeben.
+>       Alles sah sauber aus. JVerein tauchte allerdings nicht in Jameica
+>       auf.  Hier gibt es noch Optimierungspotential.
+
+Ja, das kann durchaus passieren. Schliesslich kann Jameica ja nicht
+erkennen, ob es sich bei dem Download tatsaechlich um ein Plugin handelt.
+Bei allen anderen Anwendungen, die Online-Updates aus dem Internet laden,
+ist das genauso. Es muss halt server-seitig sichergestellt sein, dass
+die heruntergeladenen Daten korrekt sind. Zumindet die Echtheitspruefung
+kann man mittels Signierung loesen. Ich habe hierzu mal einen Bug-Report
+eingetragen: https://www.willuhn.de/bugzilla/show_bug.cgi?id=676
+
+Gruss
+Olaf
+
+
+From heiner at jost-net.de  Mon Dec 22 23:02:12 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 22 Dec 2008 23:02:12 +0100
+Subject: [JVerein-Mailliste] Beta3 herausgegeben
+Message-ID: <49500E64.2030703@jost-net.de>
+
+Hallo,
+
+ich habe gerade die dritte Beta der Version 1.1 herausgegeben. 
+Änderungen können dem Changelog unter 
+http://www.jverein.de/index.php5?title=Changelog entnommen werden.
+
+Heiner
+
+
+From heiner at jost-net.de  Tue Dec 23 08:35:21 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Tue, 23 Dec 2008 08:35:21 +0100
+Subject: [JVerein-Mailliste] Beta3 herausgegeben
+In-Reply-To: <49500E64.2030703@jost-net.de>
+References: <49500E64.2030703@jost-net.de>
+Message-ID: <495094B9.80409@jost-net.de>
+
+Nachtrag: Der Einsatz der akuellen Nightly-Builds von Jameica und 
+Hibiscus ist erforderlich.
+
+Heiner
+
+Heiner Jostkleigrewe schrieb:
+> Hallo,
+>
+> ich habe gerade die dritte Beta der Version 1.1 herausgegeben. 
+> Änderungen können dem Changelog unter 
+> http://www.jverein.de/index.php5?title=Changelog entnommen werden.
+>
+> Heiner
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+
+From heiner at jost-net.de  Mon Dec 29 10:54:21 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 29 Dec 2008 10:54:21 +0100
+Subject: [JVerein-Mailliste] Neue Version
+Message-ID: <49589E4D.1000201@jost-net.de>
+
+Hallo,
+
+JVerein wurde neu released. Zwischenzeitlich gibt auch schon ein 
+Bugfixrelease (1.1.0.1).
+
+Hier die Highlights der neuen Version:
+
+    * Abbuchung wurde Abrechnung
+    * keine Abrechnung für Mitglieder, deren Eintrittsdatum in der
+      Zukunft liegt
+
+    * Mitgliederdaten erweitert um
+          o Adressierungszusätze
+          o Handynummer
+    * Layout der Mitgliederdaten optimiert
+    * Spalten der Mitgliederübersicht sind jetzt konfigurierbar
+    * kleine Buchführung integriert
+    * Backup und Restore im XML-Format
+    * Erstellung von Rechnungen
+    * Erstellung von Spendenbescheinigungen
+    * Integration der Jameica-Suchmaschine
+    * Speicherung von Zusatzfeldern
+
+Heiner
+
+

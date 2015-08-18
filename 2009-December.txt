@@ -1,0 +1,132 @@
+From heiner at jost-net.de  Tue Dec  1 20:39:31 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Tue, 01 Dec 2009 20:39:31 +0100
+Subject: [JVerein-Mailliste] Entwicklerversion 1.3.0 Rev. 217
+Message-ID: <4B1570F3.5060007@jost-net.de>
+
+Hallo,
+
+ich habe gerade die Entwicklerversion 1.3.0 Rev. 217 hochgeladen. Die 
+Änderungen können in der http://www.jverein.de/changelog.php eingesehen 
+werden. Wichtig ist der Einsatz der aktuellen Nightly-Builds von Jameica 
+und Hibiscus.
+
+Bitte berichtet mir über eure Testergebnisse unter www.jverein.de/forum .
+
+Heiner
+
+
+From m.guenther at lahntalindians.de  Wed Dec  2 10:30:12 2009
+From: m.guenther at lahntalindians.de (=?ISO-8859-1?Q?Marcel_G=FCnther?=)
+Date: Wed, 2 Dec 2009 10:30:12 +0100
+Subject: [JVerein-Mailliste] Fehlermeldung
+Message-ID: <cd2d0b6d0912020130t1fef18a3pa953166e62f973cf@mail.gmail.com>
+
+Hallo liebe JVerein Gemeinde,
+
+bei der Nutzung (wir abeiten noch nicht produktiv mit JVerein, sind in der
+Erprobungsphase) von JVerein bekam ich heute die folgende Fehlermeldung:
+
+"error while executing sql statement
+com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown table
+'BUCHUNGSART' in where clause"
+
+Woran liegts? Wollte einen Jahressaldo abrufen und dann obige Meldung. Liegt
+es daran, das den Zahlungen noch keine Buchungsarten zugeordnet wurden?
+
+Danke schonmal für die Hilfe.
+Marcel
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20091202/9567a600/attachment.html>
+
+From heiner at jost-net.de  Wed Dec  2 12:03:48 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Wed, 2 Dec 2009 12:03:48 +0100 (MET)
+Subject: [JVerein-Mailliste] Fehlermeldung
+Message-ID: <200912021103.nB2B3mVa011707@post.webmailer.de>
+
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20091202/bfc72961/attachment.html>
+-------------- nächster Teil --------------
+Hallo Marcel,
+
+welche Version hast du im Einsatz? Ab Version 1.2 sollte es den Fehler nicht mehr geben.
+
+Heiner Jostkleigrewe
+
+PS: Du kannst für Anfragen auch das Forum unter www.jverein.de/forum nutzen. Dann können auch andere JVerein-User von den Antworten profitieren.
+
+----- original Nachricht --------
+
+Betreff: [JVerein-Mailliste] Fehlermeldung
+Gesendet: Mi, 02. Dez 2009
+Von: Marcel Günther
+
+Hallo liebe JVerein Gemeinde,
+
+bei der Nutzung (wir abeiten noch nicht produktiv mit JVerein, sind in der Erprobungsphase) von JVerein bekam ich heute die folgende Fehlermeldung:
+"error while executing sql statement
+com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown table 'BUCHUNGSART' in where clause"
+
+Woran liegts? Wollte einen Jahressaldo abrufen und dann obige Meldung. Liegt es daran, das den Zahlungen noch keine Buchungsarten zugeordnet wurden?
+Danke schonmal für die Hilfe.Marcel
+
+--- original Nachricht Ende ----
+
+From frank at gesunddurchbewegung.de  Tue Dec 29 00:09:38 2009
+From: frank at gesunddurchbewegung.de (Frank Nausedat)
+Date: Tue, 29 Dec 2009 00:09:38 +0100
+Subject: [JVerein-Mailliste] =?iso-8859-15?q?=C4nderung_der_Standards_in_J?=
+	=?iso-8859-15?q?Verein?=
+Message-ID: <1274080790@web.de>
+
+Hallo Mitstreiter,
+
+in unserem Verein ist die Beitragsentrichtung per Überweisung monatlich 
+der  Normalfall. Ist es möglich die Standardeinstellungen für Zahlungsweg
+und Zahlungsrhythmus beim Neuanlegen von Mitgliedern zu ändern?
+
+Danke und guten Rutsch,
+
+Frank Nausedat ... 
+
+
+From heiner at jost-net.de  Tue Dec 29 09:06:17 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Tue, 29 Dec 2009 09:06:17 +0100
+Subject: [JVerein-Mailliste]
+ =?iso-8859-1?q?=C4nderung_der_Standards_in_JV?=
+ =?iso-8859-1?q?erein?=
+In-Reply-To: <1274080790@web.de>
+References: <1274080790@web.de>
+Message-ID: <4B39B879.4090509@jost-net.de>
+
+Hallo Frank,
+
+ich habe deine Anfrage unter 
+https://developer.berlios.de/bugs/?func=detailbug&bug_id=16605&group_id=7335 
+erfasst.
+
+Dir ebenfalls einen guten Rutsch.
+
+Heiner
+
+Frank Nausedat schrieb:
+> Hallo Mitstreiter,
+>
+> in unserem Verein ist die Beitragsentrichtung per Überweisung monatlich 
+> der  Normalfall. Ist es möglich die Standardeinstellungen für Zahlungsweg
+> und Zahlungsrhythmus beim Neuanlegen von Mitgliedern zu ändern?
+>
+> Danke und guten Rutsch,
+>
+> Frank Nausedat ... 
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+

@@ -1,0 +1,207 @@
+From heiner at jost-net.de  Mon Jan  5 19:14:05 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 05 Jan 2009 19:14:05 +0100
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <49624DED.50300@jost-net.de>
+
+Hallo,
+
+zunächst alle Gute zum neuen Jahr.
+
+Gerade habe ich das Bugfix-Releases 1.1.1-devel-164 
+<http://prdownload.berlios.de/jverein/jverein.1.1.1-devel-164.zip> 
+hochgeladen. Änderungen siehe Changelog 
+<http://www.jverein.de/index.php5?title=Changelog>. Wichtig! Für den 
+Einsatz sind Jameica- und Hibiscus-Nightly-Builds vom >= 5.1.2009 
+erforderlich.
+
+Der Download-Service von Berlios steht übrigens seit heute morgen wieder 
+zur Verfügung.
+
+Heiner
+
+
+From p.burri at bluewin.ch  Thu Jan 15 12:11:35 2009
+From: p.burri at bluewin.ch (p.burri at bluewin.ch)
+Date: Thu, 15 Jan 2009 11:11:35 +0000 (GMT)
+Subject: [JVerein-Mailliste] JVerein - Initialload von Mitrgliedern
+Message-ID: <15062566.635601232017895963.JavaMail.webmail@ps9zhb.bluewin.ch>
+
+Hallo,
+ich habe mir mal Jverein 1.1 ( mit Jameica und Hibiscus) installiert und gestartet. Da ich dieses Paket zum erstenmal 
+installiert habe , sind die Datenbanken noch leer.
+Wie kann ich nun Mitglieder in der leeren Datenbank erfassen ? Im gegensatz zur Dokumnetation wird in der Mitglieder 
+Maske die Leiste mit [A] ..[Z] unter dem Such Bildschirm nicht angezeigt und ich sehe auch kein Button 'Neu' um ein 
+neues Mitglied zu erfassen.
+
+Vielen Dank 
+Peter Burri
+
+
+From heiner at jost-net.de  Thu Jan 15 19:14:11 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Thu, 15 Jan 2009 19:14:11 +0100
+Subject: [JVerein-Mailliste] JVerein - Initialload von Mitrgliedern
+Message-ID: <496F7CF3.70000@jost-net.de>
+
+
+Hallo Peter,
+
+erfasse zunächst unter Plugins>JVerein>Stammdaten die Daten deines 
+Vereins. Danach kannst du entweder die Mitglieder importieren (siehe 
+http://www.jverein.de/index.php5?title=Import) oder du erfasst unter 
+Plugins>JVerein>Beitragsgruppe mindestens eine Beitragsgruppe und 
+anschließend die Mitglieder "von Hand". Sinnvoll ist es sicherlich auch 
+unter Plugins>JVerein>Einstellungen die für dich sinnvollen Angaben zu 
+machen.
+
+Wenn du weitere konkrete Fragen hast, kannst du dich gerne an mich wenden.
+
+Heiner
+
+p.burri at bluewin.ch schrieb:
+> Hallo,
+> ich habe mir mal Jverein 1.1 ( mit Jameica und Hibiscus) installiert und gestartet. Da ich dieses Paket zum erstenmal 
+> installiert habe , sind die Datenbanken noch leer.
+> Wie kann ich nun Mitglieder in der leeren Datenbank erfassen ? Im gegensatz zur Dokumnetation wird in der Mitglieder 
+> Maske die Leiste mit [A] ..[Z] unter dem Such Bildschirm nicht angezeigt und ich sehe auch kein Button 'Neu' um ein 
+> neues Mitglied zu erfassen.
+>
+> Vielen Dank 
+> Peter Burri
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+
+
+
+From heiner at jost-net.de  Mon Jan 19 21:11:59 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 19 Jan 2009 21:11:59 +0100
+Subject: [JVerein-Mailliste] Neue Version und Bugfix-Release
+Message-ID: <4974DE8F.3040602@jost-net.de>
+
+Hallo,
+
+ich habe gerade die Version 1.1.1 und das Bugfix-Release 1.2.0 
+herausgegeben. Die Funktionalität beider Versionen ist identisch. Die 
+Version 1.1.1 ist unter Jameica 1.7 ablauffähig und die Version 1.2.0 
+benötigt Jameica 1.8.
+
+Änderungen sind im Changelog unter 
+http://www.jverein.de/index.php5?title=Changelog beschrieben.
+
+Heiner
+
+
+From heiner at jost-net.de  Sun Jan 25 21:00:34 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 25 Jan 2009 21:00:34 +0100
+Subject: [JVerein-Mailliste] Grafiker gesucht
+Message-ID: <497CC4E2.2000002@jost-net.de>
+
+Hallo,
+
+in JVerein werden jetzt Icons auf Buttons und in Kontextmenüs angezeigt. 
+Die wirken allerdings unruhig und zusammengesucht. Deshalb suche ich 
+einen Grafiker, der mich unterstützt: 
+http://www.jverein.de/index.php5?title=Grafiker_gesucht
+
+Heiner
+
+
+From Dietmar at Stamm-Noah.de  Mon Jan 26 13:03:05 2009
+From: Dietmar at Stamm-Noah.de (Dietmar Hollmann)
+Date: Mon, 26 Jan 2009 13:03:05 +0100
+Subject: [JVerein-Mailliste] Listen erstellen
+Message-ID: <0ML31I-1LRQAp1UVr-0003Mm@mrelayeu.kundenserver.de>
+
+Hallo zusammen,
+Erst einmal möchte ich den Machern von Jverein ein dickes Lob ausprechen,
+nach langem, langem Suchen habe ich endlich eine Vereinsverwaltung gefunden,
+die meinen Zwecken entspricht.
+Nicht zuletzt durch die Möglichkeiten, "Eigenschaften" zu definieren und
+nach denen auch Listen zu erstellen, bin ich begeistert.
+Beim Thema Listen habe ich aber dann auch gleich eine Frage bzw. Anregung:
+* ich fände es praktisch, den Mitgliederbestand mir auch in Listenform am
+Bildschirm anschauen zu können und nicht die einzelnen Buchtstaben der
+Nachnamen anklicken zu müssen.
+* kann ich beim Listen erstellen im pdf oder exel Format auch definieren,
+welche Informationen in die Liste übenommen werden sollen. Ich habe unter
+Einstellungen -> Tabellen schon Felder angeklickt, aber es werden auch
+andere mit übernommen (im excel Format)
+* bzw. im pdf Format, welches ich bevorzugen würde, habe ich die Felder
+Eintritt/Austritt und Beitragsgruppe, die ich nicht erstellt haben möchte.
+
+In der Dokumetation und im Programm habe ich leider nichts gefunden, ich
+benutze Jverein 1.1
+
+Viele Grüße vom linken Niederrhein
+Dietmar
+
+
+
+From heiner at jost-net.de  Mon Jan 26 20:57:28 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 26 Jan 2009 20:57:28 +0100
+Subject: [JVerein-Mailliste] Listen erstellen
+In-Reply-To: <0ML31I-1LRQAp1UVr-0003Mm@mrelayeu.kundenserver.de>
+References: <0ML31I-1LRQAp1UVr-0003Mm@mrelayeu.kundenserver.de>
+Message-ID: <497E15A8.9030201@jost-net.de>
+
+Hallo Dietmar,
+
+
+> Beim Thema Listen habe ich aber dann auch gleich eine Frage bzw. Anregung:
+> * ich fände es praktisch, den Mitgliederbestand mir auch in Listenform am
+> Bildschirm anschauen zu können und nicht die einzelnen Buchtstaben der
+> Nachnamen anklicken zu müssen.
+>   
+Hast du schon einmal den Reiter "*" angeklickt?
+> * kann ich beim Listen erstellen im pdf oder exel Format auch definieren,
+> welche Informationen in die Liste übenommen werden sollen. Ich habe unter
+> Einstellungen -> Tabellen schon Felder angeklickt, aber es werden auch
+> andere mit übernommen (im excel Format)* bzw. im pdf Format, welches ich bevorzugen würde, habe ich die Felder
+> Eintritt/Austritt und Beitragsgruppe, die ich nicht erstellt haben möchte.
+>
+>   
+Beim Export ins CSV-Format werden alle verfügbaren Spalten ausgegeben. 
+Beim Export ins PDF-Format ist eine individuelle Listengestaltung 
+momentan nicht vorgesehen.
+
+>   
+
+Heiner
+
+
+From heiner at jost-net.de  Tue Jan 27 17:07:35 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Tue, 27 Jan 2009 17:07:35 +0100
+Subject: [JVerein-Mailliste] Jameica-Suite
+Message-ID: <497F3147.3090607@jost-net.de>
+
+Hallo,
+
+Marco hat heute die Jameica-Suite 1.1.2 veröffentlicht. Siehe auch 
+http://www.jverein.de/index.php5?title=Download
+
+Heiner
+
+
+From heiner at jost-net.de  Fri Jan 30 15:36:10 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Fri, 30 Jan 2009 15:36:10 +0100
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <4983105A.2040204@jost-net.de>
+
+Hallo,
+
+ich habe gerade eine neue Entwicklerversion von JVerein hochgeladen.
+
+Heiner
+
+

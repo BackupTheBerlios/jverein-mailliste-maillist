@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste] PDF wird nur noch mit GIMP geöffnet anstatt mit xpdf
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2009-August/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%0A%20%3D%3Fiso-8859-15%3Fq%3FPDF_wird_nur_noch_mit_GIMP_ge%3F%3D%0A%20%3D%3Fiso-8859-15%3Fq%3F%3DF6ffnet_anstatt_mit_xpdf%3F%3D&In-Reply-To=%3C1009082093%40web.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000086.html">
+   <LINK REL="Next"  HREF="000088.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste] PDF wird nur noch mit GIMP geöffnet anstatt mit xpdf</H1>
+    <B>Siegfried Kübel</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%0A%20%3D%3Fiso-8859-15%3Fq%3FPDF_wird_nur_noch_mit_GIMP_ge%3F%3D%0A%20%3D%3Fiso-8859-15%3Fq%3F%3DF6ffnet_anstatt_mit_xpdf%3F%3D&In-Reply-To=%3C1009082093%40web.de%3E"
+           TITLE="[JVerein-Mailliste] PDF wird nur noch mit GIMP geöffnet anstatt mit xpdf">s-kuebel at web.de
+                  </A><BR>
+    <I>Di Aug 18 00:11:00 CEST 2009</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000086.html">[JVerein-Mailliste] PDF wird nur noch mit GIMP geöffnet anstatt mit xpdf
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000088.html">[JVerein-Mailliste] JVerein-Version 1.2
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#87">[ Datum ]</a>
+              <a href="thread.html#87">[ Thema ]</a>
+              <a href="subject.html#87">[ Betreff (Subject) ]</a>
+              <a href="author.html#87">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hallo,
+
+vielen Dank für den Tipp, dass jameica mit GTK als Widget-Toolkit basiert und damit die Gnome-Konfiguration relevant ist. Da der &quot;Gnome Control Center&quot; bei mir nicht installiert ist muss man einfach die Datei /var/cache/gio-2.0/defaults.list abändern und schon funktioniert das Ganze.
+
+Problem gelöst!
+
+Danke und Gruß
+Siegfried
+
+
+&gt;<i> -----Ursprüngliche Nachricht-----
+</I>&gt;<i> Von: &quot;Olaf Willuhn&quot; &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">hibiscus at willuhn.de</A>&gt;
+</I>&gt;<i> Gesendet: 17.08.09 00:46:52
+</I>&gt;<i> An: <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">jverein-mailliste at lists.berlios.de</A>
+</I>&gt;<i> Betreff: Re: [JVerein-Mailliste] PDF wird nur noch mit GIMP geöffnet anstatt mit xpdf
+</I>
+
+&gt;<i> Hi,
+</I>&gt;<i> 
+</I>&gt;<i> &gt; ich bin vor einigen Wochen auf der Suche nach einem Vereinsprogramm das
+</I>&gt;<i> &gt; auch unter Linux läuft auf JVerein gestoßen, das mir sehr gut gefällt.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Nachdem ich allerdings meinen Rechner von openSuse 11.0 auf openSuse 11.1
+</I>&gt;<i> &gt; upgedatet habe (mit KDE 4.2.x) öffnet JVerein (mir scheint alle
+</I>&gt;<i> &gt; jameica-Anwedungen) die pdf-Auswertungen nur noch mit Gimp (anstatt mit
+</I>&gt;<i> &gt; xpdf). Wenn ich in Dolphin ein pdf öffne wird automatisch xpdf verwendet
+</I>&gt;<i> &gt; und so ist es auch in den Systemeinstellungen in der Reihenfolge
+</I>&gt;<i> &gt; eingestellt.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Hat jemand eine Idee?
+</I>&gt;<i> 
+</I>&gt;<i> JVerein kann da aber auch nichts dafuer ;)
+</I>&gt;<i> Meines Wissens nach uebergibt es die PDF-Datei lediglich zum Oeffnen
+</I>&gt;<i> an das System. Das entscheidet dann selbst anhand des Mime-Types,
+</I>&gt;<i> mit welcher Anwendung es geoeffnet wird. Die Tatsache, dass es in
+</I>&gt;<i> Dolphin funktioniert, liegt einfach daran, dass Dolphin zu KDE
+</I>&gt;<i> gehoert und dieser Desktop eine eigene Konfiguration der Zuordnung
+</I>&gt;<i> von Mime-Type zu Programm besitzt. JVerein basiert jedoch auf
+</I>&gt;<i> Jameica, welches unter der Haube SWT verwendet. Das wiederrum nutzt
+</I>&gt;<i> unter Linux GTK als Widget-Toolkit. Und das wiederrum ist Bestandteil
+</I>&gt;<i> von Gnome. Heisst: Die Ursache fuer die falsche Dateizuordnung
+</I>&gt;<i> ist Gnome. Ich selbst nutze Gnome nicht, von daher weiss ich auch
+</I>&gt;<i> nicht, wo man da die Mime-Types konfiguriert. Aber ich koennte
+</I>&gt;<i> mir vorstellen, dass man das im &quot;gnome-control-center&quot; machen kann.
+</I>&gt;<i> 
+</I>&gt;<i> Gruss
+</I>&gt;<i> Olaf
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> JVerein-Mailliste mailing list
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">JVerein-Mailliste at lists.berlios.de</A>
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">https://lists.berlios.de/mailman/listinfo/jverein-mailliste</A>
+</I>&gt;<i> 
+</I>
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000086.html">[JVerein-Mailliste] PDF wird nur noch mit GIMP geöffnet anstatt mit xpdf
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000088.html">[JVerein-Mailliste] JVerein-Version 1.2
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#87">[ Datum ]</a>
+              <a href="thread.html#87">[ Thema ]</a>
+              <a href="subject.html#87">[ Betreff (Subject)]</a>
+              <a href="author.html#87">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

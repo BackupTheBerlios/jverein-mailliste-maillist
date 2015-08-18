@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste] Test von Entwicklerversion [Bugs]
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2008-July/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Test%20von%20Entwicklerversion%20%5BBugs%5D&In-Reply-To=%3C4875D298.6030605%40jost-net.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000017.html">
+   <LINK REL="Next"  HREF="000019.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste] Test von Entwicklerversion [Bugs]</H1>
+    <B>Heiner Jostkleigrewe</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Test%20von%20Entwicklerversion%20%5BBugs%5D&In-Reply-To=%3C4875D298.6030605%40jost-net.de%3E"
+           TITLE="[JVerein-Mailliste] Test von Entwicklerversion [Bugs]">heiner at jost-net.de
+                  </A><BR>
+    <I>Do Jul 10 11:12:56 CEST 2008</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000017.html">[JVerein-Mailliste] Einstellung des Datenbankverzeichnisses
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000019.html">[JVerein-Mailliste] [Fwd: Re: Einstellung des	Datenbankverzeichnisses]
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#18">[ Datum ]</a>
+              <a href="thread.html#18">[ Thema ]</a>
+              <a href="subject.html#18">[ Betreff (Subject) ]</a>
+              <a href="author.html#18">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hallo Volker,
+
+hast du eine &quot;frische&quot; Datenbank angelegt? Falls ja: Im Script zum 
+Aufbau der Datenbank hatte sich noch ein Fehler eingeschlichen. Den habe 
+ich zwischenzeitlich beseitigt. Entweder wird es heute oder morgen noch 
+eine neue Entwicklerversion geben.
+
+Du hast folgende Möglichkeiten:
+
+1. Du kopierst dein bisheriges .jameica-Verzeichnis (Version 1.0) unter 
+anderem Namen (z. B. .jameica.test) und rufst jameica mit dem Parameter 
+-f /home/user/.jameica.test o. ä. auf.
+2. Du änderst mit einem SQL-Frontend (z. B. Squirrel) in der Tabelle 
+buchungsart den Namen der Spalte buchungsart in art
+3. Du wartest bis zur nächsten Entwicklerversion und löscht dein 
+Verzeichnis für den JVerein-Test
+
+Heiner
+
+
+
+Volker Richter schrieb:
+&gt;<i> Hallo Heiner,
+</I>&gt;<i>
+</I>&gt;<i> da ich keinen Entwicklerzugang auf dem BerliOS Server habe,
+</I>&gt;<i> möchte ich dir von mir entdeckte Fehler so zukommen lassen.
+</I>&gt;<i>
+</I>&gt;<i> Ich habe die Nigthly Builds vom 08.07.09 von allen Komponenten
+</I>&gt;<i> unter Windows installiert.
+</I>&gt;<i> .
+</I>&gt;<i> Durch die neuen Funktionen ist sogar eine Buchführung möglich.
+</I>&gt;<i> Damit wird JVerein zu einer richtigen Konkurenz für kommerziellen 
+</I>&gt;<i> Lösungen.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Der Fehler mit der höchsten Priorität betrifft das
+</I>&gt;<i> Anlegen von Buchungsarten nach der Einrichtung des
+</I>&gt;<i> Kontos. Dabei wird folgende Exception geworfen:
+</I>&gt;<i>
+</I>&gt;<i> error while executing sql statement
+</I>&gt;<i> org.h2.jdbc.JdbcSQLException: Feld BUCHUNGSART.ART nicht gefunden
+</I>&gt;<i> Column BUCHUNGSART.ART not found; SQL statement:
+</I>&gt;<i> select sum(betrag) from buchung, buchungsart where datum &gt;= ? and 
+</I>&gt;<i> datum &lt;= ? AND konto = ? and buchung.BUCHUNGSART = BUCHUNGSART.ID and 
+</I>&gt;<i> BUCHUNGSART.ART=? [42122-74]
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:103)
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:114)
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:77)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:125)
+</I>&gt;<i>    at org.h2.expression.Comparison.optimize(Comparison.java:133)
+</I>&gt;<i>    at org.h2.expression.ConditionAndOr.optimize(ConditionAndOr.java:132)
+</I>&gt;<i>    at org.h2.command.dml.Select.prepare(Select.java:688)
+</I>&gt;<i>    at org.h2.command.Parser.prepareCommand(Parser.java:235)
+</I>&gt;<i>    at org.h2.engine.Session.prepareLocal(Session.java:285)
+</I>&gt;<i>    at org.h2.engine.Session.prepareCommand(Session.java:246)
+</I>&gt;<i>    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1030)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:72)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:218)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.datasource.db.DBServiceImpl.execute(DBServiceImpl.java:446)
+</I>&gt;<i>    at de.jost_net.JVerein.io.SaldoZeile.&lt;init&gt;(SaldoZeile.java:101)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.parts.JahressaldoList.getInfo(JahressaldoList.java:131) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.parts.JahressaldoList.getSaldoList(JahressaldoList.java:69) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.control.JahressaldoControl.getSaldoList(JahressaldoControl.java:149) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.view.JahressaldoView.bind(JahressaldoView.java:54) 
+</I>&gt;<i>
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI$2.run(GUI.java:456)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI$3.run(GUI.java:643)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Display.syncExec(Display.java:3763)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.startSync(GUI.java:639)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.startView(GUI.java:374)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.action.JahressaldoAction.handleAction(JahressaldoAction.java:27) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.jameica.gui.Navigation$MyActionListener.handleEvent(Navigation.java:306) 
+</I>&gt;<i>
+</I>&gt;<i>    at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.loop(GUI.java:660)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.init(GUI.java:213)
+</I>&gt;<i>    at de.willuhn.jameica.system.Application.init(Application.java:144)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.jameica.system.Application.newInstance(Application.java:86)
+</I>&gt;<i>    at de.willuhn.jameica.Main.main(Main.java:78)
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Dies hat zur Folge, das auch die Jahresübersicht eine Exception 
+</I>&gt;<i> hervorruft:
+</I>&gt;<i>
+</I>&gt;<i> error while executing sql statement
+</I>&gt;<i> org.h2.jdbc.JdbcSQLException: Feld BUCHUNGSART.ART nicht gefunden
+</I>&gt;<i> Column BUCHUNGSART.ART not found; SQL statement:
+</I>&gt;<i> select sum(betrag) from buchung, buchungsart where datum &gt;= ? and 
+</I>&gt;<i> datum &lt;= ? AND konto = ? and buchung.BUCHUNGSART = BUCHUNGSART.ID and 
+</I>&gt;<i> BUCHUNGSART.ART=? [42122-74]
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:103)
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:114)
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:77)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:125)
+</I>&gt;<i>    at org.h2.expression.Comparison.optimize(Comparison.java:133)
+</I>&gt;<i>    at org.h2.expression.ConditionAndOr.optimize(ConditionAndOr.java:132)
+</I>&gt;<i>    at org.h2.command.dml.Select.prepare(Select.java:688)
+</I>&gt;<i>    at org.h2.command.Parser.prepareCommand(Parser.java:235)
+</I>&gt;<i>    at org.h2.engine.Session.prepareLocal(Session.java:285)
+</I>&gt;<i>    at org.h2.engine.Session.prepareCommand(Session.java:246)
+</I>&gt;<i>    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1030)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:72)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:218)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.datasource.db.DBServiceImpl.execute(DBServiceImpl.java:446)
+</I>&gt;<i>    at de.jost_net.JVerein.io.SaldoZeile.&lt;init&gt;(SaldoZeile.java:101)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.parts.JahressaldoList.getInfo(JahressaldoList.java:131) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.parts.JahressaldoList.getSaldoList(JahressaldoList.java:69) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.control.JahressaldoControl.getSaldoList(JahressaldoControl.java:149) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.view.JahressaldoView.bind(JahressaldoView.java:54) 
+</I>&gt;<i>
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI$2.run(GUI.java:456)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI$3.run(GUI.java:643)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Display.syncExec(Display.java:3763)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.startSync(GUI.java:639)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.startView(GUI.java:374)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.action.JahressaldoAction.handleAction(JahressaldoAction.java:27) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.jameica.gui.Navigation$MyActionListener.handleEvent(Navigation.java:306) 
+</I>&gt;<i>
+</I>&gt;<i>    at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.loop(GUI.java:660)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.init(GUI.java:213)
+</I>&gt;<i>    at de.willuhn.jameica.system.Application.init(Application.java:144)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.jameica.system.Application.newInstance(Application.java:86)
+</I>&gt;<i>    at de.willuhn.jameica.Main.main(Main.java:78)
+</I>&gt;<i>
+</I>&gt;<i> Leider scheint auch das Speichern eines Anfangsbestandes nicht zu 
+</I>&gt;<i> funktionieren.
+</I>&gt;<i>
+</I>&gt;<i>   Fehler bei speichern des Anfangsbestandes
+</I>&gt;<i> java.rmi.RemoteException: unable to prepare insert sql statement; 
+</I>&gt;<i> nested exception is:
+</I>&gt;<i>    org.h2.jdbc.JdbcSQLException: Feld BETRAG nicht gefunden
+</I>&gt;<i> Column BETRAG not found; SQL statement:
+</I>&gt;<i> insert into ANFANGSBESTAND (BETRAG,KONTO,DATUM) values (?,?,?) [42122-74]
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.datasource.db.AbstractDBObject.getInsertSQL(AbstractDBObject.java:904) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.datasource.db.AbstractDBObject.insert(AbstractDBObject.java:645) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.datasource.db.AbstractDBObject.store(AbstractDBObject.java:332) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.control.AnfangsbestandControl.handleStore(AnfangsbestandControl.java:114) 
+</I>&gt;<i>
+</I>&gt;<i>    at 
+</I>&gt;<i> de.jost_net.JVerein.gui.view.AnfangsbestandView$1.handleAction(AnfangsbestandView.java:56) 
+</I>&gt;<i>
+</I>&gt;<i>    at de.willuhn.jameica.gui.parts.Button$1$1.run(Button.java:134)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI$3.run(GUI.java:643)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Display.syncExec(Display.java:3763)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.startSync(GUI.java:639)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.jameica.gui.parts.Button$1.widgetSelected(Button.java:128)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:90)
+</I>&gt;<i>    at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+</I>&gt;<i>    at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.loop(GUI.java:660)
+</I>&gt;<i>    at de.willuhn.jameica.gui.GUI.init(GUI.java:213)
+</I>&gt;<i>    at de.willuhn.jameica.system.Application.init(Application.java:144)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.jameica.system.Application.newInstance(Application.java:86)
+</I>&gt;<i>    at de.willuhn.jameica.Main.main(Main.java:78)
+</I>&gt;<i> Caused by: org.h2.jdbc.JdbcSQLException: Feld BETRAG nicht gefunden
+</I>&gt;<i> Column BETRAG not found; SQL statement:
+</I>&gt;<i> insert into ANFANGSBESTAND (BETRAG,KONTO,DATUM) values (?,?,?) [42122-74]
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:103)
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:114)
+</I>&gt;<i>    at org.h2.message.Message.getSQLException(Message.java:77)
+</I>&gt;<i>    at org.h2.table.Table.getColumn(Table.java:490)
+</I>&gt;<i>    at org.h2.command.Parser.parseColumnList(Parser.java:749)
+</I>&gt;<i>    at org.h2.command.Parser.parseInsert(Parser.java:826)
+</I>&gt;<i>    at org.h2.command.Parser.parsePrepared(Parser.java:368)
+</I>&gt;<i>    at org.h2.command.Parser.parse(Parser.java:290)
+</I>&gt;<i>    at org.h2.command.Parser.parse(Parser.java:262)
+</I>&gt;<i>    at org.h2.command.Parser.prepareCommand(Parser.java:234)
+</I>&gt;<i>    at org.h2.engine.Session.prepareLocal(Session.java:285)
+</I>&gt;<i>    at org.h2.engine.Session.prepareCommand(Session.java:246)
+</I>&gt;<i>    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1030)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:72)
+</I>&gt;<i>    at 
+</I>&gt;<i> org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:218)
+</I>&gt;<i>    at 
+</I>&gt;<i> de.willuhn.datasource.db.AbstractDBObject.getInsertSQL(AbstractDBObject.java:889) 
+</I>&gt;<i>
+</I>&gt;<i>    ... 21 more
+</I>&gt;<i>
+</I>&gt;<i> Was ich im alten Programmteil noch gefunden habe ist,
+</I>&gt;<i> dass das Verhalten bei der Erstellung von Betragsgruppen seltsam ist.
+</I>&gt;<i> Dieser Bug kann jedoch umgangen werden.
+</I>&gt;<i>
+</I>&gt;<i> Wenn mehrere Betragsgruppen in dem Dialog Beitragsgruppe
+</I>&gt;<i> erstellt werden sollen, erscheint im Log Eintrag &quot;Beitragsgruppe 
+</I>&gt;<i> gespeichert&quot;
+</I>&gt;<i> Geht man dann zurück in den Dialog Beitragsgruppen wird nur der
+</I>&gt;<i> letzte Eintrag angezeigt.
+</I>&gt;<i>
+</I>&gt;<i> Als Workaround können mehrere Einträge erstellt werden,
+</I>&gt;<i> wenn man nach einem Eintrag zurück in das Fenster &quot;Beitragsgruppen&quot;
+</I>&gt;<i> wechselt.
+</I>&gt;<i>
+</I>&gt;<i> Ich hoffe, das dir die Fehlermeldungen weiterhelfen, das Programm
+</I>&gt;<i> zu verbessern.
+</I>&gt;<i>
+</I>&gt;<i> Gruß
+</I>&gt;<i>  Volker
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000017.html">[JVerein-Mailliste] Einstellung des Datenbankverzeichnisses
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000019.html">[JVerein-Mailliste] [Fwd: Re: Einstellung des	Datenbankverzeichnisses]
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#18">[ Datum ]</a>
+              <a href="thread.html#18">[ Thema ]</a>
+              <a href="subject.html#18">[ Betreff (Subject)]</a>
+              <a href="author.html#18">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

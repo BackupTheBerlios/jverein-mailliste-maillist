@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste] Testcases
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2009-June/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Testcases&In-Reply-To=%3C4a3c8407158d8_7beb3fb1668d5ef8768e%40app02.zenbe.com.tmail%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000058.html">
+   <LINK REL="Next"  HREF="000060.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste] Testcases</H1>
+    <B>Andre Henke</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Testcases&In-Reply-To=%3C4a3c8407158d8_7beb3fb1668d5ef8768e%40app02.zenbe.com.tmail%3E"
+           TITLE="[JVerein-Mailliste] Testcases">a_henke at gmx.de
+                  </A><BR>
+    <I>Sa Jun 20 08:39:03 CEST 2009</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000058.html">[JVerein-Mailliste] Neue Entwicklerversion
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000060.html">[JVerein-Mailliste] Testcases
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#59">[ Datum ]</a>
+              <a href="thread.html#59">[ Thema ]</a>
+              <a href="subject.html#59">[ Betreff (Subject) ]</a>
+              <a href="author.html#59">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hallo Heiner,
+
+bei meinen ersten Schritten in der Anwendung sind mir folgenden Sachen aufgefallen - eher Kleinigkeiten und ist ja auch noch eine Entwicklerversion
+
+UseCase &quot;Mitglied suchen&quot;
+- Fehlermeldung das keine Beitragsgruppe vorhanden ist verweist nicht auf den richtigen Pfad &gt; &quot;Plugins|JVerein|Beitragsgruppe&quot; anstatt &quot;Administration|Beitragsgruppe&quot;
+
+UseCase &quot;Mitglied anlegen&quot;
+- Vorname, Name, Geschlecht, Beitragsgruppe nicht als Pflichtfeld (orange) markiert
+- Geschlecht nur als &quot;m&quot; und &quot;w&quot; in der Auswahl vorhanden. Männlich, weiblich wäre vielleicht sprechender
+
+UseCase &quot;Beitragsgruppe anlegen&quot;
+- Cursor auf Feld &quot;Bezeichnung&quot; initial nicht vorhanden
+- Betrag &quot;10..............................,10&quot; wird akzeptiert und als Betrag &quot;10,10&quot; gespeichert
+
+UseCase &quot;Beitragsgruppe löschen&quot;
+- Wird einen bereits verwendete Beitragsgruppe gelöscht, gibt es zwar eine Fehlermeldung, aber keine genaue Informationen warum das Löschen fehl geschlagen ist. Schaut man im Stacktrace nach, gibt es auf der DB eine ForeignKey-Constraint Verletzung und danach eine Nullpointer-Exception.
+
+
+Dann habe ich überlegt, ob Testcase-Beschreibungen sinnvoll wären und habe mal folgende initial erstellt:
+
+##### Testcases (V1.2.0-devel-181) :
+
+
+## UseCase &quot;Pflege der Stammdaten&quot;
+
+1.1 Stammdaten ändern (Administration -&gt; Stammdaten)
+
+Voraussetzung
+keine
+
+Durchführung
+- Name des Vereins eingeben (Pflichtfeld, nicht mehr als 27 Zeichen)
+- Bankleitzahl eingeben (Pflichtfeld, nicht mehr als 7 Zeichen)
+- Konto Nummer eingeben (Pflichtfeld, nicht mehr als 10 Zeichen)
+- Altersgruppen eingeben (Format &quot;0-6,7-10&quot;)
+- Jubiläen eingeben (Format &quot;10,20&quot;)
+- Altersjubiläen (Format &quot;10,20&quot;)  
+- Den Button &quot;speichern&quot; betätigen oder Taste &quot;Enter&quot; drücken
+
+Erwartetes Ergebnis
+Die Stammdaten werden gespeichert
+
+
+## UseCase &quot;Pflege der Beitragsgruppe&quot;
+
+2.1 Beitragsgruppe anlegen (Administration -&gt; Beitragsgruppen -&gt; neu)
+
+Voraussetzung
+keine
+
+Durchführung
+- Bezeichnung eingeben (Pflichtfeld - nicht mehr als 30 Zeichen)
+- Betrag eingeben (Pflichtfeld - Zahl)
+- Beitragsart auswählen
+- Den Button &quot;speichern&quot; betätigen oder Taste &quot;Enter&quot; drücken
+
+Erwartetes Ergebnis
+Die Beitragsgruppe wird gespeichert
+
+2.2 Beitragsgruppe ändern (Administration -&gt; Beitragsgruppen -&gt; Doppelklick in Liste)
+
+Voraussetzung
+Beitragsgruppe wurde angelegt
+
+Durchführung
+- Bezeichnung ändern (Pflichtfeld - nicht mehr als 30 Zeichen)
+- Betrag ändern (Pflichtfeld - Zahl)
+- Beitragsart ändern
+- Den Button &quot;speichern&quot; betätigen oder Taste &quot;Enter&quot; drücken
+
+Erwartetes Ergebnis
+Die Beitragsgruppe wird gespeichert und Änderungen werden übernommen
+
+2.3 Beitragsgruppe löschen ohne Verwendung bei den Mitgliedern (Administration -&gt; Beitragsgruppen -&gt; löschen)
+
+Voraussetzung
+keine
+
+Durchführung
+- Beitragsgruppe in der Liste der Beitragsgruppen auswählen
+- Button &quot;löschen&quot; betätigen
+
+Erwartetes Ergebnis
+Beitragsgruppe wird gelöscht und ist in der der Liste nicht mehr sichtbar
+
+2.4 Beitragsgruppe löschen mit Verwendung bei den Mitgliedern (Administration -&gt; Beitragsgruppen -&gt; löschen)
+
+Voraussetzung
+Es wurden bereits Mitglieder angelegt, die die Beitragsgruppe verwenden
+
+Durchführung
+- Beitragsgruppe in der Liste der Beitragsgruppen auswählen
+- Button &quot;löschen&quot; betätigen
+- Bestätigungsdialog mit ja bestätigen
+
+Erwartetes Ergebnis
+Beitragsgruppe wird nicht gelöscht. Es erscheint eine Fehlermeldung &quot;Fehler beim Löschen der Beitragsgruppe&quot;.
+
+#####
+
+
+Was hällst du von den Testcases? Macht das Sinn? Soll ich die im Wiki dokumentieren? Ist natürlich initial ne Menge Fleißarbeit
+
+Gruß
+André
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000058.html">[JVerein-Mailliste] Neue Entwicklerversion
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000060.html">[JVerein-Mailliste] Testcases
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#59">[ Datum ]</a>
+              <a href="thread.html#59">[ Thema ]</a>
+              <a href="subject.html#59">[ Betreff (Subject)]</a>
+              <a href="author.html#59">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

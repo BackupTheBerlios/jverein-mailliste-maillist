@@ -1,0 +1,20 @@
+From heiner at jost-net.de  Sat Feb  9 15:43:52 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sat, 09 Feb 2008 15:43:52 +0100
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <47ADBC28.9050205@jost-net.de>
+
+Hallo,
+
+ich habe gerade eine neue Entwicklerversion hochgeladen.
+
+Änderungen:
+
+    * Bugfix bei der Abbuchung: Zusatzabbuchung und Kursteilnehmer nur
+      abbuchen, wenn entsprechendes Häkchen gesetzt ist.
+    * MySQL-Treiber entfernt. Wird jetzt von Jameica mitgeliefert.
+
+
+Heiner
+
+

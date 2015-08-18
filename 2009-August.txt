@@ -1,0 +1,181 @@
+From heiner at jost-net.de  Sun Aug  9 18:16:29 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 09 Aug 2009 18:16:29 +0200
+Subject: [JVerein-Mailliste] Release-Kandidaten 1 der Version 1.2
+Message-ID: <4A7EF65D.6000708@jost-net.de>
+
+Hallo,
+
+ich habe gerade den Release-Kandidaten 1 der Version 1.2 zur Verfügung 
+gestellt. Sofern keine gravierenden Fehler gemeldet werden, wird die 
+Version 1.2 zusammen mit den neuen Jameica und Hibiscus-Versionen released.
+
+Bitte testet ausgiebig. Für den Test ist der Einsatz eines aktuellen 
+Nightly-Builds von Jameica und Hibiscus erforderlich.
+
+Heiner
+
+
+From s-kuebel at web.de  Mon Aug 17 00:01:42 2009
+From: s-kuebel at web.de (=?iso-8859-15?Q?Siegfried_K=FCbel?=)
+Date: Mon, 17 Aug 2009 00:01:42 +0200
+Subject: [JVerein-Mailliste] =?iso-8859-15?q?PDF_wird_nur_noch_mit_GIMP_ge?=
+	=?iso-8859-15?q?=F6ffnet_anstatt_mit_xpdf?=
+Message-ID: <1008311535@web.de>
+
+Hallo,
+
+ich bin vor einigen Wochen auf der Suche nach einem Vereinsprogramm das auch unter Linux läuft auf JVerein gestoßen, das mir sehr gut gefällt. 
+
+Nachdem ich allerdings meinen Rechner von openSuse 11.0 auf openSuse 11.1 upgedatet habe (mit KDE 4.2.x) öffnet JVerein (mir scheint alle jameica-Anwedungen) die pdf-Auswertungen nur noch mit Gimp (anstatt mit xpdf). Wenn ich in Dolphin ein pdf öffne wird automatisch xpdf verwendet und so ist es auch in den Systemeinstellungen in der Reihenfolge eingestellt. 
+
+Hat jemand eine Idee?
+
+Danke schon mal im voraus.
+
+Gruß
+Siegfried
+
+
+
+From hibiscus at willuhn.de  Mon Aug 17 00:36:52 2009
+From: hibiscus at willuhn.de (Olaf Willuhn)
+Date: Mon, 17 Aug 2009 00:36:52 +0200
+Subject: [JVerein-Mailliste]
+	=?iso-8859-1?q?PDF_wird_nur_noch_mit_GIMP_ge?=
+	=?iso-8859-1?q?=F6ffnet_anstatt_mit_xpdf?=
+In-Reply-To: <1008311535@web.de>
+References: <1008311535@web.de>
+Message-ID: <200908170036.53072.hibiscus@willuhn.de>
+
+Hi,
+
+> ich bin vor einigen Wochen auf der Suche nach einem Vereinsprogramm das
+> auch unter Linux läuft auf JVerein gestoßen, das mir sehr gut gefällt.
+>
+> Nachdem ich allerdings meinen Rechner von openSuse 11.0 auf openSuse 11.1
+> upgedatet habe (mit KDE 4.2.x) öffnet JVerein (mir scheint alle
+> jameica-Anwedungen) die pdf-Auswertungen nur noch mit Gimp (anstatt mit
+> xpdf). Wenn ich in Dolphin ein pdf öffne wird automatisch xpdf verwendet
+> und so ist es auch in den Systemeinstellungen in der Reihenfolge
+> eingestellt.
+>
+> Hat jemand eine Idee?
+
+JVerein kann da aber auch nichts dafuer ;)
+Meines Wissens nach uebergibt es die PDF-Datei lediglich zum Oeffnen
+an das System. Das entscheidet dann selbst anhand des Mime-Types,
+mit welcher Anwendung es geoeffnet wird. Die Tatsache, dass es in
+Dolphin funktioniert, liegt einfach daran, dass Dolphin zu KDE
+gehoert und dieser Desktop eine eigene Konfiguration der Zuordnung
+von Mime-Type zu Programm besitzt. JVerein basiert jedoch auf
+Jameica, welches unter der Haube SWT verwendet. Das wiederrum nutzt
+unter Linux GTK als Widget-Toolkit. Und das wiederrum ist Bestandteil
+von Gnome. Heisst: Die Ursache fuer die falsche Dateizuordnung
+ist Gnome. Ich selbst nutze Gnome nicht, von daher weiss ich auch
+nicht, wo man da die Mime-Types konfiguriert. Aber ich koennte
+mir vorstellen, dass man das im "gnome-control-center" machen kann.
+
+Gruss
+Olaf
+
+
+From s-kuebel at web.de  Tue Aug 18 00:11:00 2009
+From: s-kuebel at web.de (=?iso-8859-15?Q?Siegfried_K=FCbel?=)
+Date: Tue, 18 Aug 2009 00:11:00 +0200
+Subject: [JVerein-Mailliste]
+ =?iso-8859-15?q?PDF_wird_nur_noch_mit_GIMP_ge?=
+ =?iso-8859-15?q?=F6ffnet_anstatt_mit_xpdf?=
+Message-ID: <1009082093@web.de>
+
+Hallo,
+
+vielen Dank für den Tipp, dass jameica mit GTK als Widget-Toolkit basiert und damit die Gnome-Konfiguration relevant ist. Da der "Gnome Control Center" bei mir nicht installiert ist muss man einfach die Datei /var/cache/gio-2.0/defaults.list abändern und schon funktioniert das Ganze.
+
+Problem gelöst!
+
+Danke und Gruß
+Siegfried
+
+
+> -----Ursprüngliche Nachricht-----
+> Von: "Olaf Willuhn" <hibiscus at willuhn.de>
+> Gesendet: 17.08.09 00:46:52
+> An: jverein-mailliste at lists.berlios.de
+> Betreff: Re: [JVerein-Mailliste] PDF wird nur noch mit GIMP geöffnet anstatt mit xpdf
+
+
+> Hi,
+> 
+> > ich bin vor einigen Wochen auf der Suche nach einem Vereinsprogramm das
+> > auch unter Linux läuft auf JVerein gestoßen, das mir sehr gut gefällt.
+> >
+> > Nachdem ich allerdings meinen Rechner von openSuse 11.0 auf openSuse 11.1
+> > upgedatet habe (mit KDE 4.2.x) öffnet JVerein (mir scheint alle
+> > jameica-Anwedungen) die pdf-Auswertungen nur noch mit Gimp (anstatt mit
+> > xpdf). Wenn ich in Dolphin ein pdf öffne wird automatisch xpdf verwendet
+> > und so ist es auch in den Systemeinstellungen in der Reihenfolge
+> > eingestellt.
+> >
+> > Hat jemand eine Idee?
+> 
+> JVerein kann da aber auch nichts dafuer ;)
+> Meines Wissens nach uebergibt es die PDF-Datei lediglich zum Oeffnen
+> an das System. Das entscheidet dann selbst anhand des Mime-Types,
+> mit welcher Anwendung es geoeffnet wird. Die Tatsache, dass es in
+> Dolphin funktioniert, liegt einfach daran, dass Dolphin zu KDE
+> gehoert und dieser Desktop eine eigene Konfiguration der Zuordnung
+> von Mime-Type zu Programm besitzt. JVerein basiert jedoch auf
+> Jameica, welches unter der Haube SWT verwendet. Das wiederrum nutzt
+> unter Linux GTK als Widget-Toolkit. Und das wiederrum ist Bestandteil
+> von Gnome. Heisst: Die Ursache fuer die falsche Dateizuordnung
+> ist Gnome. Ich selbst nutze Gnome nicht, von daher weiss ich auch
+> nicht, wo man da die Mime-Types konfiguriert. Aber ich koennte
+> mir vorstellen, dass man das im "gnome-control-center" machen kann.
+> 
+> Gruss
+> Olaf
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+> 
+
+
+
+
+From heiner at jost-net.de  Mon Aug 24 19:37:26 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 24 Aug 2009 19:37:26 +0200
+Subject: [JVerein-Mailliste] JVerein-Version 1.2
+Message-ID: <4A92CFD6.4030401@jost-net.de>
+
+Hallo,
+
+nachdem Olaf gestern Jameica und Hibiscus freigegeben hat, habe ich 
+heute die Version 1.2 von JVerein freigegeben.
+
+Die wichtigsten Änderungen:
+
+    * Überarbeitung der Mitgliedermaske, Die Felder Name, Vorname und
+      Straße sind jetzt Suchfelder, die den Inhalt bereits gespeicherter
+      Mitglieder anzeigen.
+    * Neue Box "aktuelle Geburtstage". Wird unter dem Menüpunkt Jameica
+      mit dem Button "Startseite anpassen" aktiviert.
+    * Die Menüpunkte von Plugins>JVerein ins Hauptmenü kopiert
+    * Juristische Personen (Firmen, Organisationen, Behörden) können als
+      Mitglied gespeichert werden.
+    * Lehrgänge
+    * Zusätzliche Felder zur Rechnungserstellung.
+    * Silbentrennung in Reports aufgenommen
+    * Icons auf Buttons
+    * Export der Mitgliederdaten als Adressbuch für div. Mail-Programmme
+    * Div. Bugfixes
+
+Außerdem habe ich der Homepage ein neues Design verpasst. Nebenbei wurde 
+die Geschwindigkeit durch den Wegfalls des MediaWikis erhöht.
+
+Heiner
+
+
+

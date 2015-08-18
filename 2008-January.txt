@@ -1,0 +1,35 @@
+From heiner at jost-net.de  Sun Jan 27 12:14:12 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 27 Jan 2008 12:14:12 +0100
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <479C6784.1070409@jost-net.de>
+
+Hallo,
+
+nach langer Enthaltsamkeit in dieser Mail-Liste schicke ich mal wieder 
+eine Nachricht.
+
+Heute habe ich eine neue Entwicklerversion freigegeben. Damit ist es 
+möglich, jedem Mitglied eine oder mehrere Eigenschaften zuzuordnen. Die 
+Eigenschaften sind frei definierbar. Die Suche der Mitglieder und die 
+Auswertung der Mitglieder wurde entsprechend erweitert.
+
+Viel Spaß beim Test.
+
+Heiner
+
+
+From heiner at jost-net.de  Thu Jan 31 19:27:54 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Thu, 31 Jan 2008 19:27:54 +0100
+Subject: [JVerein-Mailliste] MySQL-Support in JVerein
+Message-ID: <47A2132A.9060708@jost-net.de>
+
+Hallo,
+
+am 29.01.2008 habe ich eine neue JVerein-Entwickler-Version hochgeladen. 
+Jetzt wird auch MySQL von JVerein unterstützt.
+
+Heiner
+
+

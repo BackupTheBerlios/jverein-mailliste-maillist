@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste]  Re: Problem mit DTAUS Datei
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2009-June/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20%20Re%3A%20Problem%20mit%20DTAUS%20Datei&In-Reply-To=%3C71bab5a0906220550t4d99a540l9651a37af495c2e5%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000066.html">
+   <LINK REL="Next"  HREF="000068.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste]  Re: Problem mit DTAUS Datei</H1>
+    <B>Ansgar Schrage</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20%20Re%3A%20Problem%20mit%20DTAUS%20Datei&In-Reply-To=%3C71bab5a0906220550t4d99a540l9651a37af495c2e5%40mail.gmail.com%3E"
+           TITLE="[JVerein-Mailliste]  Re: Problem mit DTAUS Datei">ansgar.schrage at bigfoot.com
+                  </A><BR>
+    <I>Mo Jun 22 14:50:22 CEST 2009</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000066.html">[JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,	Band 17, Eintrag 8
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000068.html">[JVerein-Mailliste] Anregung für eine Sammel-Spendenbescheinigung
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#67">[ Datum ]</a>
+              <a href="thread.html#67">[ Thema ]</a>
+              <a href="subject.html#67">[ Betreff (Subject) ]</a>
+              <a href="author.html#67">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hallo Heiner,
+
+so, das Problem ist gelöst.
+
+Es lag nicht an JVerein bzw. der Bibliothek OBanToo.
+
+Derjenige, der die DTAUS-Datei an die Bank gesendet hatte verwendet in
+seiner Firma eine Software Namens Mailina. Diese soll dafür sorgen, dass man
+keine Viren und Spam versendet. Leider hat diese Software die DTAUS-Datei
+mit einer 'mailina-ID' versehen. Dadurch wurde natürlich Inhalt und Größe
+der DTAUS-Datei verändert und somit von der Sparkassen Software nicht mehr
+akzeptiert. Nachdem dann die Datei erst gezippt wurde und dann versendet,
+war alles OK.
+
+Das bei der Anzeige mit dem Programm Notepad unter Windows Zeilenumbrüche
+angezeigt werden, ist wohl ein Bug (Feature) in Notepad. Generell wird dort
+nach 1024 Zeichen ein Zeilenumbruch auf dem Bildschirm angezeigt.. Schaut
+man sich die Datei mit Wordpad an ist alles OK.
+
+Gruß
+Ansgar
+
+
+Am 20. Juni 2009 18:54 schrieb Heiner Jostkleigrewe &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">heiner at jost-net.de</A>&gt;:
+
+&gt;<i> Hallo Ansgar,
+</I>&gt;<i>
+</I>&gt;<i> Hibiscus und JVerein nutzen zur Verarbeitung von DTAUS die Bibliothek
+</I>&gt;<i> OBanToo. Diese Bibliothek wird auch von Anderen benutzt.
+</I>&gt;<i>
+</I>&gt;<i> Da ich selber Autor dieser Bibliothek bin, ist mir bekannt, dass es zur
+</I>&gt;<i> Zeit keine offenen Fehlermeldungen gibt. Es ist korrekt, dass Ä,Ö,Ü als
+</I>&gt;<i> [,\,] dargestellt werden. Das ist die Zeichensatzkonvention.
+</I>&gt;<i>
+</I>&gt;<i> Kann es sein, dass du oder die Bank die Datei mit einem Texteditor geöffnet
+</I>&gt;<i> und wieder gespeichert haben?
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Heiner
+</I>&gt;<i>
+</I>&gt;<i> Ansgar Schrage schrieb:
+</I>&gt;<i>
+</I>&gt;&gt;<i> Hallo,
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> hatte schon jemand Probleme, dass die DTAUS-Datei von der Bank nicht
+</I>&gt;&gt;<i> eingelesen werden kann?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Ein Mitarbeiter von der Sparkasse teilte mit, dass es Probleme mit den
+</I>&gt;&gt;<i> Zeilenumbrüchen gibt. Leider habe ich mit dem Mitarbeiter nicht selbst
+</I>&gt;&gt;<i> sprechen können, da ich nicht die Datei selbst abgegeben hatte, werde
+</I>&gt;&gt;<i> das aber am Montag nachholen.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Eine Idee die ich hätte ist, dass die DTAUS-Datei ja unter Linux
+</I>&gt;&gt;<i> erstellt worden und die Zeilenumbrüche bei Windows anders kodiert
+</I>&gt;&gt;<i> werden. Aber eine Bank müsste doch auch UNIX-Textdateien verarbeiten
+</I>&gt;&gt;<i> können? Allerdings wenn ich mir die Datei anschaue, dann sehe nur eine
+</I>&gt;&gt;<i> lange Zeile.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Des Weiteren habe ich aber auch in der DTAUS-Datei gesehen, dass
+</I>&gt;&gt;<i> Umlaute nicht dargestellt werden statt einem 'Ü' wird z.B. ein ']'
+</I>&gt;&gt;<i> dargestellt.
+</I>&gt;&gt;<i> Darf man bei Vereinsnamen und Mitgliedernamen keine Umlaute verwenden?
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> JVerein wird unter Linux genutzt mit dem Zeichensatz UTF-8
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> Gruß
+</I>&gt;&gt;<i> Ansgar
+</I>&gt;&gt;<i> _______________________________________________
+</I>&gt;&gt;<i> JVerein-Mailliste mailing list
+</I>&gt;&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">JVerein-Mailliste at lists.berlios.de</A>
+</I>&gt;&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">https://lists.berlios.de/mailman/listinfo/jverein-mailliste</A>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20090622/9fd7d155/attachment.html">https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20090622/9fd7d155/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000066.html">[JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,	Band 17, Eintrag 8
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000068.html">[JVerein-Mailliste] Anregung für eine Sammel-Spendenbescheinigung
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#67">[ Datum ]</a>
+              <a href="thread.html#67">[ Thema ]</a>
+              <a href="subject.html#67">[ Betreff (Subject)]</a>
+              <a href="author.html#67">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

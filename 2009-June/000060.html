@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste] Testcases
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2009-June/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Testcases&In-Reply-To=%3C4A3C94BF.40707%40jost-net.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000059.html">
+   <LINK REL="Next"  HREF="000061.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste] Testcases</H1>
+    <B>Heiner Jostkleigrewe</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Testcases&In-Reply-To=%3C4A3C94BF.40707%40jost-net.de%3E"
+           TITLE="[JVerein-Mailliste] Testcases">heiner at jost-net.de
+                  </A><BR>
+    <I>Sa Jun 20 09:50:23 CEST 2009</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000059.html">[JVerein-Mailliste] Testcases
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000061.html">[JVerein-Mailliste] Problem mit DTAUS Datei
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#60">[ Datum ]</a>
+              <a href="thread.html#60">[ Thema ]</a>
+              <a href="subject.html#60">[ Betreff (Subject) ]</a>
+              <a href="author.html#60">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hallo Andre,
+
+&gt;<i> bei meinen ersten Schritten in der Anwendung sind mir folgenden Sachen aufgefallen - eher Kleinigkeiten und ist ja auch noch eine Entwicklerversion
+</I>&gt;<i>
+</I>&gt;<i> UseCase &quot;Mitglied suchen&quot;
+</I>&gt;<i> - Fehlermeldung das keine Beitragsgruppe vorhanden ist verweist nicht auf den richtigen Pfad &gt; &quot;Plugins|JVerein|Beitragsgruppe&quot; anstatt &quot;Administration|Beitragsgruppe&quot;
+</I>&gt;<i>   
+</I>Momentan sind beide Pfade korrekt. Ursprünglich wurden die 
+Beitragsgruppen unter Plugins|... eingestellt. Es gab aber bei den 
+Benutzern immer wieder Verwirrungen mit dem Plugins-Menü. Deshalb habe 
+ich mich entschlossen zur Version 1.2 die gleichen Menüpunkte auch ins 
+Administrationsmenü aufzunehmen. Vermutlich werde ich zur 1.3 das 
+Plugins-Menü für JVerein entfernen.
+&gt;<i> UseCase &quot;Mitglied anlegen&quot;
+</I>&gt;<i> - Vorname, Name, Geschlecht, Beitragsgruppe nicht als Pflichtfeld (orange) markiert
+</I>&gt;<i> - Geschlecht nur als &quot;m&quot; und &quot;w&quot; in der Auswahl vorhanden. Männlich, weiblich wäre vielleicht sprechender
+</I>&gt;<i>   
+</I>Das habe ich mir neulich auch schon gedacht. Wird in kürze realisiert.
+&gt;<i> UseCase &quot;Beitragsgruppe anlegen&quot;
+</I>&gt;<i> - Cursor auf Feld &quot;Bezeichnung&quot; initial nicht vorhanden
+</I>&gt;<i> - Betrag &quot;10..............................,10&quot; wird akzeptiert und als Betrag &quot;10,10&quot; gespeichert
+</I>&gt;<i>   
+</I>Bug oder Feature?
+&gt;<i> UseCase &quot;Beitragsgruppe löschen&quot;
+</I>&gt;<i> - Wird einen bereits verwendete Beitragsgruppe gelöscht, gibt es zwar eine Fehlermeldung, aber keine genaue Informationen warum das Löschen fehl geschlagen ist. Schaut man im Stacktrace nach, gibt es auf der DB eine ForeignKey-Constraint Verletzung und danach eine Nullpointer-Exception.
+</I>&gt;<i>   
+</I>Habe ich als Bug aufgenommen: 
+<A HREF="https://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=15892&amp;group_id=7335">https://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=15892&amp;group_id=7335</A>
+&gt;<i>
+</I>&gt;<i> Dann habe ich überlegt, ob Testcase-Beschreibungen sinnvoll wären und habe mal folgende initial erstellt:
+</I>&gt;<i>
+</I>&gt;<i> ##### Testcases (V1.2.0-devel-181) :
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> ## UseCase &quot;Pflege der Stammdaten&quot;
+</I>&gt;<i>
+</I>&gt;<i> 1.1 Stammdaten ändern (Administration -&gt; Stammdaten)
+</I>&gt;<i>
+</I>&gt;<i> Voraussetzung
+</I>&gt;<i> keine
+</I>&gt;<i>
+</I>&gt;<i> Durchführung
+</I>&gt;<i> - Name des Vereins eingeben (Pflichtfeld, nicht mehr als 27 Zeichen)
+</I>&gt;<i> - Bankleitzahl eingeben (Pflichtfeld, nicht mehr als 7 Zeichen)
+</I>&gt;<i> - Konto Nummer eingeben (Pflichtfeld, nicht mehr als 10 Zeichen)
+</I>&gt;<i> - Altersgruppen eingeben (Format &quot;0-6,7-10&quot;)
+</I>&gt;<i> - Jubiläen eingeben (Format &quot;10,20&quot;)
+</I>&gt;<i> - Altersjubiläen (Format &quot;10,20&quot;)  
+</I>&gt;<i> - Den Button &quot;speichern&quot; betätigen oder Taste &quot;Enter&quot; drücken
+</I>&gt;<i>
+</I>&gt;<i> Erwartetes Ergebnis
+</I>&gt;<i> Die Stammdaten werden gespeichert
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> ## UseCase &quot;Pflege der Beitragsgruppe&quot;
+</I>&gt;<i>
+</I>&gt;<i> 2.1 Beitragsgruppe anlegen (Administration -&gt; Beitragsgruppen -&gt; neu)
+</I>&gt;<i>
+</I>&gt;<i> Voraussetzung
+</I>&gt;<i> keine
+</I>&gt;<i>
+</I>&gt;<i> Durchführung
+</I>&gt;<i> - Bezeichnung eingeben (Pflichtfeld - nicht mehr als 30 Zeichen)
+</I>&gt;<i> - Betrag eingeben (Pflichtfeld - Zahl)
+</I>&gt;<i> - Beitragsart auswählen
+</I>&gt;<i> - Den Button &quot;speichern&quot; betätigen oder Taste &quot;Enter&quot; drücken
+</I>&gt;<i>
+</I>&gt;<i> Erwartetes Ergebnis
+</I>&gt;<i> Die Beitragsgruppe wird gespeichert
+</I>&gt;<i>
+</I>&gt;<i> 2.2 Beitragsgruppe ändern (Administration -&gt; Beitragsgruppen -&gt; Doppelklick in Liste)
+</I>&gt;<i>
+</I>&gt;<i> Voraussetzung
+</I>&gt;<i> Beitragsgruppe wurde angelegt
+</I>&gt;<i>
+</I>&gt;<i> Durchführung
+</I>&gt;<i> - Bezeichnung ändern (Pflichtfeld - nicht mehr als 30 Zeichen)
+</I>&gt;<i> - Betrag ändern (Pflichtfeld - Zahl)
+</I>&gt;<i> - Beitragsart ändern
+</I>&gt;<i> - Den Button &quot;speichern&quot; betätigen oder Taste &quot;Enter&quot; drücken
+</I>&gt;<i>
+</I>&gt;<i> Erwartetes Ergebnis
+</I>&gt;<i> Die Beitragsgruppe wird gespeichert und Änderungen werden übernommen
+</I>&gt;<i>
+</I>&gt;<i> 2.3 Beitragsgruppe löschen ohne Verwendung bei den Mitgliedern (Administration -&gt; Beitragsgruppen -&gt; löschen)
+</I>&gt;<i>
+</I>&gt;<i> Voraussetzung
+</I>&gt;<i> keine
+</I>&gt;<i>
+</I>&gt;<i> Durchführung
+</I>&gt;<i> - Beitragsgruppe in der Liste der Beitragsgruppen auswählen
+</I>&gt;<i> - Button &quot;löschen&quot; betätigen
+</I>&gt;<i>
+</I>&gt;<i> Erwartetes Ergebnis
+</I>&gt;<i> Beitragsgruppe wird gelöscht und ist in der der Liste nicht mehr sichtbar
+</I>&gt;<i>
+</I>&gt;<i> 2.4 Beitragsgruppe löschen mit Verwendung bei den Mitgliedern (Administration -&gt; Beitragsgruppen -&gt; löschen)
+</I>&gt;<i>
+</I>&gt;<i> Voraussetzung
+</I>&gt;<i> Es wurden bereits Mitglieder angelegt, die die Beitragsgruppe verwenden
+</I>&gt;<i>
+</I>&gt;<i> Durchführung
+</I>&gt;<i> - Beitragsgruppe in der Liste der Beitragsgruppen auswählen
+</I>&gt;<i> - Button &quot;löschen&quot; betätigen
+</I>&gt;<i> - Bestätigungsdialog mit ja bestätigen
+</I>&gt;<i>
+</I>&gt;<i> Erwartetes Ergebnis
+</I>&gt;<i> Beitragsgruppe wird nicht gelöscht. Es erscheint eine Fehlermeldung &quot;Fehler beim Löschen der Beitragsgruppe&quot;.
+</I>&gt;<i>
+</I>&gt;<i> #####
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Was hällst du von den Testcases? Macht das Sinn? Soll ich die im Wiki dokumentieren? Ist natürlich initial ne Menge Fleißarbeit
+</I>&gt;<i>   
+</I>Die Idee halte ich für sehr gut. Allerdings ist das Wiki bei JVerein ein 
+Auslaufmodell. Auf der einen Seite ist es von der Geschwindigkeit sehr 
+träge. Auf der anderen Seite gab es auch schon einen Missbrauch des Wiki 
+für &quot;Schmuddelseiten&quot;. Da ich keine Zeit habe, das Wiki laufend zu 
+kontrollieren, bin ich momentan dabei, die Web-Site auf traditionelles 
+HTML zurückzubauen. Schicke mir die Testcases im HTML-,  Text-, 
+Openoffice- oder Winword-Format zu. Ich werde eine Konvertierung 
+vornehmen. Zusätzlich werde ich einige Checks mittels JUnit-Tests 
+durchführen.
+
+Heiner
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000059.html">[JVerein-Mailliste] Testcases
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000061.html">[JVerein-Mailliste] Problem mit DTAUS Datei
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#60">[ Datum ]</a>
+              <a href="thread.html#60">[ Thema ]</a>
+              <a href="subject.html#60">[ Betreff (Subject)]</a>
+              <a href="author.html#60">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

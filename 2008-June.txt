@@ -1,0 +1,214 @@
+From joerg.roemhild at arcor.de  Sun Jun 29 11:29:23 2008
+From: joerg.roemhild at arcor.de (=?ISO-8859-1?Q?J=F6rg_R=F6mhild?=)
+Date: Sun, 29 Jun 2008 11:29:23 +0200
+Subject: [JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann
+	nicht angelegt werden.
+Message-ID: <1214731763.6147.19.camel@susi>
+
+Beim ersten Start gibt es ein Problem beim anlegen der Datenbank für
+JVerein.
+
+error while executing sql script. Current statement: 
+
+CREATE TABLE buchung(id            CREATE TABLE konto(id
+IDENTITY,nummer        VARCHAR(10),bezeichnung   VARCHAR(30),aufloesung
+DATE,hibiscusid    INTEGER,UNIQUE        (id),UNIQUE
+(nummer),PRIMARY KEY   (id))
+org.h2.jdbc.JdbcSQLException: Unbekannter Datentyp: CREATE
+
+
+Ursache: Das Statement stimmt nicht oder ist unvollständig.
+...
+?CREATE TABLE buchung(id            CREATE TABLE konto(id           
+...
+
+Create table buchung(id ... und Rest fehlt.
+
+
+Gruß Jörg
+
+
+
+
+
+
+From heiner at jost-net.de  Sun Jun 29 11:39:57 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 29 Jun 2008 11:39:57 +0200
+Subject: [JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann
+ nicht angelegt werden.
+In-Reply-To: <1214731763.6147.19.camel@susi>
+References: <1214731763.6147.19.camel@susi>
+Message-ID: <4867586D.3050209@jost-net.de>
+
+Hallo Jörg,
+
+kann es sein, dass du eine neue Datenbank einrichten willst? Da ist 
+tatsächlich noch ein Fehler im SQL-Script, den ich gerade beseitigt 
+habe. Du kannst den Test aber auch wie in meiner Mail beschrieben 
+durchführen:
+
+Lade dir bitte die neuesten Jameica- und Hibiscus-Nightlies. 
+Entpacke Jameica in ein "frisches" Verzeichnis. In diesem Verzeichnis 
+gibt es dann ein plugins-Verzeichnis. Hier hinein entpackst du Hibiscus 
+und JVerein. Dann kopierst du dein .jameica-Verzeichnis unter anderem 
+Namen. Der Aufruf von Jameica erfolgt aus dem neuen Jameica-Verzeichnis 
+mit dem Parameter -f neues_jameica_datenverzeichnis .
+
+So sollte es funktionieren.
+
+Heiner
+
+
+
+Jörg Römhild schrieb:
+> Beim ersten Start gibt es ein Problem beim anlegen der Datenbank für
+> JVerein.
+>
+> error while executing sql script. Current statement: 
+>
+> CREATE TABLE buchung(id            CREATE TABLE konto(id
+> IDENTITY,nummer        VARCHAR(10),bezeichnung   VARCHAR(30),aufloesung
+> DATE,hibiscusid    INTEGER,UNIQUE        (id),UNIQUE
+> (nummer),PRIMARY KEY   (id))
+> org.h2.jdbc.JdbcSQLException: Unbekannter Datentyp: CREATE
+>
+>
+> Ursache: Das Statement stimmt nicht oder ist unvollständig.
+> ...
+> ?CREATE TABLE buchung(id            CREATE TABLE konto(id           
+> ...
+>
+> Create table buchung(id ... und Rest fehlt.
+>
+>
+> Gruß Jörg
+>
+>
+>
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>   
+
+
+From joerg.roemhild at arcor.de  Sun Jun 29 11:47:46 2008
+From: joerg.roemhild at arcor.de (=?ISO-8859-1?Q?J=F6rg_R=F6mhild?=)
+Date: Sun, 29 Jun 2008 11:47:46 +0200
+Subject: [JVerein-Mailliste] =?iso-8859-1?q?L=F6sung_Startup_Problem?=
+Message-ID: <1214732866.6147.27.camel@susi>
+
+Durch eine Korrektur am SQL-Skript für die H2 Datenbank kann das Problem
+behoben werden.
+
+Anbei das korrigierte Skript.
+
+Gruß Jörg
+-------------- nächster Teil --------------
+Ein Dateianhang mit Binärdaten wurde abgetrennt...
+Dateiname   : h2-create.sql
+Dateityp    : text/x-sql
+Dateigröße  : 5679 bytes
+Beschreibung: nicht verfügbar
+URL         : <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20080629/19787d0d/attachment.bin>
+
+From heiner at jost-net.de  Sun Jun 29 11:56:55 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 29 Jun 2008 11:56:55 +0200
+Subject: [JVerein-Mailliste] =?utf-8?q?L=C3=B6sung_Startup_Problem?=
+In-Reply-To: <1214732866.6147.27.camel@susi>
+References: <1214732866.6147.27.camel@susi>
+Message-ID: <48675C67.6000600@jost-net.de>
+
+Hallo Jörg,
+
+die Korrektur hatte ich vorhin schon vorgenommen.
+
+Heiner
+
+
+Jörg Römhild schrieb:
+> Durch eine Korrektur am SQL-Skript für die H2 Datenbank kann das Problem
+> behoben werden.
+>
+> Anbei das korrigierte Skript.
+>
+> Gruß Jörg
+>   
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+
+
+From joerg.roemhild at arcor.de  Sun Jun 29 12:00:48 2008
+From: joerg.roemhild at arcor.de (=?ISO-8859-1?Q?J=F6rg_R=F6mhild?=)
+Date: Sun, 29 Jun 2008 12:00:48 +0200
+Subject: [JVerein-Mailliste] PRoblem bei Imort mit Umlauten
+Message-ID: <1214733648.6147.34.camel@susi>
+
+Hallo Heier,
+es gibt ein Problem beim Import der Mitglieder, wenn Umlaute ä,ü,ö
+enthalten.
+
+Gruß Jörg
+-------------- nächster Teil --------------
+Ein Dateianhang mit Binärdaten wurde abgetrennt...
+Dateiname   : Import_umlaute.png
+Dateityp    : image/png
+Dateigröße  : 72149 bytes
+Beschreibung: nicht verfügbar
+URL         : <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20080629/729161e8/attachment.png>
+
+From joerg.roemhild at arcor.de  Sun Jun 29 12:14:06 2008
+From: joerg.roemhild at arcor.de (=?ISO-8859-1?Q?J=F6rg_R=F6mhild?=)
+Date: Sun, 29 Jun 2008 12:14:06 +0200
+Subject: [JVerein-Mailliste] Problem Startup
+Message-ID: <1214734446.6147.38.camel@susi>
+
+Hallo Heiner,
+okay - ich habe den Test etwas erweitert und eine komplett neue Instanz
+angelegt.
+Mit dem vorhandenen Daten-Verzeichnis gibt es kein Problem.
+
+Gruß Jörg
+
+
+
+From heiner at jost-net.de  Sun Jun 29 12:20:36 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 29 Jun 2008 12:20:36 +0200
+Subject: [JVerein-Mailliste] PRoblem bei Imort mit Umlauten
+In-Reply-To: <1214733648.6147.34.camel@susi>
+References: <1214733648.6147.34.camel@susi>
+Message-ID: <486761F4.2070101@jost-net.de>
+
+Hallo Jörg,
+
+die Eingabedatei muss ISO-8859-1-codiert sein.
+
+Heiner
+
+Jörg Römhild schrieb:
+> Hallo Heier,
+> es gibt ein Problem beim Import der Mitglieder, wenn Umlaute ä,ü,ö
+> enthalten.
+>
+> Gruß Jörg
+>   
+>
+> ------------------------------------------------------------------------
+>
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>   
+
+

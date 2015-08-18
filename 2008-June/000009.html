@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann nicht angelegt werden.
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2008-June/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Fehler%20bei%20Startup%20Jameica%20-%20Datenbank%20kann%0A%20nicht%20angelegt%20werden.&In-Reply-To=%3C4867586D.3050209%40jost-net.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000008.html">
+   <LINK REL="Next"  HREF="000010.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann nicht angelegt werden.</H1>
+    <B>Heiner Jostkleigrewe</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Fehler%20bei%20Startup%20Jameica%20-%20Datenbank%20kann%0A%20nicht%20angelegt%20werden.&In-Reply-To=%3C4867586D.3050209%40jost-net.de%3E"
+           TITLE="[JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann nicht angelegt werden.">heiner at jost-net.de
+                  </A><BR>
+    <I>So Jun 29 11:39:57 CEST 2008</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000008.html">[JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann	nicht angelegt werden.
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000010.html">[JVerein-Mailliste] Lösung Startup Problem
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#9">[ Datum ]</a>
+              <a href="thread.html#9">[ Thema ]</a>
+              <a href="subject.html#9">[ Betreff (Subject) ]</a>
+              <a href="author.html#9">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hallo Jörg,
+
+kann es sein, dass du eine neue Datenbank einrichten willst? Da ist 
+tatsächlich noch ein Fehler im SQL-Script, den ich gerade beseitigt 
+habe. Du kannst den Test aber auch wie in meiner Mail beschrieben 
+durchführen:
+
+Lade dir bitte die neuesten Jameica- und Hibiscus-Nightlies. 
+Entpacke Jameica in ein &quot;frisches&quot; Verzeichnis. In diesem Verzeichnis 
+gibt es dann ein plugins-Verzeichnis. Hier hinein entpackst du Hibiscus 
+und JVerein. Dann kopierst du dein .jameica-Verzeichnis unter anderem 
+Namen. Der Aufruf von Jameica erfolgt aus dem neuen Jameica-Verzeichnis 
+mit dem Parameter -f neues_jameica_datenverzeichnis .
+
+So sollte es funktionieren.
+
+Heiner
+
+
+
+Jörg Römhild schrieb:
+&gt;<i> Beim ersten Start gibt es ein Problem beim anlegen der Datenbank für
+</I>&gt;<i> JVerein.
+</I>&gt;<i>
+</I>&gt;<i> error while executing sql script. Current statement: 
+</I>&gt;<i>
+</I>&gt;<i> CREATE TABLE buchung(id            CREATE TABLE konto(id
+</I>&gt;<i> IDENTITY,nummer        VARCHAR(10),bezeichnung   VARCHAR(30),aufloesung
+</I>&gt;<i> DATE,hibiscusid    INTEGER,UNIQUE        (id),UNIQUE
+</I>&gt;<i> (nummer),PRIMARY KEY   (id))
+</I>&gt;<i> org.h2.jdbc.JdbcSQLException: Unbekannter Datentyp: CREATE
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Ursache: Das Statement stimmt nicht oder ist unvollständig.
+</I>&gt;<i> ...
+</I>&gt;<i> &#65279;CREATE TABLE buchung(id            CREATE TABLE konto(id           
+</I>&gt;<i> ...
+</I>&gt;<i>
+</I>&gt;<i> Create table buchung(id ... und Rest fehlt.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Gruß Jörg
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> JVerein-Mailliste mailing list
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">JVerein-Mailliste at lists.berlios.de</A>
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">https://lists.berlios.de/mailman/listinfo/jverein-mailliste</A>
+</I>&gt;<i>   
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000008.html">[JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann	nicht angelegt werden.
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000010.html">[JVerein-Mailliste] Lösung Startup Problem
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#9">[ Datum ]</a>
+              <a href="thread.html#9">[ Thema ]</a>
+              <a href="subject.html#9">[ Betreff (Subject)]</a>
+              <a href="author.html#9">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

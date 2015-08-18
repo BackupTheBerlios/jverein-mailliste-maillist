@@ -1,0 +1,99 @@
+From juliux at ubuntu-de.org  Sun Aug 31 13:58:00 2008
+From: juliux at ubuntu-de.org (Julius Bloch)
+Date: Sun, 31 Aug 2008 13:58:00 +0200
+Subject: [JVerein-Mailliste] jvereindaily build mysql
+Message-ID: <1220183880.9963.1.camel@seeler>
+
+Moin,
+ich habe versucht den Dailybuild von jverein mit MySQL zum laufen zu
+bringen. Nur leider fehlt das mysql-create.sql im jverein zip.
+Wo kann ich das finden?
+
+gruss
+
+julius
+-------------- nächster Teil --------------
+Ein Dateianhang mit Binärdaten wurde abgetrennt...
+Dateiname   : signature.asc
+Dateityp    : application/pgp-signature
+Dateigröße  : 189 bytes
+Beschreibung: Dies ist ein digital signierter Nachrichtenteil
+URL         : <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20080831/c82645af/attachment.pgp>
+
+From heiner at jost-net.de  Sun Aug 31 17:06:45 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 31 Aug 2008 17:06:45 +0200
+Subject: [JVerein-Mailliste] jvereindaily build mysql
+In-Reply-To: <1220183880.9963.1.camel@seeler>
+References: <1220183880.9963.1.camel@seeler>
+Message-ID: <48BAB385.8010908@jost-net.de>
+
+Hallo Julius,
+
+du findest das Script unter
+
+jameica/plugins/jverein/sql/mysql-create.sql
+
+Heiner
+
+Julius Bloch schrieb:
+> Moin,
+> ich habe versucht den Dailybuild von jverein mit MySQL zum laufen zu
+> bringen. Nur leider fehlt das mysql-create.sql im jverein zip.
+> Wo kann ich das finden?
+>
+> gruss
+>
+> julius
+>   
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>   
+
+
+From juliux at ubuntu-de.org  Sun Aug 31 17:48:44 2008
+From: juliux at ubuntu-de.org (Julius Bloch)
+Date: Sun, 31 Aug 2008 17:48:44 +0200
+Subject: [JVerein-Mailliste] jvereindaily build mysql
+In-Reply-To: <48BAB385.8010908@jost-net.de>
+References: <1220183880.9963.1.camel@seeler>  <48BAB385.8010908@jost-net.de>
+Message-ID: <1220197724.9963.3.camel@seeler>
+
+Hallo Heiner,
+
+Am Sonntag, den 31.08.2008, 17:06 +0200 schrieb Heiner Jostkleigrewe:
+
+> jameica/plugins/jverein/sql/mysql-create.sql
+
+Eben gerade nicht:
+juliux at seeler:~/jameica/plugins/jverein/sql$ ls -la
+insgesamt 44
+drwxr-xr-x 2 juliux juliux 4096 2008-01-01 14:14 .
+drwxr-xr-x 6 juliux juliux 4096 2008-01-01 14:14 ..
+-rw-r--r-- 1 juliux juliux 3414 2008-01-01 14:14 create.sql
+-rw-r--r-- 1 juliux juliux 3084 2008-01-01 14:14 h2-create.sql
+-rw-r--r-- 1 juliux juliux  864 2008-01-01 14:14 update_0.1-0.2.sql
+-rw-r--r-- 1 juliux juliux  939 2008-01-01 14:14 update_0.2-0.3.sql
+-rw-r--r-- 1 juliux juliux 1265 2008-01-01 14:14 update_0.4-0.5.sql
+-rw-r--r-- 1 juliux juliux 1223 2008-01-01 14:14 update_0.5-0.6.sql
+-rw-r--r-- 1 juliux juliux 1083 2008-01-01 14:14 update_0.6-0.7.sql
+-rw-r--r-- 1 juliux juliux  904 2008-01-01 14:14 update_0.7-0.8.sql
+-rw-r--r-- 1 juliux juliux   30 2008-01-01 14:14 update_0.8-0.9.sql
+
+Version jverein.20080101.zip
+
+gruss
+
+julius
+-------------- nächster Teil --------------
+Ein Dateianhang mit Binärdaten wurde abgetrennt...
+Dateiname   : signature.asc
+Dateityp    : application/pgp-signature
+Dateigröße  : 189 bytes
+Beschreibung: Dies ist ein digital signierter Nachrichtenteil
+URL         : <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20080831/72e9e55f/attachment.pgp>
+

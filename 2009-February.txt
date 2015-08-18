@@ -1,0 +1,48 @@
+From heiner at jost-net.de  Sun Feb 15 21:19:03 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 15 Feb 2009 21:19:03 +0100
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <499878B7.4050802@jost-net.de>
+
+Hallo,
+
+ich habe gerade eine neue JVerein-Entwicklerversion hochgeladen.
+
+Heiner
+
+
+From ruediger_ibers at gmx.de  Sat Feb 21 15:24:14 2009
+From: ruediger_ibers at gmx.de (=?ISO-8859-15?Q?R=FCdiger_Ibers?=)
+Date: Sat, 21 Feb 2009 15:24:14 +0100
+Subject: [JVerein-Mailliste] Beitragsgruppen anhand der Altersgruppen?
+Message-ID: <49A00E8E.3040808@gmx.de>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hallo liebe jVerein Nutzer,
+
+In unserem Verein gibt es eine Altersstaffelung der Vereinsbeiträge.
+
+Ist eine automatische Zuweisung der Beitragsgruppen anhand der
+Altersgruppen möglich?
+
+Ansonsten muss manuell in jedem Jahr den Mitgliedern eine andere
+Beitragsgruppe zuordnen, die die Altersgruppe wechseln.
+
+Mit freundlichen Grüßen,
+Rüdiger Ibers
+
+PS: RE: Grafiker gesucht: Falls es sich nur um die Icons handelt, dann
+könnte vielleicht das aus 1000 Icons bestehende IconSet Silk benutzt
+werden: http://www.famfamfam.com/lab/icons/silk/
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (MingW32)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iEYEARECAAYFAkmgDo4ACgkQt1007t5+YoYwpQCcDhMeEeCWkRL0tqgUGfmIdtrX
+jMAAn2IqfS67Cl6zYN8rW2MN+c0Gun3u
+=6dSr
+-----END PGP SIGNATURE-----
+
+

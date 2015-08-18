@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann	nicht angelegt werden.
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2008-June/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Fehler%20bei%20Startup%20Jameica%20-%20Datenbank%20kann%0A%09nicht%20angelegt%20werden.&In-Reply-To=%3C1214731763.6147.19.camel%40susi%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+   <LINK REL="Next"  HREF="000009.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann	nicht angelegt werden.</H1>
+    <B>Jörg Römhild</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20Fehler%20bei%20Startup%20Jameica%20-%20Datenbank%20kann%0A%09nicht%20angelegt%20werden.&In-Reply-To=%3C1214731763.6147.19.camel%40susi%3E"
+           TITLE="[JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann	nicht angelegt werden.">joerg.roemhild at arcor.de
+                  </A><BR>
+    <I>So Jun 29 11:29:23 CEST 2008</I>
+    <P><UL>
+        
+        <LI>Nächste Nachricht: <A HREF="000009.html">[JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann nicht angelegt werden.
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#8">[ Datum ]</a>
+              <a href="thread.html#8">[ Thema ]</a>
+              <a href="subject.html#8">[ Betreff (Subject) ]</a>
+              <a href="author.html#8">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Beim ersten Start gibt es ein Problem beim anlegen der Datenbank für
+JVerein.
+
+error while executing sql script. Current statement: 
+
+CREATE TABLE buchung(id            CREATE TABLE konto(id
+IDENTITY,nummer        VARCHAR(10),bezeichnung   VARCHAR(30),aufloesung
+DATE,hibiscusid    INTEGER,UNIQUE        (id),UNIQUE
+(nummer),PRIMARY KEY   (id))
+org.h2.jdbc.JdbcSQLException: Unbekannter Datentyp: CREATE
+
+
+Ursache: Das Statement stimmt nicht oder ist unvollständig.
+...
+&#65279;CREATE TABLE buchung(id            CREATE TABLE konto(id           
+...
+
+Create table buchung(id ... und Rest fehlt.
+
+
+Gruß Jörg
+
+
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Nächste Nachricht: <A HREF="000009.html">[JVerein-Mailliste] Fehler bei Startup Jameica - Datenbank kann nicht angelegt werden.
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#8">[ Datum ]</a>
+              <a href="thread.html#8">[ Thema ]</a>
+              <a href="subject.html#8">[ Betreff (Subject)]</a>
+              <a href="author.html#8">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

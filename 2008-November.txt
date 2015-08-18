@@ -1,0 +1,23 @@
+From heiner at jost-net.de  Thu Nov 13 21:22:39 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Thu, 13 Nov 2008 21:22:39 +0100
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <491C8C8F.7000608@jost-net.de>
+
+Hallo,
+
+ich habe eine neue Entwicklerversion zur Verfügung gestellt. Auszug aus 
+der Changelog:
+
+    * 13.11.2008
+          o Mitglied: Adressierungszusatz aufgenommen (Mitgliedsdaten,
+            PDF-Liste, CSV-Export, Import)
+    * 11.11.2008
+          o Einstellungen: Neu gruppiert und mit Scrollbars versehen.
+          o Mitglieder: Suche nach Geschlecht im Dialog und in den
+            Auswertungen implementiert. Such-Masken 2spaltig formatiert.
+
+Heiner
+
+
+

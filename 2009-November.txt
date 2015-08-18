@@ -1,0 +1,94 @@
+From m.guenther at lahntalindians.de  Mon Nov 23 12:03:45 2009
+From: m.guenther at lahntalindians.de (=?ISO-8859-1?Q?Marcel_G=FCnther?=)
+Date: Mon, 23 Nov 2009 12:03:45 +0100
+Subject: [JVerein-Mailliste] Fwd: Frage zum Beitragsmodell
+In-Reply-To: <cd2d0b6d0911230302m695b9d82u2b1999c28211c339@mail.gmail.com>
+References: <cd2d0b6d0911230302m695b9d82u2b1999c28211c339@mail.gmail.com>
+Message-ID: <cd2d0b6d0911230303s68ebb9dbv76d57becc254b4bb@mail.gmail.com>
+
+---------- Weitergeleitete Nachricht ----------
+Von: Marcel Günther <marguenther at googlemail.com>
+Datum: 23. November 2009 12:02
+Betreff: Frage zum Beitragsmodell
+An: jverein-mailliste at lists.berlios.de
+
+
+Hallo,
+
+wir sind kurz vor der produktiven Einführung von JVerein in unseren Verein.
+Da hat sich im Bezug auf die Beitragsmodelle bei uns eine Frage aufgetan.
+Wir haben in unserem Verein eine Satzungsklausel drin, das ein Neumitglied
+das ab dem 01.Juli, also in der 2.Jahreshälfte, in den Verein eintritt nur
+50% des Jahresbeitrags zuzahlen hat. Nun stehe ich irgendwie vor den
+Zahlungsmodellen und mir fällt nix ein, wie ich dies in den vorhanden
+Beitragsmodellen und Zahlungsrhytmen abbilden kann, das der Einzug
+automatisiert erfolgt. Bisher komme ich nur auf die Idee, das ich diesen
+Mitgliedern für das 1.Halbjahr eine andere Beitragsgruppe zu sortiere und
+diese dann am 01.01 des Folgejahres auf den "normalen" Rhytmus ändere. Oder
+gibt's da eine elegantere Lösung?
+
+Danke schonmal für Denkanstöße
+Marcel
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/jverein-mailliste/attachments/20091123/7ca14e78/attachment.html>
+
+From heiner at jost-net.de  Mon Nov 23 17:00:44 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Mon, 23 Nov 2009 17:00:44 +0100
+Subject: [JVerein-Mailliste] Fwd: Frage zum Beitragsmodell
+In-Reply-To: <cd2d0b6d0911230303s68ebb9dbv76d57becc254b4bb@mail.gmail.com>
+References: <cd2d0b6d0911230302m695b9d82u2b1999c28211c339@mail.gmail.com>
+	<cd2d0b6d0911230303s68ebb9dbv76d57becc254b4bb@mail.gmail.com>
+Message-ID: <4B0AB1AC.6090001@jost-net.de>
+
+Hallo Marcel,
+
+JVerein kann nicht so flexibel sein, wie sich Verantwortliche neue 
+Lösungen einfallen lassen. ;-)
+
+Mein Vorschlag: Die verwendest für das 2. Halbjahr eine neue 
+Betragsgruppe. Zum Jahreswechsel ordnest du die "volle" Beitragsgruppe zu.
+
+Heiner
+
+PS: unter www.jverein.de/forum kannst du jetzt auch Fragen stellen
+
+Marcel Günther schrieb:
+>
+>
+> ---------- Weitergeleitete Nachricht ----------
+> Von: *Marcel Günther* <marguenther at googlemail.com 
+> <mailto:marguenther at googlemail.com>>
+> Datum: 23. November 2009 12:02
+> Betreff: Frage zum Beitragsmodell
+> An: jverein-mailliste at lists.berlios.de 
+> <mailto:jverein-mailliste at lists.berlios.de>
+>
+>
+> Hallo,
+>
+> wir sind kurz vor der produktiven Einführung von JVerein in unseren 
+> Verein. Da hat sich im Bezug auf die Beitragsmodelle bei uns eine 
+> Frage aufgetan. Wir haben in unserem Verein eine Satzungsklausel drin, 
+> das ein Neumitglied das ab dem 01.Juli, also in der 2.Jahreshälfte, in 
+> den Verein eintritt nur 50% des Jahresbeitrags zuzahlen hat. Nun stehe 
+> ich irgendwie vor den Zahlungsmodellen und mir fällt nix ein, wie ich 
+> dies in den vorhanden Beitragsmodellen und Zahlungsrhytmen abbilden 
+> kann, das der Einzug automatisiert erfolgt. Bisher komme ich nur auf 
+> die Idee, das ich diesen Mitgliedern für das 1.Halbjahr eine andere 
+> Beitragsgruppe zu sortiere und diese dann am 01.01 des Folgejahres auf 
+> den "normalen" Rhytmus ändere. Oder gibt's da eine elegantere Lösung?
+>
+> Danke schonmal für Denkanstöße
+> Marcel
+>
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>   
+
+

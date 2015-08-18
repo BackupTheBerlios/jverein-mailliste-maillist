@@ -1,0 +1,70 @@
+From ralf-info at family-moll.de  Tue Jul 21 23:22:08 2009
+From: ralf-info at family-moll.de (Ralf Moll)
+Date: Tue, 21 Jul 2009 23:22:08 +0200
+Subject: [JVerein-Mailliste] Kann keine neuen Benutzer anlegen in v1.2.0
+Message-ID: <4A663180.70900@family-moll.de>
+
+Hallo miteinandern,
+
+ich habe beim Anlegen neuer Benutzer ein Problem.
+
+Hier kurz meine Eckdaten:
+Jameica: 1.80 nightly jVerein: 1.2.0 Build 179, Datenbankversion 52
+
+Fehler: Benutzer wurden komplett via CSV-Datei importiert. Beim Versuch, einen Benutzer manuell anzulegen, erscheint die Fehlermeldung "Bitte Namen eingeben" obwohl Vor- und Nachname bereits
+eingegeben wurden.
+
+Siehe auch:
+
+http://family-moll.de/jverein_namen.jpeg
+
+Bin ich zu doof oder habe ich was übersehen?
+
+Bis die Tage,
+
+Ralf Moll
+
+
+From heiner at jost-net.de  Wed Jul 22 19:02:54 2009
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Wed, 22 Jul 2009 19:02:54 +0200
+Subject: [JVerein-Mailliste] Kann keine neuen Benutzer anlegen in v1.2.0
+In-Reply-To: <4A663180.70900@family-moll.de>
+References: <4A663180.70900@family-moll.de>
+Message-ID: <4A67463E.4050802@jost-net.de>
+
+Hallo Ralf,
+
+setze mal die neuste Entwicklerversion ein. Es gab zwischenzeitlich mal 
+eine Version, die hatte ein entsprechendes Problem.
+
+Heiner
+
+Ralf Moll schrieb:
+> Hallo miteinandern,
+>
+> ich habe beim Anlegen neuer Benutzer ein Problem.
+>
+> Hier kurz meine Eckdaten:
+> Jameica: 1.80 nightly jVerein: 1.2.0 Build 179, Datenbankversion 52
+>
+> Fehler: Benutzer wurden komplett via CSV-Datei importiert. Beim Versuch, einen Benutzer manuell anzulegen, erscheint die Fehlermeldung "Bitte Namen eingeben" obwohl Vor- und Nachname bereits
+> eingegeben wurden.
+>
+> Siehe auch:
+>
+> http://family-moll.de/jverein_namen.jpeg
+>
+> Bin ich zu doof oder habe ich was übersehen?
+>
+> Bis die Tage,
+>
+> Ralf Moll
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+

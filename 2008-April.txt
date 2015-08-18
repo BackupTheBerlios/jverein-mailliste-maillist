@@ -1,0 +1,15 @@
+From heiner at jost-net.de  Fri Apr 11 14:43:49 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Fri, 11 Apr 2008 14:43:49 +0200
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <47FF5D05.5090805@jost-net.de>
+
+Hallo,
+
+es gibt eine neue Entwicklerversion. Jetzt können individuelle 
+Zusatzfelder definiert werden.
+http://www.jverein.de/index.php5?title=Changelog
+
+Heiner
+
+

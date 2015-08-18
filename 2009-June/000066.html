@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,	Band 17, Eintrag 8
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/jverein-mailliste/2009-June/index.html" >
+   <LINK REL="made"  HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20JVerein-Mailliste%20Nachrichtensammlung%2C%0A%09Band%2017%2C%20Eintrag%208&In-Reply-To=%3C200906221417.45527.hibiscus%40willuhn.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000065.html">
+   <LINK REL="Next"  HREF="000067.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,	Band 17, Eintrag 8</H1>
+    <B>Olaf Willuhn</B> 
+    <A
+    HREF="mailto:jverein-mailliste%40lists.berlios.de?Subject=Re%3A%20%5BJVerein-Mailliste%5D%20JVerein-Mailliste%20Nachrichtensammlung%2C%0A%09Band%2017%2C%20Eintrag%208&In-Reply-To=%3C200906221417.45527.hibiscus%40willuhn.de%3E"
+           TITLE="[JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,	Band 17, Eintrag 8">hibiscus at willuhn.de
+                  </A><BR>
+    <I>Mo Jun 22 14:17:45 CEST 2009</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000065.html">[JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,	Band 17, Eintrag 8
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000067.html">[JVerein-Mailliste]  Re: Problem mit DTAUS Datei
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#66">[ Datum ]</a>
+              <a href="thread.html#66">[ Thema ]</a>
+              <a href="subject.html#66">[ Betreff (Subject) ]</a>
+              <a href="author.html#66">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hallo,
+
+&gt;<i> Damit mein Vorstandskollege und ich auf der selben Basis arbeiten, haben
+</I>&gt;<i> wir schon erfolgreich die Nutzung über das Internet, mit einem MySQL auf
+</I>&gt;<i> einem Webserver, getestet. Allerdings haben wir die gleichen Bedenken zur
+</I>&gt;<i> Datensicherheit wie Sie. Die Daten würden unverschlüsselt übertragen und
+</I>&gt;<i> ebenso unverschlüsselt in MySQL auf dem Server gespeichert.
+</I>&gt;<i> An dieser Stelle suche ich ebenso noch eine Möglichkeit. Ich hatte überlegt
+</I>&gt;<i> einen Vereinskammeraden zu bitten eine Art Kryptographie-Modul für JVerein
+</I>&gt;<i> bzw. Jameica zu erstellen. Als andere Variante könnte ich mir vorstellen
+</I>&gt;<i> mit einem VPN zu arbeiten. Letztlich sind die Überlegungen noch recht
+</I>&gt;<i> unausgegoren.
+</I>&gt;<i> Wenn ich dahingehend etwas gefunden haben sollte bzw. implementiert haben
+</I>&gt;<i> sollte, melde ich mich über diese Liste.
+</I>
+Sowohl der Transport der Daten ueber das Netz als auch die Speicherung
+sollten sich mit MySQL- und Betriebssystembordmitteln loesen lassen:
+
+1) Transport-Sicherung: MySQL unterstuetzt SSL-gesicherte Verbindungen
+Auf folgenden beiden Seiten ist das Thema beschrieben:
+<A HREF="http://dev.mysql.com/doc/refman/5.1/de/secure-basics.html">http://dev.mysql.com/doc/refman/5.1/de/secure-basics.html</A>
+<A HREF="http://dev.mysql.com/doc/refman/5.1/de/connector-j-reference-using-ssl.html">http://dev.mysql.com/doc/refman/5.1/de/connector-j-reference-using-ssl.html</A>
+
+Der manuelle Import des CA-Zertifikates vom MySQL-Server (zweite URL)
+mittels &quot;keytool&quot; sollte jedoch nicht noetig sein. Stattdessen kann
+man das Zertifikat auch bequem in Jameica unter Datei-&gt;Einstellungen
+in den Truststore laden (Button &quot;Zertifikat importieren&quot;).
+
+Anschliessend muesste noch der Parameter &quot;useSSL=true&quot; an die JDBC-URL
+von JVerein angehaengt werden. Hier kann aber sicher Heiner sagen, in welcher
+Config-Datei das eingetragen werden kann.
+
+Was ich an dem Tutorial allerdings auf die Schnelle nicht verstanden habe,
+ist die Frage, was mit dem Client-Zertifikat passieren soll. Ich habe
+SSL-gesicherte MySQL-Verbindungen naemlich auch noch nie genutzt.
+
+2) Speicherung der Daten: Meines Wissens nach unterstuetzt derzeit keine
+der bekannten Storage-Engines von MySQL eine Verschluesselung. Allerdings
+kann man sich mittels TrueCrypt oder Linux-Bordmitteln (Crypto-Loop)
+eine verschluesselte Partition anlegen und die Datenbank-Dateien von
+MySQL dort ablegen. Erfordert etwas MySQL-Know-How, ist aber eigentlich
+nicht schwer.
+
+Gruss
+Olaf
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000065.html">[JVerein-Mailliste] JVerein-Mailliste Nachrichtensammlung,	Band 17, Eintrag 8
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000067.html">[JVerein-Mailliste]  Re: Problem mit DTAUS Datei
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#66">[ Datum ]</a>
+              <a href="thread.html#66">[ Thema ]</a>
+              <a href="subject.html#66">[ Betreff (Subject)]</a>
+              <a href="author.html#66">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/jverein-mailliste">Mehr Informationen &uuml;ber die Mailingliste JVerein-Mailliste</a><br>
+</body></html>

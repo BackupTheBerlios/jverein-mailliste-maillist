@@ -1,0 +1,15 @@
+From heiner at jost-net.de  Sat Mar 10 20:29:44 2007
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sat, 10 Mar 2007 20:29:44 +0100
+Subject: [JVerein-Mailliste] Neue Version
+Message-ID: <45F30728.3090505@jost-net.de>
+
+Hallo,
+
+ich habe eine neue Version von JVerein released:
+
+http://www.jverein.de/changelog.shtml
+
+Heiner
+
+

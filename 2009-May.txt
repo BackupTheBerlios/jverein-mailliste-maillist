@@ -1,0 +1,118 @@
+From ansgar.schrage at bigfoot.com  Mon May 25 14:14:22 2009
+From: ansgar.schrage at bigfoot.com (Ansgar Schrage)
+Date: Mon, 25 May 2009 14:14:22 +0200
+Subject: [JVerein-Mailliste] Weitere Jubilaeen
+Message-ID: <71bab5a0905250514t1bea24a1q42baa0ac95c91cb7@mail.gmail.com>
+
+Hallo,
+
+ist es angedacht, in einer zukünftigen Version von JVerein weitere
+Jubiläen auszuwerten?
+
+Bei uns im Verein gibt es hier konkret die Anforderung
+Hochzeitsjubiläen (Silber-, Goldhochzeit) in den Auswertungen zu
+berücksichtigen.
+
+Viele Grüße
+
+Ansgar Schrage
+
+
+From ansgar.schrage at bigfoot.com  Mon May 25 21:36:23 2009
+From: ansgar.schrage at bigfoot.com (Ansgar Schrage)
+Date: Mon, 25 May 2009 21:36:23 +0200
+Subject: [JVerein-Mailliste] Weitere Jubilaeen
+In-Reply-To: <4A1ADAA5.3030703@jost-net.de>
+References: <71bab5a0905250514t1bea24a1q42baa0ac95c91cb7@mail.gmail.com>
+	<4A1ADAA5.3030703@jost-net.de>
+Message-ID: <200905252136.23739.ansgar.schrage@bigfoot.com>
+
+Hallo Heiner,
+
+ja, das Datum haben wir hinterlegt.
+
+Zurzeit verwenden wir hier noch Excel-Listen (bzw. OpenOffice Calc). Dort kann 
+man das auch entsprechend herausfiltern. Die Idee kam auf, als wir JVerein für 
+unseren Verein als Software evaluiert hatten.
+Das hält uns aber nicht davon ab, JVerein zu nutzen.
+
+Gruß
+Ansgar
+
+
+Am Montag, 25. Mai 2009 schrieben Sie:
+> Hallo Ansgar,
+>
+> konkret gibt es momentan keine Planungen. Habt ihr denn das
+> Eheschließungsdatum aller verheirateten Mitglieder gespeichert?
+>
+> Heiner
+>
+> Ansgar Schrage schrieb:
+> > Hallo,
+> >
+> > ist es angedacht, in einer zukünftigen Version von JVerein weitere
+> > Jubiläen auszuwerten?
+> >
+> > Bei uns im Verein gibt es hier konkret die Anforderung
+> > Hochzeitsjubiläen (Silber-, Goldhochzeit) in den Auswertungen zu
+> > berücksichtigen.
+> >
+> > Viele Grüße
+> >
+> > Ansgar Schrage
+
+
+
+From ansgar.schrage at bigfoot.com  Tue May 26 00:27:29 2009
+From: ansgar.schrage at bigfoot.com (Ansgar Schrage)
+Date: Tue, 26 May 2009 00:27:29 +0200
+Subject: [JVerein-Mailliste] Weitere Jubilaeen
+In-Reply-To: <4A1B0B5D.8040009@jost-net.de>
+References: <71bab5a0905250514t1bea24a1q42baa0ac95c91cb7@mail.gmail.com>
+	<200905252136.23739.ansgar.schrage@bigfoot.com>
+	<4A1B0B5D.8040009@jost-net.de>
+Message-ID: <200905260027.29582.ansgar.schrage@bigfoot.com>
+
+Hallo Heiner,
+
+das ist ein prima Tipp. Dann habe ich alle Daten in JVerein und das 
+vereinfacht doch die Datenpflege. Danke.
+
+An dieser Stelle überhaupt einmal ein Danke dafür, dass du JVerein 
+entwickelst.
+
+Gruß
+Ansgar
+
+PS: Hier ein Link auf unsere Vereinsseite:
+http://www.pfarr-caecilienchor.de/
+
+
+Am Montag, 25. Mai 2009 schrieben Sie:
+> Hallo Ansgar,
+>
+> mir ist gerade noch ein Workaround eingefallen. Du kannst das
+> Eheschließungsdatum als Zusatzfeld speichern. Unter
+> Auswertung>Mitglieder kannst du die Daten ins CSV-Format exportieren und
+> wie bisher mit OpenOffice Calc auswerten. Dann werden die Daten nur in
+> JVerein gehalten und die Bestände in JVerein und in deiner Tabelle
+> laufen nicht auseinander.
+>
+> Heiner
+>
+> Ansgar Schrage schrieb:
+> > Hallo Heiner,
+> >
+> > ja, das Datum haben wir hinterlegt.
+> >
+> > Zurzeit verwenden wir hier noch Excel-Listen (bzw. OpenOffice Calc). Dort
+> > kann man das auch entsprechend herausfiltern. Die Idee kam auf, als wir
+> > JVerein für unseren Verein als Software evaluiert hatten.
+> > Das hält uns aber nicht davon ab, JVerein zu nutzen.
+> >
+> > Gruß
+> > Ansgar
+
+
+

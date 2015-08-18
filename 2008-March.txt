@@ -1,0 +1,36 @@
+From heiner at jost-net.de  Sun Mar 16 08:08:52 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sun, 16 Mar 2008 08:08:52 +0100
+Subject: [JVerein-Mailliste] =?iso-8859-15?q?Plan_f=FCr_die_Version_1=2E1?=
+Message-ID: <47DCC784.5090603@jost-net.de>
+
+Hallo,
+
+die Version 1.0 wird vermutlich am 25.3.2008 freigegeben. Für die 
+Version 1.1 gibt es bereits unter 
+http://www.jverein.de/index.php5?title=Plan_f%C3%BCr_Version_1.1 einen 
+Plan.
+
+Kommentare und weitere Ideen sind herzlich willkommen.
+
+Heiner
+
+
+From heiner at jost-net.de  Tue Mar 25 21:49:29 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Tue, 25 Mar 2008 21:49:29 +0100
+Subject: [JVerein-Mailliste] Version 1.0 freigegeben
+Message-ID: <47E96559.8090206@jost-net.de>
+
+Hallo,
+
+ich habe gerade nach rund 20 Monaten Entwicklungsarbeit die Version 1.0 
+von JVerein freigegeben. Voraussetzung ist der Einsatz von den heute 
+ebenfalls freigegebenen Version 1.6 von Jameica und 1.8 von Hibiscus.
+
+Die Änderungen können, wie immer, dem Changlog unter www.jverein.de 
+entnommen werden.
+
+Heiner
+
+

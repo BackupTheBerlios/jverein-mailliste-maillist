@@ -1,0 +1,463 @@
+From heiner at jost-net.de  Wed Jul  9 10:42:31 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Wed, 09 Jul 2008 10:42:31 +0200
+Subject: [JVerein-Mailliste] =?iso-8859-15?q?Neue_Entwicklerversion_zum_al?=
+ =?iso-8859-15?q?lgemeinen_Test_der_Buchf=FChrung?=
+Message-ID: <487479F7.9090301@jost-net.de>
+
+Hallo,
+
+unter http://prdownload.berlios.de/jverein/jverein.20080709.zip steht 
+eine Entwicklerversion von JVerein zum allgemeinen Test der neuen 
+Buchführung zum Download bereit. Für den Test sind die neuesten 
+Nightlies von Jameica und Hibiscus zu verwenden.
+
+Heiner
+
+
+From volker.richter at igboerse.de  Thu Jul 10 10:23:16 2008
+From: volker.richter at igboerse.de (Volker Richter)
+Date: Thu, 10 Jul 2008 10:23:16 +0200
+Subject: [JVerein-Mailliste] Einstellung des Datenbankverzeichnisses
+Message-ID: <4875C6F4.6010104@igboerse.de>
+
+Hallo,
+
+die Konfiguration und die Datenbank wird zur Zeit unter \user\.jameica
+gespeichert. Wie kann ich diese auf ein zentrales Verzeichnis umlegen,
+sodass mehrere Benutzer mit unterschiedlichen Accounts die
+gleiche Datenbank nutzen können.
+
+Vielen Dank
+  Volker Richter
+
+
+From hibiscus at willuhn.de  Thu Jul 10 10:30:37 2008
+From: hibiscus at willuhn.de (Olaf Willuhn)
+Date: Thu, 10 Jul 2008 10:30:37 +0200
+Subject: [JVerein-Mailliste] Einstellung des Datenbankverzeichnisses
+In-Reply-To: <4875C6F4.6010104@igboerse.de>
+References: <4875C6F4.6010104@igboerse.de>
+Message-ID: <200807101030.37642.hibiscus@willuhn.de>
+
+Hallo,
+
+> die Konfiguration und die Datenbank wird zur Zeit unter \user\.jameica
+> gespeichert. Wie kann ich diese auf ein zentrales Verzeichnis umlegen,
+> sodass mehrere Benutzer mit unterschiedlichen Accounts die
+> gleiche Datenbank nutzen können.
+
+Die verwendete H2-Datenbank ist fuer den gleichzeitigen Zugriff
+mehrerer Nutzer nicht geeignet. Nutze fuer den Mehrbenutzerbetrieb
+besser den MySQL-Support von JVerein.
+http://www.jverein.de/index.php5?title=MySQL-Support
+
+Gruss
+Olaf
+
+
+From heiner at jost-net.de  Thu Jul 10 11:12:56 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Thu, 10 Jul 2008 11:12:56 +0200
+Subject: [JVerein-Mailliste] Test von Entwicklerversion [Bugs]
+In-Reply-To: <4875CBDD.6040208@igboerse.de>
+References: <4863866D.30302@igboerse.de> <4863932B.40002@jost-net.de>
+	<4864B73B.40802@igboerse.de> <4864BC78.2000403@jost-net.de>
+	<4875CBDD.6040208@igboerse.de>
+Message-ID: <4875D298.6030605@jost-net.de>
+
+Hallo Volker,
+
+hast du eine "frische" Datenbank angelegt? Falls ja: Im Script zum 
+Aufbau der Datenbank hatte sich noch ein Fehler eingeschlichen. Den habe 
+ich zwischenzeitlich beseitigt. Entweder wird es heute oder morgen noch 
+eine neue Entwicklerversion geben.
+
+Du hast folgende Möglichkeiten:
+
+1. Du kopierst dein bisheriges .jameica-Verzeichnis (Version 1.0) unter 
+anderem Namen (z. B. .jameica.test) und rufst jameica mit dem Parameter 
+-f /home/user/.jameica.test o. ä. auf.
+2. Du änderst mit einem SQL-Frontend (z. B. Squirrel) in der Tabelle 
+buchungsart den Namen der Spalte buchungsart in art
+3. Du wartest bis zur nächsten Entwicklerversion und löscht dein 
+Verzeichnis für den JVerein-Test
+
+Heiner
+
+
+
+Volker Richter schrieb:
+> Hallo Heiner,
+>
+> da ich keinen Entwicklerzugang auf dem BerliOS Server habe,
+> möchte ich dir von mir entdeckte Fehler so zukommen lassen.
+>
+> Ich habe die Nigthly Builds vom 08.07.09 von allen Komponenten
+> unter Windows installiert.
+> .
+> Durch die neuen Funktionen ist sogar eine Buchführung möglich.
+> Damit wird JVerein zu einer richtigen Konkurenz für kommerziellen 
+> Lösungen.
+>
+>
+> Der Fehler mit der höchsten Priorität betrifft das
+> Anlegen von Buchungsarten nach der Einrichtung des
+> Kontos. Dabei wird folgende Exception geworfen:
+>
+> error while executing sql statement
+> org.h2.jdbc.JdbcSQLException: Feld BUCHUNGSART.ART nicht gefunden
+> Column BUCHUNGSART.ART not found; SQL statement:
+> select sum(betrag) from buchung, buchungsart where datum >= ? and 
+> datum <= ? AND konto = ? and buchung.BUCHUNGSART = BUCHUNGSART.ID and 
+> BUCHUNGSART.ART=? [42122-74]
+>    at org.h2.message.Message.getSQLException(Message.java:103)
+>    at org.h2.message.Message.getSQLException(Message.java:114)
+>    at org.h2.message.Message.getSQLException(Message.java:77)
+>    at 
+> org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:125)
+>    at org.h2.expression.Comparison.optimize(Comparison.java:133)
+>    at org.h2.expression.ConditionAndOr.optimize(ConditionAndOr.java:132)
+>    at org.h2.command.dml.Select.prepare(Select.java:688)
+>    at org.h2.command.Parser.prepareCommand(Parser.java:235)
+>    at org.h2.engine.Session.prepareLocal(Session.java:285)
+>    at org.h2.engine.Session.prepareCommand(Session.java:246)
+>    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1030)
+>    at 
+> org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:72)
+>    at 
+> org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:218)
+>    at 
+> de.willuhn.datasource.db.DBServiceImpl.execute(DBServiceImpl.java:446)
+>    at de.jost_net.JVerein.io.SaldoZeile.<init>(SaldoZeile.java:101)
+>    at 
+> de.jost_net.JVerein.gui.parts.JahressaldoList.getInfo(JahressaldoList.java:131) 
+>
+>    at 
+> de.jost_net.JVerein.gui.parts.JahressaldoList.getSaldoList(JahressaldoList.java:69) 
+>
+>    at 
+> de.jost_net.JVerein.gui.control.JahressaldoControl.getSaldoList(JahressaldoControl.java:149) 
+>
+>    at 
+> de.jost_net.JVerein.gui.view.JahressaldoView.bind(JahressaldoView.java:54) 
+>
+>    at de.willuhn.jameica.gui.GUI$2.run(GUI.java:456)
+>    at 
+> org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+>    at de.willuhn.jameica.gui.GUI$3.run(GUI.java:643)
+>    at 
+> org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+>    at org.eclipse.swt.widgets.Display.syncExec(Display.java:3763)
+>    at de.willuhn.jameica.gui.GUI.startSync(GUI.java:639)
+>    at de.willuhn.jameica.gui.GUI.startView(GUI.java:374)
+>    at 
+> de.jost_net.JVerein.gui.action.JahressaldoAction.handleAction(JahressaldoAction.java:27) 
+>
+>    at 
+> de.willuhn.jameica.gui.Navigation$MyActionListener.handleEvent(Navigation.java:306) 
+>
+>    at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+>    at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+>    at 
+> org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+>    at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+>    at de.willuhn.jameica.gui.GUI.loop(GUI.java:660)
+>    at de.willuhn.jameica.gui.GUI.init(GUI.java:213)
+>    at de.willuhn.jameica.system.Application.init(Application.java:144)
+>    at 
+> de.willuhn.jameica.system.Application.newInstance(Application.java:86)
+>    at de.willuhn.jameica.Main.main(Main.java:78)
+>
+>
+> Dies hat zur Folge, das auch die Jahresübersicht eine Exception 
+> hervorruft:
+>
+> error while executing sql statement
+> org.h2.jdbc.JdbcSQLException: Feld BUCHUNGSART.ART nicht gefunden
+> Column BUCHUNGSART.ART not found; SQL statement:
+> select sum(betrag) from buchung, buchungsart where datum >= ? and 
+> datum <= ? AND konto = ? and buchung.BUCHUNGSART = BUCHUNGSART.ID and 
+> BUCHUNGSART.ART=? [42122-74]
+>    at org.h2.message.Message.getSQLException(Message.java:103)
+>    at org.h2.message.Message.getSQLException(Message.java:114)
+>    at org.h2.message.Message.getSQLException(Message.java:77)
+>    at 
+> org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:125)
+>    at org.h2.expression.Comparison.optimize(Comparison.java:133)
+>    at org.h2.expression.ConditionAndOr.optimize(ConditionAndOr.java:132)
+>    at org.h2.command.dml.Select.prepare(Select.java:688)
+>    at org.h2.command.Parser.prepareCommand(Parser.java:235)
+>    at org.h2.engine.Session.prepareLocal(Session.java:285)
+>    at org.h2.engine.Session.prepareCommand(Session.java:246)
+>    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1030)
+>    at 
+> org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:72)
+>    at 
+> org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:218)
+>    at 
+> de.willuhn.datasource.db.DBServiceImpl.execute(DBServiceImpl.java:446)
+>    at de.jost_net.JVerein.io.SaldoZeile.<init>(SaldoZeile.java:101)
+>    at 
+> de.jost_net.JVerein.gui.parts.JahressaldoList.getInfo(JahressaldoList.java:131) 
+>
+>    at 
+> de.jost_net.JVerein.gui.parts.JahressaldoList.getSaldoList(JahressaldoList.java:69) 
+>
+>    at 
+> de.jost_net.JVerein.gui.control.JahressaldoControl.getSaldoList(JahressaldoControl.java:149) 
+>
+>    at 
+> de.jost_net.JVerein.gui.view.JahressaldoView.bind(JahressaldoView.java:54) 
+>
+>    at de.willuhn.jameica.gui.GUI$2.run(GUI.java:456)
+>    at 
+> org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+>    at de.willuhn.jameica.gui.GUI$3.run(GUI.java:643)
+>    at 
+> org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+>    at org.eclipse.swt.widgets.Display.syncExec(Display.java:3763)
+>    at de.willuhn.jameica.gui.GUI.startSync(GUI.java:639)
+>    at de.willuhn.jameica.gui.GUI.startView(GUI.java:374)
+>    at 
+> de.jost_net.JVerein.gui.action.JahressaldoAction.handleAction(JahressaldoAction.java:27) 
+>
+>    at 
+> de.willuhn.jameica.gui.Navigation$MyActionListener.handleEvent(Navigation.java:306) 
+>
+>    at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+>    at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+>    at 
+> org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+>    at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+>    at de.willuhn.jameica.gui.GUI.loop(GUI.java:660)
+>    at de.willuhn.jameica.gui.GUI.init(GUI.java:213)
+>    at de.willuhn.jameica.system.Application.init(Application.java:144)
+>    at 
+> de.willuhn.jameica.system.Application.newInstance(Application.java:86)
+>    at de.willuhn.jameica.Main.main(Main.java:78)
+>
+> Leider scheint auch das Speichern eines Anfangsbestandes nicht zu 
+> funktionieren.
+>
+>   Fehler bei speichern des Anfangsbestandes
+> java.rmi.RemoteException: unable to prepare insert sql statement; 
+> nested exception is:
+>    org.h2.jdbc.JdbcSQLException: Feld BETRAG nicht gefunden
+> Column BETRAG not found; SQL statement:
+> insert into ANFANGSBESTAND (BETRAG,KONTO,DATUM) values (?,?,?) [42122-74]
+>    at 
+> de.willuhn.datasource.db.AbstractDBObject.getInsertSQL(AbstractDBObject.java:904) 
+>
+>    at 
+> de.willuhn.datasource.db.AbstractDBObject.insert(AbstractDBObject.java:645) 
+>
+>    at 
+> de.willuhn.datasource.db.AbstractDBObject.store(AbstractDBObject.java:332) 
+>
+>    at 
+> de.jost_net.JVerein.gui.control.AnfangsbestandControl.handleStore(AnfangsbestandControl.java:114) 
+>
+>    at 
+> de.jost_net.JVerein.gui.view.AnfangsbestandView$1.handleAction(AnfangsbestandView.java:56) 
+>
+>    at de.willuhn.jameica.gui.parts.Button$1$1.run(Button.java:134)
+>    at 
+> org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+>    at de.willuhn.jameica.gui.GUI$3.run(GUI.java:643)
+>    at 
+> org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+>    at org.eclipse.swt.widgets.Display.syncExec(Display.java:3763)
+>    at de.willuhn.jameica.gui.GUI.startSync(GUI.java:639)
+>    at 
+> de.willuhn.jameica.gui.parts.Button$1.widgetSelected(Button.java:128)
+>    at 
+> org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:90)
+>    at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+>    at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+>    at 
+> org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+>    at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+>    at de.willuhn.jameica.gui.GUI.loop(GUI.java:660)
+>    at de.willuhn.jameica.gui.GUI.init(GUI.java:213)
+>    at de.willuhn.jameica.system.Application.init(Application.java:144)
+>    at 
+> de.willuhn.jameica.system.Application.newInstance(Application.java:86)
+>    at de.willuhn.jameica.Main.main(Main.java:78)
+> Caused by: org.h2.jdbc.JdbcSQLException: Feld BETRAG nicht gefunden
+> Column BETRAG not found; SQL statement:
+> insert into ANFANGSBESTAND (BETRAG,KONTO,DATUM) values (?,?,?) [42122-74]
+>    at org.h2.message.Message.getSQLException(Message.java:103)
+>    at org.h2.message.Message.getSQLException(Message.java:114)
+>    at org.h2.message.Message.getSQLException(Message.java:77)
+>    at org.h2.table.Table.getColumn(Table.java:490)
+>    at org.h2.command.Parser.parseColumnList(Parser.java:749)
+>    at org.h2.command.Parser.parseInsert(Parser.java:826)
+>    at org.h2.command.Parser.parsePrepared(Parser.java:368)
+>    at org.h2.command.Parser.parse(Parser.java:290)
+>    at org.h2.command.Parser.parse(Parser.java:262)
+>    at org.h2.command.Parser.prepareCommand(Parser.java:234)
+>    at org.h2.engine.Session.prepareLocal(Session.java:285)
+>    at org.h2.engine.Session.prepareCommand(Session.java:246)
+>    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1030)
+>    at 
+> org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:72)
+>    at 
+> org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:218)
+>    at 
+> de.willuhn.datasource.db.AbstractDBObject.getInsertSQL(AbstractDBObject.java:889) 
+>
+>    ... 21 more
+>
+> Was ich im alten Programmteil noch gefunden habe ist,
+> dass das Verhalten bei der Erstellung von Betragsgruppen seltsam ist.
+> Dieser Bug kann jedoch umgangen werden.
+>
+> Wenn mehrere Betragsgruppen in dem Dialog Beitragsgruppe
+> erstellt werden sollen, erscheint im Log Eintrag "Beitragsgruppe 
+> gespeichert"
+> Geht man dann zurück in den Dialog Beitragsgruppen wird nur der
+> letzte Eintrag angezeigt.
+>
+> Als Workaround können mehrere Einträge erstellt werden,
+> wenn man nach einem Eintrag zurück in das Fenster "Beitragsgruppen"
+> wechselt.
+>
+> Ich hoffe, das dir die Fehlermeldungen weiterhelfen, das Programm
+> zu verbessern.
+>
+> Gruß
+>  Volker
+>
+>
+>
+>
+>
+>
+>
+>
+
+
+From heiner at jost-net.de  Thu Jul 10 11:14:09 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Thu, 10 Jul 2008 11:14:09 +0200
+Subject: [JVerein-Mailliste] [Fwd: Re: Einstellung des
+	Datenbankverzeichnisses]
+Message-ID: <4875D2E1.80001@jost-net.de>
+
+Versehentlich hatte ich die untenstehende Mail direkt an Olaf Willuhn 
+und nicht an die Mailliste geschickt:
+
+-------- Original-Nachricht --------
+Betreff: 	Re: [JVerein-Mailliste] Einstellung des Datenbankverzeichnisses
+Datum: 	Thu, 10 Jul 2008 11:06:58 +0200
+Von: 	Heiner Jostkleigrewe <heiner at jost-net.de>
+An: 	Olaf Willuhn <hibiscus at willuhn.de>
+Referenzen: 	<4875C6F4.6010104 at igboerse.de> 
+<200807101030.37642.hibiscus at willuhn.de>
+
+
+
+Hallo Olaf,
+
+der gleichzeitige Betrieb sollte von verschiedenen Benutzern auf dem 
+gleichen Rechner doch möglich sein. Üblicherweise meldet sich immer ein 
+Benutzer an einem Rechner an. Dann ist immer nur ein Benutzer auf der 
+Datenbank angemeldet. Das gibt meines erachtens keine Probleme.
+
+Melden sich Benutzer remote auf dem Rechner an, wird es crashen.
+
+Heiner
+
+Olaf Willuhn schrieb:
+> Hallo,
+>
+>   
+>> die Konfiguration und die Datenbank wird zur Zeit unter \user\.jameica
+>> gespeichert. Wie kann ich diese auf ein zentrales Verzeichnis umlegen,
+>> sodass mehrere Benutzer mit unterschiedlichen Accounts die
+>> gleiche Datenbank nutzen können.
+>>     
+>
+> Die verwendete H2-Datenbank ist fuer den gleichzeitigen Zugriff
+> mehrerer Nutzer nicht geeignet. Nutze fuer den Mehrbenutzerbetrieb
+> besser den MySQL-Support von JVerein.
+> http://www.jverein.de/index.php5?title=MySQL-Support
+>
+> Gruss
+> Olaf
+> _______________________________________________
+> JVerein-Mailliste mailing list
+> JVerein-Mailliste at lists.berlios.de
+> https://lists.berlios.de/mailman/listinfo/jverein-mailliste
+>
+>   
+
+
+
+
+From hibiscus at willuhn.de  Thu Jul 10 12:06:48 2008
+From: hibiscus at willuhn.de (Olaf Willuhn)
+Date: Thu, 10 Jul 2008 12:06:48 +0200
+Subject: [JVerein-Mailliste] [Fwd: Re: Einstellung des
+	Datenbankverzeichnisses]
+In-Reply-To: <4875D2E1.80001@jost-net.de>
+References: <4875D2E1.80001@jost-net.de>
+Message-ID: <200807101206.49184.hibiscus@willuhn.de>
+
+Hi,
+
+> der gleichzeitige Betrieb sollte von verschiedenen Benutzern auf dem
+> gleichen Rechner doch möglich sein. 
+
+Achso, dann hab ich was falsch verstanden. Ich dachte, mehrere
+Nutze greifen gleichzeitig auf einem gemeinsame JVerein-Datenbank
+auf einem Server zu.
+
+> Üblicherweise meldet sich immer ein 
+> Benutzer an einem Rechner an. Dann ist immer nur ein Benutzer auf der
+> Datenbank angemeldet. Das gibt meines erachtens keine Probleme.
+
+Stimmt. Dann kann man mit dem Parameter "-f Verzeichnis" beim Aufruf
+von jameica.bat/jameica.sh ein Verzeichnis auf dem Rechner angeben,
+welches von allen Nutzern verwendet wird. Man muss halt nur darauf
+achten, dass alle dort Schreibrechte haben.
+Wichtig ist nur, dass nicht gleichzeitig mehrere User darauf zugreifen.
+Aber meines Wissens nach blockiert H2 das ohnehin. Heisst. Wenn die
+Datenbank bereits geoeffnet ist, kann sie kein weiterer oeffnen.
+
+Gruss
+Olaf
+
+
+From heiner at jost-net.de  Fri Jul 11 10:29:46 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Fri, 11 Jul 2008 10:29:46 +0200
+Subject: [JVerein-Mailliste] =?iso-8859-15?q?Neue_Entwicklerversion_ver=F6?=
+	=?iso-8859-15?q?ffentlicht?=
+Message-ID: <487719FA.1020902@jost-net.de>
+
+Hallo,
+
+ich habe gerade eine neue Entwicklerversion veröffentlicht. Änderungen 
+siehe http://www.jverein.de/index.php5?title=Changelog
+
+Heiner
+
+
+From heiner at jost-net.de  Sat Jul 19 21:58:11 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Sat, 19 Jul 2008 21:58:11 +0200
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <48824753.9090601@jost-net.de>
+
+Hallo,
+
+ich habe gerade eine neue Entwicklerversion freigegeben. Neu sind die 
+Möglichkeit Formulare zu hinterlegen und damit Spendenbescheinigungen 
+auszugeben. Künftig werden auch Rechnungen mit diesen Formularen 
+erstellt werden können. Weitere Ideen könnt ihr mir zuschicken.
+
+Heiner
+
+

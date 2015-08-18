@@ -1,0 +1,15 @@
+From heiner at jost-net.de  Wed Oct  1 09:37:46 2008
+From: heiner at jost-net.de (Heiner Jostkleigrewe)
+Date: Wed, 01 Oct 2008 09:37:46 +0200
+Subject: [JVerein-Mailliste] Neue Entwicklerversion
+Message-ID: <48E328CA.2050009@jost-net.de>
+
+Hallo,
+
+ich habe heute eine neue Entwicklerversion erstellt. Neben kleinen 
+Änderungen ist ein Diagnose-Backup und Import eingefügt worden. Wichtig 
+ist der Einsatz des Nightly-Builds von Jameica und Hibiscus >= 30.09.2008.
+
+Heiner
+
+
